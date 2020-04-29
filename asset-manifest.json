@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ShirWeb/static/css/main.d1b05096.chunk.css",
+    "main.js": "/ShirWeb/static/js/main.57ef503b.chunk.js",
+    "main.js.map": "/ShirWeb/static/js/main.57ef503b.chunk.js.map",
+    "runtime-main.js": "/ShirWeb/static/js/runtime-main.0757aa73.js",
+    "runtime-main.js.map": "/ShirWeb/static/js/runtime-main.0757aa73.js.map",
+    "static/js/2.bd42c3fa.chunk.js": "/ShirWeb/static/js/2.bd42c3fa.chunk.js",
+    "static/js/2.bd42c3fa.chunk.js.map": "/ShirWeb/static/js/2.bd42c3fa.chunk.js.map",
+    "index.html": "/ShirWeb/index.html",
+    "precache-manifest.8d98f55e2d33395a157d1adb0fe3acb2.js": "/ShirWeb/precache-manifest.8d98f55e2d33395a157d1adb0fe3acb2.js",
+    "service-worker.js": "/ShirWeb/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/ShirWeb/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.bd42c3fa.chunk.js.LICENSE.txt": "/ShirWeb/static/js/2.bd42c3fa.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/ShirWeb/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0757aa73.js",
+    "static/js/2.bd42c3fa.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.57ef503b.chunk.js"
+  ]
+}

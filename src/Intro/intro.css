@@ -1,0 +1,10 @@
+.intro-cont {
+  display: flex;
+  justify-content: center;
+  justify-self: start;
+  align-content: center;
+  flex-direction: column;
+
+}
+
+

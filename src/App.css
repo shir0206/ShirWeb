@@ -11,8 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-   font-family: Calibri, 'Trebuchet MS', sans-serif; 
-
+  font-family: Calibri, "Trebuchet MS", sans-serif;
 }
 .card {
   background-color: #fff;
@@ -46,10 +45,17 @@
   border-style: solid;
   border-width: 0.25px;
   text-align: center;
-  /* background-color: springgreen; */
   width: 33.3vw;
+  cursor: pointer;
 }
-
+@media (pointer: fine) {
+  .intro-container:hover,
+  .project-container:hover,
+  .about-container:hover {
+    border-color: rgb(127, 127, 127);
+    background-color: rgb(127, 127, 127, 0.1);
+  }
+}
 .button-container p {
   font-size: 2vh;
   color: rgb(127, 127, 127);

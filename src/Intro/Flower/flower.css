@@ -1,6 +1,19 @@
-.flower-cont {
-  max-height: 30vh;
-  max-width: 30vw;
+
+
+@media only screen and (min-width: 501px) {
+  .flower-cont {
+    max-height: 32vh;
+    max-width: 32vw;
+    margin-left:5vw;
+
+  }
+}
+@media only screen and (max-width: 500px) {
+  .flower-cont {
+    max-height: 50vh;
+    max-width: 60vw;
+    margin-left:5vw;
+  }
 }
 .flower-cont svg {
   fill: none;

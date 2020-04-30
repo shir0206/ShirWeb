@@ -25,7 +25,6 @@ function App() {
           <div
             className="intro-container"
             onClick={() => {
-              console.log(0);
               setButtonClicked(0);
             }}
           >
@@ -34,8 +33,6 @@ function App() {
           <div
             className="project-container"
             onClick={() => {
-              console.log(1);
-
               setButtonClicked(1);
             }}
           >
@@ -44,8 +41,6 @@ function App() {
           <div
             className="about-container"
             onClick={() => {
-              console.log(2);
-
               setButtonClicked(2);
             }}
           >

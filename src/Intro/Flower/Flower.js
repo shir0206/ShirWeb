@@ -9,12 +9,12 @@ export const Flower = () => {
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: "cubicBezier(.5, .05, .1, .3)",
       duration: 100,
-      delay: function(el, i) {
+      delay: function (el, i) {
         return i * 80;
       },
       loop: false,
       direction: "alternate",
-      autoplay: true
+      autoplay: true,
     });
   }
 

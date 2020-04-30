@@ -1,24 +1,31 @@
 
 
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 901px) {
   .flower-cont {
-    max-height: 32vh;
-    max-width: 32vw;
+    max-height: 20vw;
+    max-width: 20vw;
     margin-left:5vw;
 
   }
 }
+@media only screen and (min-width: 501px)  and (max-width: 900px){
+  .flower-cont {
+    max-height: 50vw;
+    max-width: 50vw;
+    margin-left:5vw;
+  }
+}
 @media only screen and (max-width: 500px) {
   .flower-cont {
-    max-height: 50vh;
-    max-width: 60vw;
+    max-height: 45vw;
+    max-width: 45vw;
     margin-left:5vw;
   }
 }
 .flower-cont svg {
   fill: none;
   max-width: 98vw;
-  max-height: 98vh;
+  max-height: 98vw;
 }
 .flower-cont path {
   stroke-width: 3px;

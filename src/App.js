@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import { Intro } from "./Intro/Intro";
+import { Project } from "./Project/Project";
 import Demo from "./Demo";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
   if (buttonClicked === 0) {
     cardContent = <Intro />;
   } else if (buttonClicked === 1) {
-    cardContent = <p>hi im 2</p>;
+    cardContent = <Project />;;
   } else if (buttonClicked === 2) {
     cardContent = <p>hi im 3</p>;
   }
@@ -23,7 +24,9 @@ function App() {
         <div className="content-container">{cardContent}</div>
         <div className="button-container">
           <div
-            className="intro-container"
+            className={
+              buttonClicked === 0 ? "intro-container tab-on" : "intro-container"
+            }
             onClick={() => {
               setButtonClicked(0);
             }}
@@ -31,7 +34,11 @@ function App() {
             <p>Intro</p>
           </div>
           <div
-            className="project-container"
+            className={
+              buttonClicked === 1
+                ? "project-container tab-on"
+                : "project-container"
+            }
             onClick={() => {
               setButtonClicked(1);
             }}
@@ -39,7 +46,9 @@ function App() {
             <p>Projects</p>
           </div>
           <div
-            className="about-container"
+            className={
+              buttonClicked === 2 ? "about-container tab-on" : "about-container"
+            }
             onClick={() => {
               setButtonClicked(2);
             }}

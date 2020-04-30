@@ -1,0 +1,45 @@
+
+.about-svg {
+    max-height: 20vw;
+    max-width: 20vw;
+  }
+.about-svg #path-0 {
+  fill: #fefeff;
+  stroke: #fefeff;
+}
+.about-svg #path-1 {
+  fill: #cb4673;
+  stroke: #cb4673;
+}
+.about-svg #path-2 {
+  fill: #060606;
+  stroke: #060606;
+}
+.about-svg #path-3 {
+  fill: #1c140c;
+  stroke: #1c140c;
+}
+.about-svg #path-4 {
+  fill: #422610;
+  stroke: #422610;
+}
+.about-svg #path-5 {
+  fill: #f9d09d;
+  stroke: #f9d09d;
+}
+.about-svg #path-6 {
+  fill: #f2ab56;
+  stroke: #f2ab56;
+}
+.about-svg #path-7 {
+  fill: #9b5a27;
+  stroke: #9b5a27;
+}
+.about-svg #path-8 {
+  fill: #efa955;
+  stroke: #efa955;
+}
+.about-svg #path-9 {
+  fill: #503116;
+  stroke: #503116;
+}

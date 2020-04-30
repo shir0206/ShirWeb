@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { Intro } from "./Intro/Intro";
 import { Project } from "./Project/Project";
+import { About } from "./About/About";
 import Demo from "./Demo";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
   } else if (buttonClicked === 1) {
     cardContent = <Project />;;
   } else if (buttonClicked === 2) {
-    cardContent = <p>hi im 3</p>;
+    cardContent = <About />;;
   }
 
   return (

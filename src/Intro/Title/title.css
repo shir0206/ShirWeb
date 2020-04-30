@@ -1,0 +1,15 @@
+.title-cont svg {
+    fill: none;
+    max-width: 98vw;
+    max-height: 98vh;
+  }
+  .title-cont svg path {
+    stroke-width: 7px;
+    stroke: rgb(199, 71, 120);
+  }
+  .title-cont {
+    max-height: 30vh;
+    max-width: 50vw;
+    margin-left: 45vw;
+  }
+  

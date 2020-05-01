@@ -6,6 +6,8 @@ export const About = (props) => {
     <div className="about-cont">
       <p>about</p>
       <div className="about-svg"> {aboutSVG}</div>
+      <button className="read-more-btn">Read More</button>
+
     </div>
   );
 };

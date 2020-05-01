@@ -14,15 +14,18 @@ function App() {
   if (buttonClicked === 0) {
     cardContent = <Intro />;
   } else if (buttonClicked === 1) {
-    cardContent = <Project />;;
+    cardContent = <Project />;
   } else if (buttonClicked === 2) {
-    cardContent = <About />;;
+    cardContent = <About />;
   }
 
   return (
     <div className="app">
       <div className="card">
-        <div className="content-container">{cardContent}</div>
+        <div className="content-container">
+          {cardContent}
+          
+        </div>
         <div className="button-container">
           <div
             className={
@@ -57,6 +60,7 @@ function App() {
             <p>About</p>
           </div>
         </div>
+        
       </div>
     </div>
   );

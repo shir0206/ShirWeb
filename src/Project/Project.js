@@ -6,12 +6,13 @@ export const Project = (props) => {
     <div className="project-cont">
       <p>projects</p>
       <div className="project-svg"> {projectSVG}</div>
+      <button className="read-more-btn">Read More</button>
     </div>
   );
 };
 
 const projectSVG = (
-  <svg viewBox="0 0 632 954" >
+  <svg viewBox="0 0 632 954">
     <path
       id="path-7"
       d="M 405.00,251.00

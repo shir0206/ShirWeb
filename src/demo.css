@@ -1,4 +1,4 @@
-.demo {
+/* .demo {
     text-align: center;
     background: linear-gradient(180deg, #ECD4DE 31.15%, rgba(236, 212, 222, 0) 100%), #FFFFFF;
     display: flex;
@@ -407,7 +407,6 @@
     border-radius: 100%;
     top: -25%;
     right: -25%;
-    /* transform: translateX(-50%) translateY(-50%); */
   
   }
   .blob:before,
@@ -431,4 +430,4 @@
     width: 40%;
     height: 60%;
     background: lime;
-  }
+  } */

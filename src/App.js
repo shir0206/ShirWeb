@@ -21,6 +21,29 @@ function App() {
 
   return (
     <div className="app">
+      <div className="blob-container">
+        <div
+          className={
+            (buttonClicked === 0 && "intro-blob-1") ||
+            (buttonClicked === 1 && "project-blob-1") ||
+            (buttonClicked === 2 && "about-blob-1")
+          }
+        ></div>
+        <div
+          className={
+            (buttonClicked === 0 && "intro-blob-2") ||
+            (buttonClicked === 1 && "project-blob-2") ||
+            (buttonClicked === 2 && "about-blob-2")
+          }
+        ></div>
+        <div
+          className={
+            (buttonClicked === 0 && "intro-blob-3") ||
+            (buttonClicked === 1 && "project-blob-3") ||
+            (buttonClicked === 2 && "about-blob-3")
+          }
+        ></div>
+      </div>
       <div className="card">
         <div className="content-container">
           {cardContent}
@@ -63,6 +86,7 @@ function App() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

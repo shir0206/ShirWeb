@@ -24,7 +24,9 @@ function App() {
       <div className="card">
         <div className="content-container">
           {cardContent}
-          
+          {buttonClicked !== 0 && (
+            <button className="read-more-btn">Read More</button>
+          )}
         </div>
         <div className="button-container">
           <div
@@ -60,7 +62,6 @@ function App() {
             <p>About</p>
           </div>
         </div>
-        
       </div>
     </div>
   );

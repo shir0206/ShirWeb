@@ -16,32 +16,6 @@
   }
 }
 
-
-
-.project-cont .read-more-btn {
-  z-index: 90;
-  position: absolute;
-  top: calc(50% + 15vh);
-  width: 50vw;
-  max-width: 250px;
-  left: 5vw;
-  height: 5vw;
-  max-height: 50px;
-  min-height: 50px;
-  opacity: 1;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 15px;
-  text-decoration: none;
-  cursor: pointer;
-  outline: 0;
-  border: 2px solid #c64675;
-  font-size: 1.25em;
-  color: #c64675;
-  font-family: Calibri;
-}
-.project-cont .read-more-btn:hover {
-  background-color: #ff89b433;
-}
 .project-svg #path-7 {
   fill: #693c3c;
   stroke: #693c3c;

@@ -1,5 +1,6 @@
-/* svg image */
-
+.project-cont {
+  z-index:10;
+}
 .project-svg {
   width: 20vw;
   margin-left: 40vw;

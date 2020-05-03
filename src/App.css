@@ -45,6 +45,7 @@ body {
   max-width: 80vw;
   bottom: 0;
   height: fit-content;
+  z-index: 150;
 }
 
 .intro-container,
@@ -129,9 +130,12 @@ body {
 .read-more-btn:hover {
   background-color: #ff89b433;
 }
-
+svg {
+  z-index: 99;
+}
 .blob-container {
   opacity: 0.5;
+  z-index: 111;
 }
 
 .intro-blob-1 {
@@ -162,10 +166,10 @@ body {
 
 .project-blob-1 {
   width: 40%;
-  height: 55%;
-  background: #c64675;
-  top: -15%;
-  right: -5%;
+  height: 35%;
+  background: #7746c6;
+  top: 15%;
+  right: 15%;
   animation: blob-project-anim 0.5s cubic-bezier(0, 0, 0.6, 1);
 }
 .project-blob-2 {
@@ -178,47 +182,46 @@ body {
 }
 
 .project-blob-3 {
-  background: #c64675;
-  width: 60%;
-  height: 60%;
+  background: #46c67b;
+  width: 30%;
+  height: 30%;
   right: 5%;
   top: 5%;
   animation: blob-project-anim 0.5s cubic-bezier(0, 0, 0.6, 1);
 }
 
 .about-blob-1 {
-  width: 60%;
-  height: 75%;
+  width: 30%;
+  height: 45%;
   background: #6d44b5;
-  top: -25%;
-  right: -25%;
+  top: 10%;
+  right: 5%;
+  animation: blob-about-anim 0.5s cubic-bezier(0, 0, 0.6, 1);
 }
 .about-blob-2 {
   background: #00ff40;
-  right: -15%;
-  top: 20%;
-  width: 40%;
-  height: 60%;
+  right: 5%;
+  top: 50%;
+  width: 30%;
+  height: 30%;
+  animation: blob-about-anim 0.5s cubic-bezier(0, 0, 0.6, 1);
 }
 
 .about-blob-3 {
   background: #ff7300;
-  width: 50%;
-  height: 60%;
-  right: 0;
-  top: 20px;
+  width: 40%;
+  height: 50%;
+  right: 15%;
+  top: 20%;
+  animation: blob-about-anim 0.5s cubic-bezier(0, 0, 0.6, 1);
 }
 
 .blob-container * {
   /* animation: blob-anim 0.5s cubic-bezier(0, 0, 0.6, 1); */
   border-radius: 100%;
   position: absolute;
-  z-index: 80;
 }
 
-svg {
-  z-index: 999999999999;
-}
 @keyframes blob-intro-anim {
   0%,
   100% {
@@ -230,6 +233,15 @@ svg {
 }
 
 @keyframes blob-project-anim {
+  0%,
+  100% {
+    transform: scale(1) translate3d(3, 3);
+  }
+  25% {
+    transform: scale(0.95);
+  }
+}
+@keyframes blob-about-anim {
   0%,
   100% {
     transform: scale(1);

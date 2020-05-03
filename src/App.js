@@ -1,94 +1,98 @@
 import React, { useState } from "react";
+
 import "./App.css";
+import "./cloud.css";
+
 import { Intro } from "./Intro/Intro";
 import { Project } from "./Project/Project";
 import { About } from "./About/About";
-import Demo from "./Demo";
 
 function App() {
-  const [buttonClicked, setButtonClicked] = useState(0);
-  // <Intro/>
-  //      <Demo/>
+  const [tab, setTab] = useState(0);
+  const [openReadMore, setOpenReadMore] = useState(false);
 
   let cardContent;
-  if (buttonClicked === 0) {
+  if (tab === 0) {
     cardContent = <Intro />;
-  } else if (buttonClicked === 1) {
+  } else if (tab === 1) {
     cardContent = <Project />;
-  } else if (buttonClicked === 2) {
+  } else if (tab === 2) {
     cardContent = <About />;
   }
 
   return (
     <div className="app">
-      <div className="blob-container">
-        <div
-          className={
-            (buttonClicked === 0 && "intro-blob-1") ||
-            (buttonClicked === 1 && "project-blob-1") ||
-            (buttonClicked === 2 && "about-blob-1")
-          }
-        ></div>
-        <div
-          className={
-            (buttonClicked === 0 && "intro-blob-2") ||
-            (buttonClicked === 1 && "project-blob-2") ||
-            (buttonClicked === 2 && "about-blob-2")
-          }
-        ></div>
-        <div
-          className={
-            (buttonClicked === 0 && "intro-blob-3") ||
-            (buttonClicked === 1 && "project-blob-3") ||
-            (buttonClicked === 2 && "about-blob-3")
-          }
-        ></div>
-      </div>
       <div className="card">
         <div className="content-container">
+          <Cloud tab={tab} openReadMore={openReadMore}></Cloud>
           {cardContent}
-          {buttonClicked !== 0 && (
-            <button className="read-more-btn">Read More</button>
+          {tab !== 0 && (
+            <button
+              className="read-more-btn"
+              onClick={() => {
+                setOpenReadMore(!openReadMore);
+              }}
+            >
+              Read More
+            </button>
           )}
         </div>
         <div className="button-container">
           <div
-            className={
-              buttonClicked === 0 ? "intro-container tab-on" : "intro-container"
-            }
+            className={tab === 0 ? "intro-container tab-on" : "intro-container"}
             onClick={() => {
-              setButtonClicked(0);
+              setTab(0);
             }}
           >
             <p>Intro</p>
           </div>
           <div
             className={
-              buttonClicked === 1
-                ? "project-container tab-on"
-                : "project-container"
+              tab === 1 ? "project-container tab-on" : "project-container"
             }
             onClick={() => {
-              setButtonClicked(1);
+              setTab(1);
             }}
           >
             <p>Projects</p>
           </div>
           <div
-            className={
-              buttonClicked === 2 ? "about-container tab-on" : "about-container"
-            }
+            className={tab === 2 ? "about-container tab-on" : "about-container"}
             onClick={() => {
-              setButtonClicked(2);
+              setTab(2);
             }}
           >
             <p>About</p>
           </div>
         </div>
       </div>
-      
     </div>
   );
 }
 
 export default App;
+
+function Cloud(props) {
+  let shape;
+
+  if (props.openReadMore) {
+    shape = (
+      <div className="change-shape cloudD" style={{ top: 10, left: 10 }} />
+    );
+  } else {
+    if (props.tab === 0) {
+      shape = (
+        <div className="change-shape cloudA" style={{ top: 20, left: 20 }} />
+      );
+    } else if (props.tab === 1) {
+      shape = (
+        <div className="change-shape cloudB" style={{ top: 30, left: 30 }} />
+      );
+    } else if (props.tab === 2) {
+      shape = (
+        <div className="change-shape cloudC" style={{ top: 40, left: 40 }} />
+      );
+    }
+  }
+  return <div className="cloud-container">{shape} </div>;
+}

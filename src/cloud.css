@@ -1,0 +1,134 @@
+.cloud-container {
+  z-index: 50;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cloudA {
+  background-color: red;
+  border-radius: 48px;
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.cloudA::before,
+.cloudA::after {
+  background-color: green;
+  border-radius: 50%;
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 7px;
+  top: -6px;
+}
+
+.cloudA::after {
+  background-color: blue;
+  width: 23px;
+  height: 23px;
+  left: 7px;
+  right: auto;
+  top: -10px;
+}
+
+.cloudB {
+  background-color: red;
+  border-radius: 48px;
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+
+.cloudB::before,
+.cloudB::after {
+  background-color: green;
+  border-radius: 50%;
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  right: 17px;
+  top: -6px;
+}
+
+.cloudB::after {
+  background-color: blue;
+  width: 13px;
+  height: 13px;
+  left: 17px;
+  right: auto;
+  top: -10px;
+}
+
+.cloudC {
+  background-color: red;
+  border-radius: 48px;
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.cloudC::before,
+.cloudC::after {
+  background-color: green;
+  border-radius: 50%;
+  content: "";
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  right: 17px;
+  top: -6px;
+}
+
+.cloudC::after {
+  background-color: blue;
+  width: 43px;
+  height: 43px;
+  left: 17px;
+  right: auto;
+  top: -10px;
+}
+
+.cloudD {
+  background-color: red;
+  border-radius: 10px;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.cloudD::before,
+.cloudD::after {
+  background-color: green;
+  border-radius: 50%;
+  content: "";
+  width: 0px;
+  height: 0px;
+  right: 10px;
+  top: 10px;
+  position: absolute;
+}
+
+.cloudD::after {
+  background-color: blue;
+  width: 0px;
+  height: 0px;
+  right: 10px;
+  top: 10px;
+}
+
+.change-shape,
+.change-shape:after,
+.change-shape:before {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}

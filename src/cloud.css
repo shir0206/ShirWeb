@@ -7,15 +7,25 @@
   align-items: flex-end;
   justify-content: flex-start;
   flex-direction: column;
-  opacity: 0.5;
 }
 
+.cloud-container .cloud-intro {
+  opacity: 0;
+}
+.cloud-container .cloud-project,
+.cloud-container .cloud-about {
+  opacity: 0.5;
+}
+.cloud-container .cloud-read-more {
+  opacity: 0.8;
+}
 .cloud-intro {
   width: 0%;
   height: 0%;
   border-radius: 100%;
   position: absolute;
   background-color: rgb(199, 71, 120);
+  opacity: 0;
 }
 
 .cloud-intro::before,
@@ -115,9 +125,7 @@
   width: 90%;
   height: 90%;
   transform: translate(-50%, -50%);
-
 }
-
 
 .cloud-read-more::before,
 .cloud-read-more::after {

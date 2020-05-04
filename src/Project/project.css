@@ -5,6 +5,8 @@
   width: 20vw;
   margin-left: 40vw;
   animation: project-svg-anim 0.5s cubic-bezier(0, 0, 0.6, 1);
+  animation-delay: 0.25s;
+
 }
 
 @keyframes project-svg-anim {

@@ -1,127 +1,143 @@
 .cloud-container {
-  z-index: 50;
+  z-index: 1;
   position: absolute;
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-start;
   flex-direction: column;
+  opacity: 0.5;
 }
 
 .cloud-intro {
-  background-color: red;
-  border-radius: 48px;
-  position: relative;
-  width: 48px;
-  height: 48px;
+  width: 0%;
+  height: 0%;
+  border-radius: 100%;
+  position: absolute;
+  background-color: rgb(199, 71, 120);
 }
 
 .cloud-intro::before,
 .cloud-intro::after {
-  background-color: green;
-  border-radius: 50%;
-  content: "";
-  width: 14px;
-  height: 14px;
+  width: 50%;
+  height: 50%;
+  right: 5;
+  top: 45%;
+  border-radius: 100%;
   position: absolute;
-  right: 7px;
-  top: -6px;
+  background-color: rgb(199, 71, 120);
+  content: "";
 }
 
 .cloud-intro::after {
-  background-color: blue;
-  width: 23px;
-  height: 23px;
-  left: 7px;
+  width: 25%;
+  height: 25%;
+  left: -10%;
   right: auto;
-  top: -10px;
+  top: 25%;
+  border-radius: 100%;
+  position: absolute;
+  background-color: rgb(199, 71, 120);
+  content: "";
 }
 
 .cloud-project {
-  background-color: red;
-  border-radius: 48px;
-  position: relative;
-  width: 28px;
-  height: 28px;
+  width: 70%;
+  height: 70%;
+  border-radius: 100%;
+  position: absolute;
+  background-color: rgb(199, 71, 120);
 }
 
 .cloud-project::before,
 .cloud-project::after {
-  background-color: green;
-  border-radius: 50%;
-  content: "";
-  width: 11px;
-  height: 11px;
+  width: 50%;
+  height: 50%;
+  right: 10%;
+  top: 65%;
+  border-radius: 100%;
   position: absolute;
-  right: 17px;
-  top: -6px;
+  background-color: rgb(199, 71, 120);
+  content: "";
 }
 
 .cloud-project::after {
-  background-color: blue;
-  width: 13px;
-  height: 13px;
-  left: 17px;
+  width: 30%;
+  height: 30%;
+  left: -10%;
   right: auto;
-  top: -10px;
+  top: 10%;
+  border-radius: 100%;
+  position: absolute;
+  background-color: rgb(199, 71, 120);
+  content: "";
 }
 
 .cloud-about {
-  background-color: red;
-  border-radius: 48px;
-  position: relative;
-  width: 48px;
-  height: 48px;
+  width: 40%;
+  height: 40%;
+  border-radius: 100%;
+  position: absolute;
+  background-color: rgb(199, 71, 120);
 }
 
 .cloud-about::before,
 .cloud-about::after {
-  background-color: green;
-  border-radius: 50%;
-  content: "";
-  width: 41px;
-  height: 41px;
+  width: 150%;
+  height: 150%;
+  right: 5%;
+  top: 35%;
+  border-radius: 100%;
   position: absolute;
-  right: 17px;
-  top: -6px;
+  background-color: rgb(199, 71, 120);
+  content: "";
 }
 
 .cloud-about::after {
-  background-color: blue;
-  width: 43px;
-  height: 43px;
-  left: 17px;
+  width: 65%;
+  height: 65%;
+  left: -25%;
   right: auto;
-  top: -10px;
+  top: 5%;
+  border-radius: 100%;
+  position: absolute;
+  background-color: rgb(199, 71, 120);
+  content: "";
 }
 
 .cloud-read-more {
-  background-color: red;
-  border-radius: 10px;
-  position: relative;
-  width: 80px;
-  height: 80px;
+  background-color: rgb(199, 71, 120);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+
 }
+
 
 .cloud-read-more::before,
 .cloud-read-more::after {
-  background-color: green;
+  background-color: rgb(199, 71, 120);
   border-radius: 50%;
   content: "";
   width: 0px;
   height: 0px;
-  right: 10px;
-  top: 10px;
+  left: 90%;
   position: absolute;
+  top: 20%;
+  right: -20%;
 }
 
 .cloud-read-more::after {
-  background-color: blue;
+  background-color: rgb(199, 71, 120);
   width: 0px;
   height: 0px;
-  right: 10px;
-  top: 10px;
+  top: 20%;
+  right: -20%;
 }
 
 .change-shape,

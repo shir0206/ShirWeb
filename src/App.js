@@ -22,9 +22,11 @@ function App() {
 
   return (
     <div className="app">
+                <Cloud tab={tab} openReadMore={openReadMore}></Cloud>
+
       <div className="card">
         <div className="content-container">
-          <Cloud tab={tab} openReadMore={openReadMore}></Cloud>
+          {/* <Cloud tab={tab} openReadMore={openReadMore}></Cloud> */}
           {cardContent}
           {tab !== 0 && (
             <button
@@ -78,17 +80,18 @@ function Cloud(props) {
 
   if (props.openReadMore) {
     cloudClassName = "change-shape cloud-read-more";
-    cloudStyle = { top: 10, left: 10 };
+    cloudStyle = { top: "50%", left: "50%" };
   } else {
     if (props.tab === 0) {
       cloudClassName = "change-shape cloud-intro";
-      cloudStyle = { top: 20, left: 20 };
+      cloudStyle = { top: "20%", left: "80%" };
     } else if (props.tab === 1) {
       cloudClassName = "change-shape cloud-project";
-      cloudStyle = { top: 30, left: 30 };
+      cloudStyle ={ top: "-5%", left: "30%" };
+
     } else if (props.tab === 2) {
       cloudClassName = "change-shape cloud-about";
-      cloudStyle = { top: 40, left: 40 };
+      cloudStyle ={ top: "5%", left: "60%" };
     }
   }
   return (

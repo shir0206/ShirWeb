@@ -5,6 +5,8 @@
   width: 30vw;
   margin-left: 40vw;
   animation: about-svg-anim 0.5s cubic-bezier(0, 0, 0.6, 1);
+  animation-delay: 0.25s;
+
 }
 
 @keyframes about-svg-anim {

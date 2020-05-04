@@ -73,26 +73,27 @@ function App() {
 export default App;
 
 function Cloud(props) {
-  let shape;
+  let cloudClassName;
+  let cloudStyle;
 
   if (props.openReadMore) {
-    shape = (
-      <div className="change-shape cloudD" style={{ top: 10, left: 10 }} />
-    );
+    cloudClassName = "change-shape cloud-read-more";
+    cloudStyle = { top: 10, left: 10 };
   } else {
     if (props.tab === 0) {
-      shape = (
-        <div className="change-shape cloudA" style={{ top: 20, left: 20 }} />
-      );
+      cloudClassName = "change-shape cloud-intro";
+      cloudStyle = { top: 20, left: 20 };
     } else if (props.tab === 1) {
-      shape = (
-        <div className="change-shape cloudB" style={{ top: 30, left: 30 }} />
-      );
+      cloudClassName = "change-shape cloud-project";
+      cloudStyle = { top: 30, left: 30 };
     } else if (props.tab === 2) {
-      shape = (
-        <div className="change-shape cloudC" style={{ top: 40, left: 40 }} />
-      );
+      cloudClassName = "change-shape cloud-about";
+      cloudStyle = { top: 40, left: 40 };
     }
   }
-  return <div className="cloud-container">{shape} </div>;
+  return (
+    <div className="cloud-container">
+      <div className={cloudClassName} style={cloudStyle} />
+    </div>
+  );
 }

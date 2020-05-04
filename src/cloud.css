@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-.cloudA {
+.cloud-intro {
   background-color: red;
   border-radius: 48px;
   position: relative;
@@ -17,8 +17,8 @@
   height: 48px;
 }
 
-.cloudA::before,
-.cloudA::after {
+.cloud-intro::before,
+.cloud-intro::after {
   background-color: green;
   border-radius: 50%;
   content: "";
@@ -29,7 +29,7 @@
   top: -6px;
 }
 
-.cloudA::after {
+.cloud-intro::after {
   background-color: blue;
   width: 23px;
   height: 23px;
@@ -38,7 +38,7 @@
   top: -10px;
 }
 
-.cloudB {
+.cloud-project {
   background-color: red;
   border-radius: 48px;
   position: relative;
@@ -46,8 +46,8 @@
   height: 28px;
 }
 
-.cloudB::before,
-.cloudB::after {
+.cloud-project::before,
+.cloud-project::after {
   background-color: green;
   border-radius: 50%;
   content: "";
@@ -58,7 +58,7 @@
   top: -6px;
 }
 
-.cloudB::after {
+.cloud-project::after {
   background-color: blue;
   width: 13px;
   height: 13px;
@@ -67,7 +67,7 @@
   top: -10px;
 }
 
-.cloudC {
+.cloud-about {
   background-color: red;
   border-radius: 48px;
   position: relative;
@@ -75,8 +75,8 @@
   height: 48px;
 }
 
-.cloudC::before,
-.cloudC::after {
+.cloud-about::before,
+.cloud-about::after {
   background-color: green;
   border-radius: 50%;
   content: "";
@@ -87,7 +87,7 @@
   top: -6px;
 }
 
-.cloudC::after {
+.cloud-about::after {
   background-color: blue;
   width: 43px;
   height: 43px;
@@ -96,7 +96,7 @@
   top: -10px;
 }
 
-.cloudD {
+.cloud-read-more {
   background-color: red;
   border-radius: 10px;
   position: relative;
@@ -104,8 +104,8 @@
   height: 80px;
 }
 
-.cloudD::before,
-.cloudD::after {
+.cloud-read-more::before,
+.cloud-read-more::after {
   background-color: green;
   border-radius: 50%;
   content: "";
@@ -116,7 +116,7 @@
   position: absolute;
 }
 
-.cloudD::after {
+.cloud-read-more::after {
   background-color: blue;
   width: 0px;
   height: 0px;

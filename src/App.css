@@ -110,7 +110,6 @@ body {
 }
 
 .read-more-btn {
-  z-index: 90;
   position: absolute;
   top: calc(50% + 15vh);
   width: 50vw;
@@ -130,8 +129,7 @@ body {
   color: #c64675;
   font-family: Calibri;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
-
-  z-index: 250;
+  z-index: 500;
 }
 
 svg {

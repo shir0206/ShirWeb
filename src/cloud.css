@@ -19,6 +19,7 @@
 }
 .cloud-container .cloud-read-more {
   opacity: 0.85;
+  opacity: 0.5;
   z-index: 200;
 }
 .cloud-intro {

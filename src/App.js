@@ -6,6 +6,7 @@ import "./cloud.css";
 import { Intro } from "./Intro/Intro";
 import { Project } from "./Project/Project";
 import { About } from "./About/About";
+import { Profile } from "./Profile/Profile";
 
 function App() {
   const [tab, setTab] = useState(0);
@@ -65,6 +66,7 @@ function App() {
           </div>
         </div>
       </div>
+      {openReadMore && tab === 2 && <Profile></Profile>}
     </div>
   );
 }

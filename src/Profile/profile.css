@@ -1,0 +1,78 @@
+.profile-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 400;
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  padding: 1vw;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+.profile-image-cont,
+.profile-info-cont {
+  margin: 1vw;
+  padding: 1vw;
+}
+.profile-image {
+  width: 30vw;
+  border-radius: 70px 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

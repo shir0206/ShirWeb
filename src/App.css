@@ -15,7 +15,11 @@ body {
 
 body {
   overflow: hidden;
+  will-change: transform;      
+
 }
+
+
 .card {
   background-color: #fff;
   border-radius: 20px;

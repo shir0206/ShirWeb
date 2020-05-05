@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./App.css";
 import "./cloud.css";
@@ -21,10 +21,18 @@ function App() {
     cardContent = <About />;
   }
 
+  let loadProfile = () => {
+    // {openReadMore && tab === 2 && <Profile></Profile>}
+
+    if (openReadMore && tab === 2) return <Profile></Profile>;
+    else return null;
+  };
+
+  useEffect(() => {});
+
   return (
     <div className="app">
       <Cloud tab={tab} openReadMore={openReadMore}></Cloud>
-
       <div className="card">
         <div className="content-container">{cardContent}</div>
         {tab !== 0 && (
@@ -66,7 +74,7 @@ function App() {
           </div>
         </div>
       </div>
-      {openReadMore && tab === 2 && <Profile></Profile>}
+      {openReadMore && tab === 2 ? <Profile></Profile> : null}
     </div>
   );
 }

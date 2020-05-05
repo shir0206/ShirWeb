@@ -28,7 +28,9 @@ function App() {
         <div className="content-container">
           {/* <Cloud tab={tab} openReadMore={openReadMore}></Cloud> */}
           {cardContent}
-          {tab !== 0 && (
+          
+        </div>
+        {tab !== 0 && (
             <button
               className="read-more-btn"
               onClick={() => {
@@ -38,7 +40,6 @@ function App() {
               Read More
             </button>
           )}
-        </div>
         <div className="button-container">
           <div
             className={tab === 0 ? "intro-container tab-on" : "intro-container"}

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./project.css";
+import anime from "animejs";
 
 export const Project = (props) => {
+
   return (
     <div className="project-cont">
       <p>projects</p>
@@ -11,6 +13,16 @@ export const Project = (props) => {
   );
 };
 
+const colors = [
+  "#693c3c",
+  "#fdfffc",
+  "#1d120d",
+  "#f59f52",
+  "#f3c891",
+  "#9f5c24",
+  "#44250f",
+  "#c64675",
+];
 const projectSVG = (
   <svg viewBox="0 0 632 954">
     <path

@@ -18,6 +18,9 @@
   }
 }
 
+.project-svg path{
+  fill: rgb(199, 71, 120);
+}
 .project-svg #path-7 {
   fill: #693c3c;
   stroke: #693c3c;

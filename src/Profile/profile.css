@@ -15,8 +15,7 @@
   -ms-animation: fadein 0.5s; /* Internet Explorer */
   -o-animation: fadein 0.5s; /* Opera < 12.1 */
   animation: fadein 0.5s;
-  will-change: transform;      
-
+  will-change: transform;
 }
 
 .profile-image-cont,
@@ -92,4 +91,25 @@
   90% {
     opacity: 1;
   }
+}
+
+.profile-icon {
+  font-size: 1.5em;
+}
+.profile-icon-ref {
+  margin: 0.5em;
+  text-align: center;
+  font-size: 1.25em;
+  position: relative;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.profile-icon-ref:hover {
+  color: #c74778;
+  text-shadow: 2px 2px 2px rgba(51, 61, 71, 0.2);
 }

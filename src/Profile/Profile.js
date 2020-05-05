@@ -17,10 +17,30 @@ export const Profile = (props) => {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
         </p>
-        <i className="fab fa-github"></i> 
-        <i className="fab fa-linkedin"></i>
-        <i class="fab fa-codepen"></i>
-
+        <a
+          href="https://github.com/shir0206/"
+          target="_blank"
+          className="profile-icon-ref"
+        >
+          <i className="fab fa-github profile-icon"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/shir-zabolotny-a83b18109/"
+          target="_blank"
+          className="profile-icon-ref"
+        >
+          <i className="fab fa-linkedin profile-icon"></i>
+        </a>
+        <a
+          href="https://codesandbox.io/u/shir0206"
+          target="_blank"
+          className="profile-icon-ref"
+        >
+          <i className="fab fa-codepen profile-icon"></i>
+        </a>
+        <a href="mailto:shir0206@gmail.com" className="profile-icon-ref">
+          <i className="far fa-envelope profile-icon"></i>
+        </a>
       </div>
       <div className="profile-image-cont">
         <img

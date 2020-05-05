@@ -6,9 +6,7 @@ export const Project = (props) => {
 
   return (
     <div className="project-cont">
-      <p>projects</p>
       <div className="project-svg"> {projectSVG}</div>
-      <button className="read-more-btn">Read More</button>
     </div>
   );
 };

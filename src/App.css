@@ -66,6 +66,9 @@ body {
     border-color: rgb(127, 127, 127);
     background-color: rgb(127, 127, 127, 0.1);
   }
+  .read-more-btn:hover {
+    background-color: rgb(250, 250, 250, 0.9);
+  }
   .tab-on:hover {
     border-color: rgb(199, 71, 120);
     background-color: rgb(199, 71, 120);
@@ -117,23 +120,20 @@ body {
   max-height: 50px;
   min-height: 50px;
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 1);
   border-radius: 15px;
   text-decoration: none;
   cursor: pointer;
   outline: 0;
-  border: 2px solid #c64675;
+  border: 1.75px solid #c64675;
   font-size: 1.25em;
   color: #c64675;
   font-family: Calibri;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+
   z-index: 250;
 }
-.read-more-btn:hover {
-  background-color: #ff89b433;
-}
-.read-more-btn:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-}
+
 svg {
   z-index: 99;
 }

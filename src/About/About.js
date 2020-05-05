@@ -4,7 +4,6 @@ import "./about.css";
 export const About = (props) => {
   return (
     <div className="about-cont">
-      <p>about</p>
       <div className="about-svg"> {aboutSVG}</div>
     </div>
   );

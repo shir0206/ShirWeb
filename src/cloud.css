@@ -1,5 +1,4 @@
 .cloud-container {
-  /* z-index: 1; */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -9,6 +8,7 @@
   flex-direction: column;
 }
 
+
 .cloud-container .cloud-intro {
   opacity: 0;
 }
@@ -16,7 +16,6 @@
 .cloud-container .cloud-about {
   opacity: 0.5;
   z-index: 1;
-
 }
 .cloud-container .cloud-read-more {
   opacity: 0.85;
@@ -154,8 +153,8 @@
 .change-shape,
 .change-shape:after,
 .change-shape:before {
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }

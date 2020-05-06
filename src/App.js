@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 
 import "./App.css";
 import "./cloud.css";
@@ -7,6 +7,7 @@ import { Intro } from "./Intro/Intro";
 import { Project } from "./Project/Project";
 import { About } from "./About/About";
 import { Profile } from "./Profile/Profile";
+// import { Portfolio } from "./Portfolio/Portfolio";
 
 function App() {
   const [tab, setTab] = useState(0);
@@ -20,15 +21,6 @@ function App() {
   } else if (tab === 2) {
     cardContent = <About />;
   }
-
-  let loadProfile = () => {
-    // {openReadMore && tab === 2 && <Profile></Profile>}
-
-    if (openReadMore && tab === 2) return <Profile></Profile>;
-    else return null;
-  };
-
-  useEffect(() => {});
 
   return (
     <div className="app">
@@ -74,7 +66,9 @@ function App() {
           </div>
         </div>
       </div>
+      {/* {openReadMore && tab === 1 ? <Portfolio></Portfolio> : null} */}
       {openReadMore && tab === 2 ? <Profile></Profile> : null}
+
     </div>
   );
 }

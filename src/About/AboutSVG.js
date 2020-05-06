@@ -2,7 +2,7 @@ import React from "react";
 import "./about.css";
 
 export const AboutSVG = (props) => {
-  return { aboutSVG };
+  return aboutSVG;
 };
 
 const aboutSVG = (

@@ -125,8 +125,8 @@
   position: absolute;
   top: 50%;
   right: 50%;
-  height: calc(80vh + 5vw);
-  width: calc(80vw + 5vw);
+  height: calc(80vh + 2vw);
+  width: calc(80vw + 2vw);
   transform: translate(-50%, -50%);
 }
 

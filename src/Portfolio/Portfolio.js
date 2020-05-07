@@ -1,22 +1,26 @@
 import React, { useState } from "react";
 import "./portfolio.css";
+import "./arrow.css";
 
 export const Portfolio = (props) => {
+
+  const [currCard, setCurrCard] = useState(0);
+
   return (
     <div className="portfolio-cont">
       <div className="portfolio-image-cont">
         <img
           className="portfolio-image"
-          src={card[0].image}
-          alt={card[0].name}
+          src={card[currCard].image}
+          alt={card[currCard].name}
         ></img>
       </div>
       <div className="portfolio-info-cont">
-        <h1>{card[0].name}</h1>
-        <p>{card[0].description}</p>
+        <h1>{card[currCard].name}</h1>
+        <p>{card[currCard].description}</p>
         <div className="portfolio-icon-cont">
           <a
-            href={card[0].gitLink}
+            href={card[currCard].gitLink}
             target="_blank"
             rel="noopener noreferrer"
             className="portfolio-icon-ref"
@@ -24,7 +28,7 @@ export const Portfolio = (props) => {
             <i className="fab fa-github portfolio-icon"></i>
           </a>
           <a
-            href={card[0].webLink}
+            href={card[currCard].webLink}
             target="_blank"
             rel="noopener noreferrer"
             className="portfolio-icon-ref"
@@ -32,7 +36,7 @@ export const Portfolio = (props) => {
             <i className="fas fa-link portfolio-icon"></i>
           </a>
           <a
-            href={card[0].playStoreLink}
+            href={card[currCard].playStoreLink}
             target="_blank"
             rel="noopener noreferrer"
             className="portfolio-icon-ref"
@@ -40,12 +44,25 @@ export const Portfolio = (props) => {
             <i className="fab fa-google-play portfolio-icon"></i>
           </a>
         </div>
-        <ul>{createTagsList(card[0].tags)}</ul>
+        <ul>{createTagsList(card[currCard].tags)}</ul>
+      </div>
+      <div className="portfolio-arrow-cont" >
+        <div className="right-arrow-container" onClick={() => {setCurrCard((currCard +1) % card.length) }}>
+          <div className="round">
+            <p className="arrow">&gt;</p>
+            <p className="arrow second-arrow">></p>
+          </div>
+        </div>
+        <div className="left-arrow-container" onClick={() => {setCurrCard((currCard - 1 + card.length) % card.length) }}>
+          <div className="round">
+            <p className="arrow">&lt;</p>
+            <p className="arrow second-arrow">&lt;</p>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
-
 
 const card = [
   {

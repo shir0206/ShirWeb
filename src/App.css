@@ -28,9 +28,9 @@ body {
 .card {
   background-color: #fff;
   border-radius: 20px;
-
   height: 80vh;
   width: 80vw;
+  max-width: 135vh;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
@@ -123,7 +123,7 @@ body {
   top: calc(50% + 15vh);
   width: 50vw;
   max-width: 250px;
-  left: 2vw;
+  left: 10%;
   height: 5vw;
   max-height: 50px;
   min-height: 50px;

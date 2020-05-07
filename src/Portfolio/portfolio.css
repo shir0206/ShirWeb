@@ -6,6 +6,7 @@
   max-height: 80vh;
   height: 80vh;
   width: 80vw;
+  max-width: 135vh;
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
@@ -30,9 +31,9 @@
   height: 100%;
 }
 
-.portfolio-info-cont p {
+/* .portfolio-info-cont pre {
   text-align: left;
-}
+} */
 
 .portfolio-image-cont {
   display: flex;

@@ -27,7 +27,7 @@ export const Portfolio = (props) => {
           >
             <i className="fab fa-github portfolio-icon"></i>
           </a>
-          {card[currCard].webLink  && (
+          {card[currCard].webLink && (
             <a
               href={card[currCard].webLink}
               target="_blank"
@@ -37,7 +37,7 @@ export const Portfolio = (props) => {
               <i className="fas fa-link portfolio-icon"></i>
             </a>
           )}
-          {card[currCard].playStoreLink  && (
+          {card[currCard].playStoreLink && (
             <a
               href={card[currCard].playStoreLink}
               target="_blank"
@@ -116,7 +116,7 @@ const card = [
   {
     name: "Art Gallery",
     description:
-      "Arg gagdf gfd gagdf gfd rat bagdf gfd gfd llery gagdf gfd rat bagdf gfd gfd llery gfd llery gagdf gfd rat bagdf gfd gfd llery",
+      "Developed a website in React that is used as a gallery for my paintings & drawings.",
     gitLink: "https://github.com/shir0206/ArtGallery",
     webLink: "https://csb-9sv19.now.sh/",
     playStoreLink: "",
@@ -134,7 +134,7 @@ const card = [
   {
     name: "TropiX",
     description:
-      "Gagdf gfd gagdfd llery gfd llery gagdf gfd rat bagdf gfd gfd llery",
+      "Developed game inspired from Tic-Tac-Toe. The development was planned and executed by using the MVC model.",
     gitLink: "https://github.com/shir0206/TropiX-App",
     webLink: "",
     playStoreLink:
@@ -153,7 +153,8 @@ const card = [
   },
   {
     name: "NyquistOptics",
-    description: "Bllery gfd llery gagdf gfd rallery",
+    description:
+      "Developed a native Android mobile app for cameras performance evaluation, used by a global company. Collected, defined and translated user requirements into project designs and implementation plans.",
     gitLink: "https://github.com/shir0206/NyquistOptics",
     webLink: "",
     playStoreLink:

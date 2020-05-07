@@ -127,6 +127,8 @@
   right: 50%;
   height: calc(80vh + 2vw);
   width: calc(80vw + 2vw);
+  max-width: calc(135vh + 2vw);
+
   transform: translate(-50%, -50%);
 }
 

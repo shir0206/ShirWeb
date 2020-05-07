@@ -70,14 +70,15 @@ export const Portfolio = (props) => {
           </div>
         </div>
       </div>
-      <div className="portfolio-card-cont">
+      <div className="portfolio-carousel-cont">
         <ul>
-          <li id={"id"} className="portfolio-circle-icon portfolio-fill-icon">
-          </li>
-          <li className="portfolio-circle-icon">
-          </li>
-          <li className="portfolio-circle-icon">
-          </li>
+          {createCarouselList(currCard)}
+          {/* <li
+            id={"id"}
+            className="portfolio-circle-icon portfolio-fill-icon"
+          ></li>
+          <li className="portfolio-circle-icon"></li>
+          <li className="portfolio-circle-icon"></li> */}
         </ul>
       </div>
     </div>
@@ -142,8 +143,27 @@ function createTagsList(tags) {
 }
 
 function Tag(props) {
-  //const [tag, setTag] = useState(props.currentTag.toString());
-
   const tag = props.currentTag.toString();
   return <li className="tag">#{tag}</li>;
+}
+
+function createCarouselList(currCard) {
+  let carouselList = card.map((cardObj, cardIndex) => {
+    return (
+      <CarouselItem key={cardIndex} cardIndex={cardIndex} currCard={currCard} />
+    );
+  });
+  return carouselList;
+}
+
+function CarouselItem(props) {
+  return (
+    <li
+      className={
+        props.cardIndex == props.currCard
+          ? "portfolio-circle-icon portfolio-fill-icon"
+          : "portfolio-circle-icon"
+      }
+    ></li>
+  );
 }

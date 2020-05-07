@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./portfolio.css";
 import "./arrow.css";
+import "./carousel.css";
 
 export const Portfolio = (props) => {
-
   const [currCard, setCurrCard] = useState(0);
 
   return (
@@ -46,19 +46,39 @@ export const Portfolio = (props) => {
         </div>
         <ul>{createTagsList(card[currCard].tags)}</ul>
       </div>
-      <div className="portfolio-arrow-cont" >
-        <div className="right-arrow-container" onClick={() => {setCurrCard((currCard +1) % card.length) }}>
+      <div className="portfolio-arrow-cont">
+        <div
+          className="right-arrow-container"
+          onClick={() => {
+            setCurrCard((currCard + 1) % card.length);
+          }}
+        >
           <div className="round">
             <p className="arrow">&gt;</p>
             <p className="arrow second-arrow">></p>
           </div>
         </div>
-        <div className="left-arrow-container" onClick={() => {setCurrCard((currCard - 1 + card.length) % card.length) }}>
+        <div
+          className="left-arrow-container"
+          onClick={() => {
+            setCurrCard((currCard - 1 + card.length) % card.length);
+          }}
+        >
           <div className="round">
             <p className="arrow">&lt;</p>
             <p className="arrow second-arrow">&lt;</p>
           </div>
         </div>
+      </div>
+      <div className="portfolio-card-cont">
+        <ul>
+          <li id={"id"} className="portfolio-circle-icon portfolio-fill-icon">
+          </li>
+          <li className="portfolio-circle-icon">
+          </li>
+          <li className="portfolio-circle-icon">
+          </li>
+        </ul>
       </div>
     </div>
   );

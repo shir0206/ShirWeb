@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import "./portfolio.css";
 import "./arrow.css";
 import "./carousel.css";
@@ -27,22 +27,26 @@ export const Portfolio = (props) => {
           >
             <i className="fab fa-github portfolio-icon"></i>
           </a>
-          <a
-            href={card[currCard].webLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="portfolio-icon-ref"
-          >
-            <i className="fas fa-link portfolio-icon"></i>
-          </a>
-          <a
-            href={card[currCard].playStoreLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="portfolio-icon-ref"
-          >
-            <i className="fab fa-google-play portfolio-icon"></i>
-          </a>
+          {card[currCard].webLink  && (
+            <a
+              href={card[currCard].webLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="portfolio-icon-ref"
+            >
+              <i className="fas fa-link portfolio-icon"></i>
+            </a>
+          )}
+          {card[currCard].playStoreLink  && (
+            <a
+              href={card[currCard].playStoreLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="portfolio-icon-ref"
+            >
+              <i className="fab fa-google-play portfolio-icon"></i>
+            </a>
+          )}
         </div>
         <ul>{createTagsList(card[currCard].tags)}</ul>
       </div>
@@ -55,7 +59,7 @@ export const Portfolio = (props) => {
         >
           <div className="round">
             <p className="arrow">&gt;</p>
-            <p className="arrow second-arrow">></p>
+            <p className="arrow second-arrow">&gt;</p>
           </div>
         </div>
         <div
@@ -71,71 +75,11 @@ export const Portfolio = (props) => {
         </div>
       </div>
       <div className="portfolio-carousel-cont">
-        <ul>
-          {createCarouselList(currCard)}
-          {/* <li
-            id={"id"}
-            className="portfolio-circle-icon portfolio-fill-icon"
-          ></li>
-          <li className="portfolio-circle-icon"></li>
-          <li className="portfolio-circle-icon"></li> */}
-        </ul>
+        <ul>{createCarouselList(currCard)}</ul>
       </div>
     </div>
   );
 };
-
-const card = [
-  {
-    name: "Art Gallery",
-    description:
-      "Arg gagdf gfd gagdf gfd rat bagdf gfd gfd llery gagdf gfd rat bagdf gfd gfd llery gfd llery gagdf gfd rat bagdf gfd gfd llery",
-    gitLink: "https://github.com/shir0206/ArtGallery",
-    webLink: "https://csb-9sv19.now.sh/",
-    playStoreLink: "#",
-    tags: [
-      "JavaScript",
-      "React",
-      "HTML5",
-      "CSS3",
-      "Firebase",
-      "Search",
-      "Zoom Image",
-    ],
-    image: "https://english.tau.ac.il/sites/default/files/galery580-330.jpg",
-  },
-  {
-    name: "TropiX",
-    description:
-      "Gagdf gfd gagdfd llery gfd llery gagdf gfd rat bagdf gfd gfd llery",
-    gitLink: "https://github.com/shir0206/TropiX-App",
-    webLink: "#",
-    playStoreLink:
-      "https://play.google.com/store/apps/details?id=com.shirzabolotnyklein.tropix&hl=en",
-    tags: [
-      "Java",
-      "Android",
-      "MVC",
-      "Multi-Language",
-      "RecyclerView",
-      "Tic-Tac-Toe",
-      "Fun",
-    ],
-    image:
-      "https://lh3.googleusercontent.com/5r-OSK7yL-p_8_qvnPrDpAWWTxeQiofdl-D8NxFotgmm_o7g-f7nmodL4MMRdTmkldo=w1440-h620-rw",
-  },
-  {
-    name: "NyquistOptics",
-    description: "Bllery gfd llery gagdf gfd rallery",
-    gitLink: "https://github.com/shir0206/NyquistOptics",
-    webLink: "#",
-    playStoreLink:
-      "https://play.google.com/store/apps/details?id=com.shirzabolotnyklein.nyquistoptics&hl=en",
-    tags: ["Java", "Android", "Performance Calculations", "Shared Preferance"],
-    image:
-      "https://lh3.googleusercontent.com/mAaSRqqx1WRkwVwNIM4jnLdQfoh6KMnWbFczL57H7qp-9zIPl6ODHpHOZ0vtAW0BKYWQ=s360-rw",
-  },
-];
 
 function createTagsList(tags) {
   let tagsList = tags.map((i) => <Tag currentTag={i} key={i} />);
@@ -167,3 +111,55 @@ function CarouselItem(props) {
     ></li>
   );
 }
+
+const card = [
+  {
+    name: "Art Gallery",
+    description:
+      "Arg gagdf gfd gagdf gfd rat bagdf gfd gfd llery gagdf gfd rat bagdf gfd gfd llery gfd llery gagdf gfd rat bagdf gfd gfd llery",
+    gitLink: "https://github.com/shir0206/ArtGallery",
+    webLink: "https://csb-9sv19.now.sh/",
+    playStoreLink: "",
+    tags: [
+      "JavaScript",
+      "React",
+      "HTML5",
+      "CSS3",
+      "Firebase",
+      "Search",
+      "Zoom Image",
+    ],
+    image: "https://english.tau.ac.il/sites/default/files/galery580-330.jpg",
+  },
+  {
+    name: "TropiX",
+    description:
+      "Gagdf gfd gagdfd llery gfd llery gagdf gfd rat bagdf gfd gfd llery",
+    gitLink: "https://github.com/shir0206/TropiX-App",
+    webLink: "",
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.shirzabolotnyklein.tropix&hl=en",
+    tags: [
+      "Java",
+      "Android",
+      "MVC",
+      "Multi-Language",
+      "RecyclerView",
+      "Tic-Tac-Toe",
+      "Fun",
+    ],
+    image:
+      "https://lh3.googleusercontent.com/5r-OSK7yL-p_8_qvnPrDpAWWTxeQiofdl-D8NxFotgmm_o7g-f7nmodL4MMRdTmkldo=w1440-h620-rw",
+  },
+  {
+    name: "NyquistOptics",
+    description: "Bllery gfd llery gagdf gfd rallery",
+    gitLink: "https://github.com/shir0206/NyquistOptics",
+    webLink: "",
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.shirzabolotnyklein.nyquistoptics&hl=en",
+    tags: ["Java", "Android", "Performance Calculations", "Shared Preferance"],
+    image:
+      "https://lh3.googleusercontent.com/mAaSRqqx1WRkwVwNIM4jnLdQfoh6KMnWbFczL57H7qp-9zIPl6ODHpHOZ0vtAW0BKYWQ=s360-rw",
+  },
+];

@@ -6,6 +6,10 @@ import "./carousel.css";
 export const Portfolio = (props) => {
   const [currCard, setCurrCard] = useState(0);
 
+  const recieveCardIndex = useCallback((childProps) => {
+    setCurrCard(childProps);
+  }, []);
+
   return (
     <div className="portfolio-cont">
       <div className="portfolio-image-cont">
@@ -75,7 +79,7 @@ export const Portfolio = (props) => {
         </div>
       </div>
       <div className="portfolio-carousel-cont">
-        <ul>{createCarouselList(currCard)}</ul>
+        <ul>{createCarouselList(currCard, recieveCardIndex)}</ul>
       </div>
     </div>
   );
@@ -91,16 +95,26 @@ function Tag(props) {
   return <li className="tag">#{tag}</li>;
 }
 
-function createCarouselList(currCard) {
+function createCarouselList(currCard, recieveCardIndex) {
   let carouselList = card.map((cardObj, cardIndex) => {
     return (
-      <CarouselItem key={cardIndex} cardIndex={cardIndex} currCard={currCard} />
+      <CarouselItem
+        key={cardIndex}
+        cardIndex={cardIndex}
+        currCard={currCard}
+        handleCarouselItemClick={recieveCardIndex}
+      />
     );
   });
   return carouselList;
 }
 
 function CarouselItem(props) {
+  function updateCarousel(event) {
+    event.preventDefault();
+    props.handleCarouselItemClick(props.cardIndex);
+  }
+
   return (
     <li
       className={
@@ -108,6 +122,7 @@ function CarouselItem(props) {
           ? "portfolio-circle-icon portfolio-fill-icon"
           : "portfolio-circle-icon"
       }
+      onClick={updateCarousel}
     ></li>
   );
 }

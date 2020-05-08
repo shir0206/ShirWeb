@@ -54,37 +54,44 @@ export const Portfolio = (props) => {
         </div>
         <ul>{createTagsList(card[currCard].tags)}</ul>
       </div>
-      <div className="portfolio-arrow-cont">
-        <div
-          className="right-arrow-container"
-          onClick={() => {
-            setCurrCard((currCard + 1) % card.length);
-          }}
-        >
-          <div className="round">
-            <p className="arrow">&gt;</p>
-            <p className="arrow second-arrow">&gt;</p>
-          </div>
-        </div>
-        <div
-          className="left-arrow-container"
-          onClick={() => {
-            setCurrCard((currCard - 1 + card.length) % card.length);
-          }}
-        >
-          <div className="round">
-            <p className="arrow">&lt;</p>
-            <p className="arrow second-arrow">&lt;</p>
-          </div>
-        </div>
-      </div>
+      <Arrows
+        currCard={currCard}
+        handleCarouselItemClick={recieveCardIndex}
+      ></Arrows>
       <div className="portfolio-carousel-cont">
         <ul>{createCarouselList(currCard, recieveCardIndex)}</ul>
       </div>
     </div>
   );
 };
-
+function Arrows(props) {
+  function updateNext(event) {
+    event.preventDefault();
+    let next = (props.currCard + 1) % card.length;
+    props.handleCarouselItemClick(next);
+  }
+  function updatePrev(event) {
+    event.preventDefault();
+    let prev = (props.currCard - 1 + card.length) % card.length;
+    props.handleCarouselItemClick(prev);
+  }
+  return (
+    <div className="portfolio-arrow-cont">
+      <div className="right-arrow-container" onClick={updateNext}>
+        <div className="round">
+          <p className="arrow">&gt;</p>
+          <p className="arrow second-arrow">&gt;</p>
+        </div>
+      </div>
+      <div className="left-arrow-container" onClick={updatePrev}>
+        <div className="round">
+          <p className="arrow">&lt;</p>
+          <p className="arrow second-arrow">&lt;</p>
+        </div>
+      </div>
+    </div>
+  );
+}
 function createTagsList(tags) {
   let tagsList = tags.map((i) => <Tag currentTag={i} key={i} />);
   return tagsList;

@@ -1,21 +1,28 @@
-@media only screen and (min-width: 901px) {
-  .flower-cont {
-    width: 30vw;
-    margin-left: 5vw;
+.flower-cont {
+  height: 100%;
+  position: absolute;
+  /* width: 100%; */
+
+  /* margin-left: 5vw; */
+}
+
+@media only screen and (min-width: 651px) {
+  .flower-cont{
+    left: 5%;
+    top: 2%;
+    width: 50%;
+
   }
 }
-@media only screen and (min-width: 501px) and (max-width: 900px) {
+
+@media only screen and (max-width: 650px) {
   .flower-cont {
-    width: 50vw;
-    margin-left: 5vw;
+    left: 10%;
+    top: 0%;
+    width: 80%;
   }
 }
-@media only screen and (max-width: 500px) {
-  .flower-cont {
-    width: 45vw;
-    margin-left: 5vw;
-  }
-}
+
 .flower-cont svg {
   fill: white;
   max-width: 98vw;
@@ -24,7 +31,6 @@
 .flower-cont path {
   stroke-width: 2.5px;
   opacity: 0.9;
-
 }
 .flower-cont #path-0 {
   stroke: #cccccc57;

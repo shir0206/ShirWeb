@@ -1,3 +1,25 @@
+.title-cont{
+  height: 100%;
+  position: absolute;
+
+}
+
+@media only screen and (min-width: 651px) {
+  .title-cont {
+    right: 5%;
+    top: 50%;
+    width: 40%;
+
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .title-cont {
+    right: 10%;
+    top: 60%;
+    width: 80%;
+  }
+} 
 .title-cont svg {
   fill: none;
   max-width: 98vw;
@@ -8,6 +30,10 @@
   stroke: rgb(199, 71, 120);
 }
 
+
+
+
+/* 
 @media only screen and (min-width: 901px) {
   .title-cont {
     width: 30vw;
@@ -29,4 +55,4 @@
     margin-top: 4vw;
     margin-left: 2vw;
   }
-}
+} */

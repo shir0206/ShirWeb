@@ -2,7 +2,13 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  max-width: 80vw;
+  /* max-width: 80vw; */
+
+
+  
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 @media only screen and (min-width: 601px) {

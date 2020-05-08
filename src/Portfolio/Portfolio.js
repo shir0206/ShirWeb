@@ -12,16 +12,16 @@ export const Portfolio = (props) => {
 
   return (
     <div className="portfolio-cont">
-      <div className="portfolio-image-cont">
+      {/* <div className="portfolio-image-cont"> */}
         <img
           className="portfolio-image"
           src={card[currCard].image}
           alt={card[currCard].name}
         ></img>
-      </div>
-      <div className="portfolio-info-cont">
-        <h1>{card[currCard].name}</h1>
-        <p>{card[currCard].description}</p>
+      {/* </div> */}
+      {/* <div className="portfolio-info-cont"> */}
+        <h1 className="name">{card[currCard].name}</h1>
+        <p className="description">{card[currCard].description}</p>
         <div className="portfolio-icon-cont">
           <a
             href={card[currCard].gitLink}
@@ -52,14 +52,14 @@ export const Portfolio = (props) => {
             </a>
           )}
         </div>
-        <ul>{createTagsList(card[currCard].tags)}</ul>
-      </div>
+        <ul className="tagList">{createTagsList(card[currCard].tags)}</ul>
+      {/* </div> */}
       <Arrows
         currCard={currCard}
         handleCarouselItemClick={recieveCardIndex}
       ></Arrows>
-      <div className="portfolio-carousel-cont">
-        <ul>{createCarouselList(currCard, recieveCardIndex)}</ul>
+      <div className="portfolio-carousel-cont ">
+        <ul >{createCarouselList(currCard, recieveCardIndex)}</ul>
       </div>
     </div>
   );

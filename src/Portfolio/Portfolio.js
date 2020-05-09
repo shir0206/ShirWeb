@@ -12,54 +12,50 @@ export const Portfolio = (props) => {
 
   return (
     <div className="portfolio-cont">
-      {/* <div className="portfolio-image-cont"> */}
-        <img
-          className="portfolio-image"
-          src={card[currCard].image}
-          alt={card[currCard].name}
-        ></img>
-      {/* </div> */}
-      {/* <div className="portfolio-info-cont"> */}
-        <h1 className="name">{card[currCard].name}</h1>
-        <p className="description">{card[currCard].description}</p>
-        <div className="portfolio-icon-cont">
+      <img
+        className="portfolio-image"
+        src={card[currCard].image}
+        alt={card[currCard].name}
+      ></img>
+      <h1 className="name">{card[currCard].name}</h1>
+      <p className="description">{card[currCard].description}</p>
+      <div className="portfolio-icon-cont">
+        <a
+          href={card[currCard].gitLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="portfolio-icon-ref"
+        >
+          <i className="fab fa-github portfolio-icon"></i>
+        </a>
+        {card[currCard].webLink && (
           <a
-            href={card[currCard].gitLink}
+            href={card[currCard].webLink}
             target="_blank"
             rel="noopener noreferrer"
             className="portfolio-icon-ref"
           >
-            <i className="fab fa-github portfolio-icon"></i>
+            <i className="fas fa-link portfolio-icon"></i>
           </a>
-          {card[currCard].webLink && (
-            <a
-              href={card[currCard].webLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="portfolio-icon-ref"
-            >
-              <i className="fas fa-link portfolio-icon"></i>
-            </a>
-          )}
-          {card[currCard].playStoreLink && (
-            <a
-              href={card[currCard].playStoreLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="portfolio-icon-ref"
-            >
-              <i className="fab fa-google-play portfolio-icon"></i>
-            </a>
-          )}
-        </div>
-        <ul className="tagList">{createTagsList(card[currCard].tags)}</ul>
-      {/* </div> */}
+        )}
+        {card[currCard].playStoreLink && (
+          <a
+            href={card[currCard].playStoreLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="portfolio-icon-ref"
+          >
+            <i className="fab fa-google-play portfolio-icon"></i>
+          </a>
+        )}
+      </div>
+      <ul className="tagList">{createTagsList(card[currCard].tags)}</ul>
       <Arrows
         currCard={currCard}
         handleCarouselItemClick={recieveCardIndex}
       ></Arrows>
       <div className="portfolio-carousel-cont ">
-        <ul >{createCarouselList(currCard, recieveCardIndex)}</ul>
+        <ul>{createCarouselList(currCard, recieveCardIndex)}</ul>
       </div>
     </div>
   );
@@ -149,7 +145,7 @@ const card = [
       "CSS3",
       "Firebase",
       "Search",
-      "Zoom Image",
+      "ZoomImage",
     ],
     image: "https://english.tau.ac.il/sites/default/files/galery580-330.jpg",
   },
@@ -165,9 +161,9 @@ const card = [
       "Java",
       "Android",
       "MVC",
-      "Multi-Language",
+      "MultiLanguage",
       "RecyclerView",
-      "Tic-Tac-Toe",
+      "TicTacToe",
       "Fun",
     ],
     image:
@@ -181,7 +177,7 @@ const card = [
     webLink: "",
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.shirzabolotnyklein.nyquistoptics&hl=en",
-    tags: ["Java", "Android", "Performance Calculations", "Shared Preferance"],
+    tags: ["Java", "Android", "PerformanceCalculator", "SharedPreferance"],
     image:
       "https://lh3.googleusercontent.com/mAaSRqqx1WRkwVwNIM4jnLdQfoh6KMnWbFczL57H7qp-9zIPl6ODHpHOZ0vtAW0BKYWQ=s360-rw",
   },

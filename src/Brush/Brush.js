@@ -18,14 +18,16 @@ export const Brush = (props) => {
 
   function animationProject() {
     anime({
-      targets: "#hi",
+      targets: "#brush-svg path",
       easing: "easeOutQuad",
-      duration: 5000,
-      delay: 100,
-      // endDelay: 1000,
+      duration: 500,
       direction: "alternate",
       loop: false,
-      scale: 1.5,
+      delay: function (el, i) {
+        return i * 5;
+      },
+      scale:1.1,
+      translateX: 100,
       rotate: 20,
     });
   }

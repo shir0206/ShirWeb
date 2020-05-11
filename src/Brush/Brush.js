@@ -5,17 +5,34 @@ import anime from "animejs";
 
 export const Brush = (props) => {
   if (props.openReadMore) {
-    // animationReadMore();
+    animationReadMore();
   } else {
     if (props.tab === 0) {
-      //  animationIntro();
+        animationIntro();
     } else if (props.tab === 1) {
       animationProject();
     } else if (props.tab === 2) {
-      //  animationAbout();
+        animationAbout();
     }
   }
 
+  
+  function animationIntro() {
+    anime({
+      targets: "#brush-svg path",
+      easing: "easeOutQuad",
+      duration: 500,
+      direction: "alternate",
+      loop: false,
+      delay: function (el, i) {
+        return i * 5;
+      },
+      scale:0,
+      translateX: 0,
+      rotate: 0,
+      opacity:0,
+    });
+  }
   function animationProject() {
     anime({
       targets: "#brush-svg path",
@@ -27,8 +44,45 @@ export const Brush = (props) => {
         return i * 5;
       },
       scale:1.1,
-      translateX: 100,
+    //   translateX: 100,
       rotate: 20,
+      opacity:1,
+
+    });
+  }
+  function animationAbout() {
+    anime({
+      targets: "#brush-svg path",
+      easing: "easeOutQuad",
+      duration: 500,
+      direction: "alternate",
+      loop: false,
+      delay: function (el, i) {
+        return i * 5;
+      },
+      scale:1,
+      translateX: 0,
+      rotate: 0,
+      opacity:1,
+
+    });
+  }
+
+  function animationReadMore() {
+    anime({
+      targets: "#brush-svg path",
+      easing: "easeOutQuad",
+      duration: 500,
+      direction: "alternate",
+      loop: false,
+      delay: function (el, i) {
+        return i * 5;
+      },
+      scale:2,
+      translateX: 0,
+      rotate: 0,
+      opacity:1,
+
     });
   }
   return (

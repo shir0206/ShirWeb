@@ -8,6 +8,7 @@ import { Project } from "./Project/Project";
 import { About } from "./About/About";
 import { Profile } from "./Profile/Profile";
 import { Portfolio } from "./Portfolio/Portfolio";
+import { Brush } from "./Brush/Brush";
 
 function App() {
   const [tab, setTab] = useState(0);
@@ -24,7 +25,8 @@ function App() {
 
   return (
     <div className="app">
-      <Cloud tab={tab} openReadMore={openReadMore}></Cloud>
+      <Brush tab={tab} openReadMore={openReadMore}/>
+      {/* <Cloud tab={tab} openReadMore={openReadMore}></Cloud> */}
       <div className="card">
         <div className="content-container">{cardContent}</div>
         {tab !== 0 && (
@@ -73,29 +75,3 @@ function App() {
 }
 
 export default App;
-
-function Cloud(props) {
-  let cloudClassName;
-  let cloudStyle;
-
-  if (props.openReadMore) {
-    cloudClassName = "change-shape cloud-read-more";
-    cloudStyle = { top: "50%", left: "50%" };
-  } else {
-    if (props.tab === 0) {
-      cloudClassName = "change-shape cloud-intro";
-      cloudStyle = { top: "20%", left: "80%" };
-    } else if (props.tab === 1) {
-      cloudClassName = "change-shape cloud-project";
-      cloudStyle = { top: "-5%", left: "30%" };
-    } else if (props.tab === 2) {
-      cloudClassName = "change-shape cloud-about";
-      cloudStyle = { top: "5%", left: "60%" };
-    }
-  }
-  return (
-    <div className="cloud-container">
-      <div className={cloudClassName} style={cloudStyle} />
-    </div>
-  );
-}

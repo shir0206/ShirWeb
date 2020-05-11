@@ -6,50 +6,53 @@ import "./carousel.css";
 export const Portfolio = (props) => {
   const [currCard, setCurrCard] = useState(0);
 
+  let tmp;
   const recieveCardIndex = useCallback((childProps) => {
     setCurrCard(childProps);
+    tmp = "fadeOutLeft";
   }, []);
 
   return (
     <div className="portfolio-cont">
-      <img
-        className="portfolio-image"
-        src={card[currCard].image}
-        alt={card[currCard].name}
-      ></img>
-      <h1 className="name">{card[currCard].name}</h1>
-      <p className="description">{card[currCard].description}</p>
-      <div className="portfolio-icon-cont">
-        <a
-          href={card[currCard].gitLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-icon-ref"
-        >
-          <i className="fab fa-github portfolio-icon"></i>
-        </a>
-        {card[currCard].webLink && (
+        <img
+          className="portfolio-image"
+          src={card[currCard].image}
+          alt={card[currCard].name}
+        ></img>
+        <h1 className="name">{card[currCard].name}</h1>
+        <p className="description">{card[currCard].description}</p>
+        <div className="portfolio-icon-cont">
           <a
-            href={card[currCard].webLink}
+            href={card[currCard].gitLink}
             target="_blank"
             rel="noopener noreferrer"
             className="portfolio-icon-ref"
           >
-            <i className="fas fa-link portfolio-icon"></i>
+            <i className="fab fa-github portfolio-icon"></i>
           </a>
-        )}
-        {card[currCard].playStoreLink && (
-          <a
-            href={card[currCard].playStoreLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="portfolio-icon-ref"
-          >
-            <i className="fab fa-google-play portfolio-icon"></i>
-          </a>
-        )}
-      </div>
-      <ul className="tagList">{createTagsList(card[currCard].tags)}</ul>
+          {card[currCard].webLink && (
+            <a
+              href={card[currCard].webLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="portfolio-icon-ref"
+            >
+              <i className="fas fa-link portfolio-icon"></i>
+            </a>
+          )}
+          {card[currCard].playStoreLink && (
+            <a
+              href={card[currCard].playStoreLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="portfolio-icon-ref"
+            >
+              <i className="fab fa-google-play portfolio-icon"></i>
+            </a>
+          )}
+        </div>
+        <ul className="tagList">{createTagsList(card[currCard].tags)}</ul>
+
       <Arrows
         currCard={currCard}
         handleCarouselItemClick={recieveCardIndex}

@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "013056a159846df386e0cdce627ced80",
+    "revision": "7e2826c92cdf2cdc31871c3c7836db2f",
     "url": "/ShirWeb/index.html"
   },
   {
-    "revision": "8b1bca1140e982fb0f10",
-    "url": "/ShirWeb/static/css/main.699fc7db.chunk.css"
+    "revision": "86dec23df57ce62f9a2c",
+    "url": "/ShirWeb/static/css/main.0fb630d7.chunk.css"
   },
   {
     "revision": "f71ac86f9fd76a5b31ca",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ShirWeb/static/js/2.578d9e95.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8b1bca1140e982fb0f10",
-    "url": "/ShirWeb/static/js/main.a9b2478b.chunk.js"
+    "revision": "86dec23df57ce62f9a2c",
+    "url": "/ShirWeb/static/js/main.ff630f0b.chunk.js"
   },
   {
     "revision": "56359f0d03bff7d23a1d",
@@ -26,5 +26,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8efe0c610a89b7506f91d555a9ff77e9",
     "url": "/ShirWeb/static/media/background.8efe0c61.png"
+  },
+  {
+    "revision": "f44332d0484f5314ca1e4cd574a7b5f2",
+    "url": "/ShirWeb/static/media/rm.f44332d0.png"
+  },
+  {
+    "revision": "f44332d0484f5314ca1e4cd574a7b5f2",
+    "url": "/ShirWeb/static/media/u.f44332d0.png"
   }
 ]);

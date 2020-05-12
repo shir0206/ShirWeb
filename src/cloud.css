@@ -6,6 +6,7 @@
   align-items: flex-end;
   justify-content: flex-start;
   flex-direction: column;
+
 }
 
 
@@ -15,19 +16,24 @@
 .cloud-container .cloud-project,
 .cloud-container .cloud-about {
   opacity: 0.5;
+
   z-index: 1;
+
 }
 .cloud-container .cloud-read-more {
-  opacity: 0.85;
   opacity: 0.5;
+
   z-index: 200;
 }
 .cloud-intro {
   width: 0%;
   height: 0%;
-  border-radius: 100%;
   position: absolute;
-  background-color: rgb(199, 71, 120);
+  background-image: url("./images/u.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+
   opacity: 0;
 }
 
@@ -37,9 +43,13 @@
   height: 50%;
   right: 5;
   top: 45%;
-  border-radius: 100%;
   position: absolute;
-  background-color: rgb(199, 71, 120);
+  background-image: url("./images/u.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+  
   content: "";
 }
 
@@ -49,18 +59,26 @@
   left: -10%;
   right: auto;
   top: 25%;
-  border-radius: 100%;
   position: absolute;
-  background-color: rgb(199, 71, 120);
+  background-image: url("./images/u.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+
   content: "";
 }
 
 .cloud-project {
-  width: 70%;
-  height: 70%;
-  border-radius: 100%;
+  width: 40%;
+  height: 40%;
   position: absolute;
-  background-color: rgb(199, 71, 120);
+  background-image:  url("./images/u.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+
 }
 
 .cloud-project::before,
@@ -69,30 +87,42 @@
   height: 50%;
   right: 10%;
   top: 65%;
-  border-radius: 100%;
   position: absolute;
-  background-color: rgb(199, 71, 120);
+  background-image: url("./images/u.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+  
   content: "";
 }
 
 .cloud-project::after {
   width: 30%;
   height: 30%;
-  left: -10%;
+  left: 5%;
   right: auto;
   top: 10%;
-  border-radius: 100%;
   position: absolute;
-  background-color: rgb(199, 71, 120);
+  background-image: url("./images/u.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+ 
   content: "";
 }
 
 .cloud-about {
   width: 40%;
   height: 40%;
-  border-radius: 100%;
   position: absolute;
-  background-color: rgb(199, 71, 120);
+  background-image: url("./images/u.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+
 }
 
 .cloud-about::before,
@@ -101,9 +131,13 @@
   height: 150%;
   right: 5%;
   top: 35%;
-  border-radius: 100%;
   position: absolute;
-  background-color: rgb(199, 71, 120);
+  background-image: url("./images/u.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+  
   content: "";
 }
 
@@ -113,29 +147,43 @@
   left: -25%;
   right: auto;
   top: 5%;
-  border-radius: 100%;
   position: absolute;
-  background-color: rgb(199, 71, 120);
+  /* background-color: rgb(199, 71, 120); */
+  background-image: url("./images/u.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+ 
   content: "";
 }
 
 .cloud-read-more {
-  background-color: rgb(199, 71, 120);
-  border-radius: 20px;
+  /* background-color: rgb(199, 71, 120); */
+  background-image: url("./images/rm.png");
+  /* background-repeat: no-repeat; */
+  background-size: 100% auto;
+  background-position: center;
+  border-radius: 50px;
   position: absolute;
   top: 50%;
   right: 50%;
-  height: calc(80vh + 2vw);
-  width: calc(80vw + 2vw);
-  max-width: calc(135vh + 2vw);
+  /* height: calc(80vh + 5vw);
+  width: calc(80vw + 5vw);
+  max-width: calc(135vh + 5vw); */
+  height:100%;
+  width:100%;
 
   transform: translate(-50%, -50%);
 }
 
 .cloud-read-more::before,
 .cloud-read-more::after {
-  background-color: rgb(199, 71, 120);
-  border-radius: 50%;
+  /* background-color: rgb(199, 71, 120); */
+  background-image: url("./images/rm.png");
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% 100%; */
+  /* border-radius: 50%; */
   content: "";
   width: 0px;
   height: 0px;
@@ -146,7 +194,10 @@
 }
 
 .cloud-read-more::after {
-  background-color: rgb(199, 71, 120);
+  /* background-color: rgb(199, 71, 120); */
+  background-image: url("./images/rm.png");
+  /* background-repeat: no-repeat; */
+  background-size: auto;
   width: 0px;
   height: 0px;
   top: 20%;

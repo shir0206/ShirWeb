@@ -1,11 +1,16 @@
 .brush-cont {
-  z-index: 100;
+  z-index: 10;
   width: 40vw;
   height: auto;
   position: absolute;
+  stroke-width: 1px;
+  top: 10vh;
+  right: 18vw;
+  
 }
-.brush-cont  #brush-svg
-{transform-origin: center;}
+.brush-cont #brush-svg {
+  transform-origin: center;
+}
 
 .brush-cont #path-0 {
   fill: #fde1cb;

@@ -9,7 +9,6 @@
     left: 5%;
     top: 2%;
     width: 50%;
-
   }
 }
 
@@ -28,7 +27,7 @@
 }
 .flower-cont path {
   stroke-width: 2.5px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 .flower-cont #path-0 {
   stroke: #cccccc57;
@@ -49,7 +48,7 @@
   stroke: #6666995d;
 }
 .flower-cont #path-6 {
-  stroke: #179e1763;
+  stroke: #698869;
 }
 .flower-cont #path-7 {
   stroke: #1c94da9a;

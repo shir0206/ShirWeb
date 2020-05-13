@@ -8,7 +8,7 @@ export const Title = () => {
       targets: ".title-cont svg path",
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: "cubicBezier(.5, .05, .1, .3)",
-      duration: 300,
+      duration: 500,
       delay: function(el, i) {
         return i * 100 + 1500;
       },

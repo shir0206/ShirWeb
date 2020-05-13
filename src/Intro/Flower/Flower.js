@@ -10,26 +10,18 @@ export const Flower = () => {
       targets: ".flower-cont svg path",
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: "cubicBezier(.5, .05, .1, .3)",
-      duration: 80,
+      duration: 200,
       delay: function (el, i) {
-        return i * 50;
+        return i * 50 + 1500;
       },
       loop: false,
       direction: "alternate",
       autoplay: true,
-    });
 
-    let fillColors = anime({
-      targets: ".flower-cont svg path",
-      easing: "easeInOutSine",
-      duration: 100,
-      delay: function (el, i) {
-        return i * 100;
-      },
       fill: function (el, i) {
         return colors[99 - i];
       },
-    }).finished;
+    });
   }
 
   useEffect(() => {
@@ -44,26 +36,26 @@ export const Flower = () => {
 };
 
 const colors = [
-  "#cccccc57",
-  "#6699cc71",
+  "#cccccc",
+  "#6699cc",
   "#669999",
   "#ccccff",
-  "#9999cc91",
-  "#6666995d",
-  "#179e1763",
-  "#1c94da9a",
-  "#24dfdf81",
-  "#2ac52a50",
-  "#43b128a4",
+  "#9999cc",
+  "#666699",
+  "#179e17",
+  "#1c94da",
+  "#24dfdf",
+  "#2ac52a",
+  "#43b128",
   "#6666cc",
-  "#33336698",
+  "#333366",
   "#336666",
   "#9966cc",
-  "#cc99997e",
+  "#cc9999",
   "#ffcccc",
   "#ffccff",
   "#cc99cc",
-  "#9966999d",
+  "#996699",
   "#330066",
   "#333399",
   "#339966",

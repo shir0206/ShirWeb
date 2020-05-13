@@ -10,9 +10,8 @@ export const Flower = () => {
       targets: ".flower-cont svg path",
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: "cubicBezier(.5, .05, .1, .3)",
-      duration: 100,
+      duration: 80,
       delay: function (el, i) {
-        console.log(i);
         return i * 80;
       },
       loop: false,
@@ -23,13 +22,11 @@ export const Flower = () => {
     let fillColors = anime({
       targets: ".flower-cont svg path",
       easing: "easeInOutSine",
-      duration: 600,
+      duration: 200,
       delay: function (el, i) {
-        console.log(i);
         return i * 100;
       },
       fill: function (el, i) {
-        console.log("colors i", i, "colors[i]", colors[99 - i]);
         return colors[99 - i];
       },
     }).finished;

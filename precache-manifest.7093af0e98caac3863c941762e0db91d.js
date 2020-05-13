@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7e2826c92cdf2cdc31871c3c7836db2f",
+    "revision": "287cb84da20cb1f91c944a0bf1cb56cd",
     "url": "/ShirWeb/index.html"
   },
   {
-    "revision": "86dec23df57ce62f9a2c",
-    "url": "/ShirWeb/static/css/main.0fb630d7.chunk.css"
+    "revision": "e67906cc24e1f54b977b",
+    "url": "/ShirWeb/static/css/main.92788bea.chunk.css"
   },
   {
     "revision": "f71ac86f9fd76a5b31ca",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ShirWeb/static/js/2.578d9e95.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "86dec23df57ce62f9a2c",
-    "url": "/ShirWeb/static/js/main.ff630f0b.chunk.js"
+    "revision": "e67906cc24e1f54b977b",
+    "url": "/ShirWeb/static/js/main.3567acbc.chunk.js"
   },
   {
     "revision": "56359f0d03bff7d23a1d",
@@ -28,11 +28,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ShirWeb/static/media/background.8efe0c61.png"
   },
   {
+    "revision": "7adcd17d132b8103cad7b564921d768b",
+    "url": "/ShirWeb/static/media/blue.7adcd17d.png"
+  },
+  {
+    "revision": "2c9e371548ba21eaa51a7038b42163da",
+    "url": "/ShirWeb/static/media/gold.2c9e3715.png"
+  },
+  {
     "revision": "f44332d0484f5314ca1e4cd574a7b5f2",
     "url": "/ShirWeb/static/media/rm.f44332d0.png"
   },
   {
-    "revision": "f44332d0484f5314ca1e4cd574a7b5f2",
-    "url": "/ShirWeb/static/media/u.f44332d0.png"
+    "revision": "8784cf5514dea570d11b60849ea79b2f",
+    "url": "/ShirWeb/static/media/yellow-pink.8784cf55.png"
   }
 ]);

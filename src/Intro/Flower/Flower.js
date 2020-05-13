@@ -12,7 +12,7 @@ export const Flower = () => {
       easing: "cubicBezier(.5, .05, .1, .3)",
       duration: 80,
       delay: function (el, i) {
-        return i * 80;
+        return i * 50;
       },
       loop: false,
       direction: "alternate",
@@ -22,7 +22,7 @@ export const Flower = () => {
     let fillColors = anime({
       targets: ".flower-cont svg path",
       easing: "easeInOutSine",
-      duration: 200,
+      duration: 100,
       delay: function (el, i) {
         return i * 100;
       },

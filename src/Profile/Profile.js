@@ -47,7 +47,8 @@ export const Profile = (props) => {
         <img
           className="profile-image"
           alt="Profile"
-          src="https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/522977_3877750903628_1542323555_n.jpg?_nc_cat=107&_nc_sid=e007fa&_nc_ohc=IqijnuKCntsAX8jwfXr&_nc_ht=scontent.fsdv2-1.fna&oh=9cea3e1cbd2bda1c6c5b8d391121fcc1&oe=5ED67FE9"
+          src={require('../images/profile.png')}
+
         ></img>
       </div>
     </div>

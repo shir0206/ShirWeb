@@ -17,7 +17,6 @@
   -ms-animation: fadein 0.5s; /* Internet Explorer */
   -o-animation: fadein 0.5s; /* Opera < 12.1 */
   animation: fadein 0.5s;
-  will-change: transform;
 }
 
 .profile-image-cont,
@@ -31,7 +30,7 @@
 }
 .profile-image {
   width: 30vw;
-  border-radius: 70px 20px;
+  border-radius: 70px 20px; 
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 

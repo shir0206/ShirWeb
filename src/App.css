@@ -11,12 +11,9 @@ body {
 
 .app {
   text-align: center;
-  background: linear-gradient(180deg, #ecd4de 35%, rgba(236, 212, 222, 0) 100%),
-    #ffffff;
-
-  /* background: url(https://cdn.shopify.com/s/files/1/0153/0623/products/BW_Striped_Wallpaper_in_Ivory_design_by_BD_Wall_7dc80d01-d0b8-4f49-8288-d86522480399_large.jpg?v=1571709614); */
 
   background-image: url("./images/background.png");
+  /* background:  rgba(255, 255, 255, 0.5) ; */
 
   height: 100vh;
   overflow: hidden;
@@ -27,7 +24,6 @@ body {
 
 body {
   overflow: hidden;
-  will-change: transform;
 }
 
 .card {

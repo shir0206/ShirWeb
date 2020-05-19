@@ -132,9 +132,8 @@ h1 {
 
 .portfolio-cont {
   text-align: left;
-
   display: grid;
-  grid-template-columns: 35% 5% 55% 5%;
+  grid-template-columns: 50% 2.5% 45% 2.5%;
   grid-template-rows: 1fr 1fr 2.5fr 1fr 2.5fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 10px;

@@ -1,6 +1,7 @@
 import React from "react";
 import "./profile.css";
 
+
 export const Profile = (props) => {
   return (
     <div className="profile-cont">

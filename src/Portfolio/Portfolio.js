@@ -14,44 +14,44 @@ export const Portfolio = (props) => {
 
   return (
     <div className="portfolio-cont">
-        <img
-          className="portfolio-image"
-          src={card[currCard].image}
-          alt={card[currCard].name}
-        ></img>
-        <h1 className="name">{card[currCard].name}</h1>
-        <p className="description">{card[currCard].description}</p>
-        <div className="portfolio-icon-cont">
+      <img
+        className="portfolio-image"
+        src={card[currCard].image}
+        alt={card[currCard].name}
+      ></img>
+      <h1 className="name">{card[currCard].name}</h1>
+      <p className="description">{card[currCard].description}</p>
+      <div className="portfolio-icon-cont">
+        <a
+          href={card[currCard].gitLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="portfolio-icon-ref"
+        >
+          <i className="fab fa-github portfolio-icon"></i>
+        </a>
+        {card[currCard].webLink && (
           <a
-            href={card[currCard].gitLink}
+            href={card[currCard].webLink}
             target="_blank"
             rel="noopener noreferrer"
             className="portfolio-icon-ref"
           >
-            <i className="fab fa-github portfolio-icon"></i>
+            <i className="fas fa-link portfolio-icon"></i>
           </a>
-          {card[currCard].webLink && (
-            <a
-              href={card[currCard].webLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="portfolio-icon-ref"
-            >
-              <i className="fas fa-link portfolio-icon"></i>
-            </a>
-          )}
-          {card[currCard].playStoreLink && (
-            <a
-              href={card[currCard].playStoreLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="portfolio-icon-ref"
-            >
-              <i className="fab fa-google-play portfolio-icon"></i>
-            </a>
-          )}
-        </div>
-        <ul className="tagList">{createTagsList(card[currCard].tags)}</ul>
+        )}
+        {card[currCard].playStoreLink && (
+          <a
+            href={card[currCard].playStoreLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="portfolio-icon-ref"
+          >
+            <i className="fab fa-google-play portfolio-icon"></i>
+          </a>
+        )}
+      </div>
+      <ul className="tagList">{createTagsList(card[currCard].tags)}</ul>
 
       <Arrows
         currCard={currCard}
@@ -148,9 +148,9 @@ const card = [
       "CSS3",
       "Firebase",
       "Search",
-      "ZoomImage",
+      "ImageZoom",
     ],
-    image: "https://english.tau.ac.il/sites/default/files/galery580-330.jpg",
+    image: require("../images/art-gallery.png"),
   },
   {
     name: "TropiX",
@@ -169,8 +169,7 @@ const card = [
       "TicTacToe",
       "Fun",
     ],
-    image:
-      "https://lh3.googleusercontent.com/5r-OSK7yL-p_8_qvnPrDpAWWTxeQiofdl-D8NxFotgmm_o7g-f7nmodL4MMRdTmkldo=w1440-h620-rw",
+    image: require("../images/tropix.jpeg"),
   },
   {
     name: "NyquistOptics",
@@ -181,7 +180,6 @@ const card = [
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.shirzabolotnyklein.nyquistoptics&hl=en",
     tags: ["Java", "Android", "PerformanceCalculator", "SharedPreferance"],
-    image:
-      "https://lh3.googleusercontent.com/mAaSRqqx1WRkwVwNIM4jnLdQfoh6KMnWbFczL57H7qp-9zIPl6ODHpHOZ0vtAW0BKYWQ=s360-rw",
+    image: require("../images/nyquist-optics.png"),
   },
 ];

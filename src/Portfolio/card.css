@@ -2,12 +2,19 @@
   text-align: left;
   display: grid;
   grid-template-columns: 50% 2.5% 45% 2.5%;
-  grid-template-rows: 1fr 1fr 2.5fr 1fr 2.5fr 1fr;
+  grid-template-rows: 10% 12% 30% 8% 25% auto;
   grid-column-gap: 0px;
   grid-row-gap: 10px;
   overflow: hidden;
   max-height: 80vh;
   height: 80vh;
+  border-radius: 20px;
+}
+
+.card-cont > * {
+  height: 100%;
+  overflow: hidden;
+  align-self: start;
 }
 
 .portfolio-image {
@@ -20,6 +27,7 @@
   grid-area: 2 / 3 / 3 / 4;
   color: #c74778;
   text-shadow: 1px 1px 1px rgba(51, 61, 71, 0.4);
+  margin: 0;
 }
 
 .descriptionList {
@@ -27,6 +35,7 @@
   padding-right: 45px;
   padding-left: 20px;
   align-self: start;
+  margin: 0;
 }
 
 .description {
@@ -36,6 +45,7 @@
 
 .portfolio-icon-cont {
   grid-area: 4 / 3 / 5 / 4;
+  margin: 0;
 }
 
 .tagList {
@@ -44,6 +54,7 @@
   list-style: none;
   list-style-type: none;
   padding-inline-start: 0px;
+  margin: 0;
 }
 
 .portfolio-icon {

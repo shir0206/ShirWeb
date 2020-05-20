@@ -6,55 +6,16 @@ import "./carousel.css";
 export const Portfolio = (props) => {
   const [currCard, setCurrCard] = useState(0);
 
-  let tmp;
   const recieveCardIndex = useCallback((childProps) => {
     setCurrCard(childProps);
-    tmp = "fadeOutLeft";
   }, []);
 
   return (
     <div className="portfolio-cont">
-      <img
-        className="portfolio-image"
-        src={card[currCard].image}
-        alt={card[currCard].name}
-      ></img>
-      <h1 className="name">{card[currCard].name}</h1>
-      <p className="description">{card[currCard].description}</p>
-      <div className="portfolio-icon-cont">
-        <a
-          href={card[currCard].gitLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-icon-ref"
-        >
-          <i className="fab fa-github portfolio-icon"></i>
-        </a>
-        {card[currCard].webLink && (
-          <a
-            href={card[currCard].webLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="portfolio-icon-ref"
-          >
-            <i className="fas fa-link portfolio-icon"></i>
-          </a>
-        )}
-        {card[currCard].playStoreLink && (
-          <a
-            href={card[currCard].playStoreLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="portfolio-icon-ref"
-          >
-            <i className="fab fa-google-play portfolio-icon"></i>
-          </a>
-        )}
-      </div>
-      <ul className="tagList">{createTagsList(card[currCard].tags)}</ul>
-
+      <Card card={cards[currCard]}></Card>
       <Arrows
         currCard={currCard}
+        length={cards.length}
         handleCarouselItemClick={recieveCardIndex}
       ></Arrows>
       <div className="portfolio-carousel-cont ">
@@ -63,15 +24,58 @@ export const Portfolio = (props) => {
     </div>
   );
 };
+
+function Card(props) {
+  let card = props.card;
+  return (
+    <div className="card-cont">
+      <img className="portfolio-image" src={card.image} alt={card.name}></img>
+      <h1 className="name">{card.name}</h1>
+      <p className="description">{card.description}</p>
+      <div className="portfolio-icon-cont">
+        <a
+          href={card.gitLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="portfolio-icon-ref"
+        >
+          <i className="fab fa-github portfolio-icon"></i>
+        </a>
+        {card.webLink && (
+          <a
+            href={card.webLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="portfolio-icon-ref"
+          >
+            <i className="fas fa-link portfolio-icon"></i>
+          </a>
+        )}
+        {card.playStoreLink && (
+          <a
+            href={card.playStoreLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="portfolio-icon-ref"
+          >
+            <i className="fab fa-google-play portfolio-icon"></i>
+          </a>
+        )}
+      </div>
+      <ul className="tagList">{createTagsList(card.tags)}</ul>
+    </div>
+  );
+}
+
 function Arrows(props) {
   function updateNext(event) {
     event.preventDefault();
-    let next = (props.currCard + 1) % card.length;
+    let next = (props.currCard + 1) % props.length;
     props.handleCarouselItemClick(next);
   }
   function updatePrev(event) {
     event.preventDefault();
-    let prev = (props.currCard - 1 + card.length) % card.length;
+    let prev = (props.currCard - 1 + props.length) % props.length;
     props.handleCarouselItemClick(prev);
   }
   return (
@@ -91,6 +95,7 @@ function Arrows(props) {
     </div>
   );
 }
+
 function createTagsList(tags) {
   let tagsList = tags.map((i) => <Tag currentTag={i} key={i} />);
   return tagsList;
@@ -102,7 +107,7 @@ function Tag(props) {
 }
 
 function createCarouselList(currCard, recieveCardIndex) {
-  let carouselList = card.map((cardObj, cardIndex) => {
+  let carouselList = cards.map((cardObj, cardIndex) => {
     return (
       <CarouselItem
         key={cardIndex}
@@ -133,7 +138,7 @@ function CarouselItem(props) {
   );
 }
 
-const card = [
+const cards = [
   {
     name: "Art Gallery",
     description:

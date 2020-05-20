@@ -9,7 +9,6 @@
   max-width: 135vh;
   background-color: white;
   border-radius: 20px;
-  overflow: hidden;
   position: absolute;
   -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 0.5s; /* Firefox < 16 */
@@ -130,13 +129,18 @@ h1 {
   text-shadow: 2px 2px 2px rgba(51, 61, 71, 0.2);
 }
 
-.portfolio-cont {
+.card-cont {
   text-align: left;
   display: grid;
   grid-template-columns: 50% 2.5% 45% 2.5%;
   grid-template-rows: 1fr 1fr 2.5fr 1fr 2.5fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 10px;
+  overflow: hidden;
+  max-height: 80vh;
+  height: 80vh;
+  width: 80vw;
+  max-width: 135vh;
 }
 
 .portfolio-image {

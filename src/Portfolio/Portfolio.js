@@ -36,8 +36,6 @@ function Card(props) {
       <ul className="descriptionList">
         {createDescriptionList(card.description)}
       </ul>
-
-      {/* <p className="description">{card.description}</p> */}
       <div className="portfolio-icon-cont">
         <a
           href={card.gitLink}
@@ -160,10 +158,12 @@ const cards = [
   {
     name: "Art Gallery",
     description: [
-      "Developed a website in React that is used as a gallery for my paintings & drawings.",
+      "Developed a website in React that displays my paintings & drawings.",
+      "The data is retrieved from Firebase.",
+      "Search images according to keywords.",
     ],
     gitLink: "https://github.com/shir0206/ArtGallery",
-    webLink: "https://csb-9sv19.now.sh/",
+    webLink: "https://shir0206.github.io/ArtGallery/",
     playStoreLink: "",
     tags: [
       "JavaScript",
@@ -173,13 +173,15 @@ const cards = [
       "Firebase",
       "Search",
       "ImageZoom",
+      "ScrollLock",
     ],
     image: require("../images/art-gallery.png"),
   },
   {
     name: "TropiX",
     description: [
-      "Developed game inspired from Tic-Tac-Toe.",
+      "Developed an Android game inspired by Tic-Tac-Toe.",
+      "Unlockable characters.",
       "The development was planned and executed by using the MVC model.",
     ],
     gitLink: "https://github.com/shir0206/TropiX-App",
@@ -192,6 +194,8 @@ const cards = [
       "MVC",
       "MultiLanguage",
       "RecyclerView",
+      "SharedPreference",
+      "UX/UI",
       "TicTacToe",
       "Fun",
     ],

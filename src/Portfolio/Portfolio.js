@@ -2,159 +2,47 @@ import React, { useState, useCallback } from "react";
 import "./portfolio.css";
 import "./arrow.css";
 import "./carousel.css";
-import "./card.css";
-import "./tag.css";
+import { Slide } from "./Slide";
+import { SlideIndex } from "./SlideIndex";
+import { Arrows } from "./Arrows";
 
 export const Portfolio = (props) => {
-  const [currCard, setCurrCard] = useState(0);
+  const [currSlide, setCurrSlide] = useState(0);
 
-  const recieveCardIndex = useCallback((childProps) => {
-    setCurrCard(childProps);
+  const recieveSlideIndex = useCallback((childProps) => {
+    setCurrSlide(childProps);
   }, []);
 
   return (
     <div className="portfolio-cont">
-      <Card card={cards[currCard]}></Card>
+      <Slide slide={slides[currSlide]}></Slide>
       <Arrows
-        currCard={currCard}
-        length={cards.length}
-        handleCarouselItemClick={recieveCardIndex}
+        currSlide={currSlide}
+        length={slides.length}
+        handleSlideIndexClick={recieveSlideIndex}
       ></Arrows>
       <div className="portfolio-carousel-cont ">
-        <ul>{createCarouselList(currCard, recieveCardIndex)}</ul>
+        <ul>{createSlideList(currSlide, recieveSlideIndex)}</ul>
       </div>
     </div>
   );
 };
 
-function Card(props) {
-  let card = props.card;
-  return (
-    <div className="card-cont">
-      <img className="portfolio-image" src={card.image} alt={card.name}></img>
-      <h1 className="name">{card.name}</h1>
-      <ul className="descriptionList">
-        {createDescriptionList(card.description)}
-      </ul>
-      <div className="portfolio-icon-cont">
-        <a
-          href={card.gitLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-icon-ref"
-        >
-          <i className="fab fa-github portfolio-icon"></i>
-        </a>
-        {card.webLink && (
-          <a
-            href={card.webLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="portfolio-icon-ref"
-          >
-            <i className="fas fa-link portfolio-icon"></i>
-          </a>
-        )}
-        {card.playStoreLink && (
-          <a
-            href={card.playStoreLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="portfolio-icon-ref"
-          >
-            <i className="fab fa-google-play portfolio-icon"></i>
-          </a>
-        )}
-      </div>
-      <ul className="tagList">{createTagsList(card.tags)}</ul>
-    </div>
-  );
-}
-
-function Arrows(props) {
-  function updateNext(event) {
-    event.preventDefault();
-    let next = (props.currCard + 1) % props.length;
-    props.handleCarouselItemClick(next);
-  }
-  function updatePrev(event) {
-    event.preventDefault();
-    let prev = (props.currCard - 1 + props.length) % props.length;
-    props.handleCarouselItemClick(prev);
-  }
-  return (
-    <div className="portfolio-arrow-cont">
-      <div className="right-arrow-container" onClick={updateNext}>
-        <div className="round">
-          <p className="arrow">&gt;</p>
-          <p className="arrow second-arrow">&gt;</p>
-        </div>
-      </div>
-      <div className="left-arrow-container" onClick={updatePrev}>
-        <div className="round">
-          <p className="arrow">&lt;</p>
-          <p className="arrow second-arrow">&lt;</p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function createDescriptionList(descriptions) {
-  let descriptionList = descriptions.map((i) => (
-    <Description currentDescription={i} key={i} />
-  ));
-  return descriptionList;
-}
-
-function Description(props) {
-  const description = props.currentDescription.toString();
-  return <li className="description">{description}</li>;
-}
-
-function createTagsList(tags) {
-  let tagsList = tags.map((i) => <Tag currentTag={i} key={i} />);
-  return tagsList;
-}
-
-function Tag(props) {
-  const tag = props.currentTag.toString();
-  return <li className="tag">#{tag}</li>;
-}
-
-function createCarouselList(currCard, recieveCardIndex) {
-  let carouselList = cards.map((cardObj, cardIndex) => {
+function createSlideList(currSlide, recieveSlideIndex) {
+  let carouselList = slides.map((slideObj, slideIndex) => {
     return (
-      <CarouselItem
-        key={cardIndex}
-        cardIndex={cardIndex}
-        currCard={currCard}
-        handleCarouselItemClick={recieveCardIndex}
+      <SlideIndex
+        key={slideIndex}
+        slideIndex={slideIndex}
+        currSlide={currSlide}
+        handleSlideIndexClick={recieveSlideIndex}
       />
     );
   });
   return carouselList;
 }
 
-function CarouselItem(props) {
-  function updateCarousel(event) {
-    event.preventDefault();
-    props.handleCarouselItemClick(props.cardIndex);
-  }
-
-  return (
-    <li
-      className={
-        props.cardIndex == props.currCard
-          ? "portfolio-circle-icon portfolio-fill-icon"
-          : "portfolio-circle-icon"
-      }
-      onClick={updateCarousel}
-    ></li>
-  );
-}
-
-const cards = [
+const slides = [
   {
     name: "Art Gallery",
     description: [

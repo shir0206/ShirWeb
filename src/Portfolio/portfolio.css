@@ -15,35 +15,9 @@
   -ms-animation: fadein 0.5s; /* Internet Explorer */
   -o-animation: fadein 0.5s; /* Opera < 12.1 */
   animation: fadein 0.5s;
-  will-change: transform;
+  /* will-change: transform; */
 }
 
-.portfolio-image {
-  width: 100%;
-  height: 100%;
-}
-
-.portfolio-cont ul {
-  list-style: none;
-  list-style-type: none;
-  padding-inline-start: 0px;
-}
-
-h1 {
-  color: #c74778;
-  text-shadow: 1px 1px 1px rgba(51, 61, 71, 0.4);
-}
-
-.tag {
-  color: #000;
-  border: 1px solid #000;
-  box-shadow: 2px 2px 2px rgba(51, 61, 71, 0.4);
-  border-radius: 20px;
-  padding: 2%;
-  margin: 2%;
-  display: inline-block;
-  text-align: left;
-}
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -106,60 +80,4 @@ h1 {
   90% {
     opacity: 1;
   }
-}
-
-.portfolio-icon {
-  font-size: 1.5em;
-}
-.portfolio-icon-ref {
-  margin: 0.5em;
-  text-align: center;
-  font-size: 1.25em;
-  position: relative;
-  background: none;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  color: #000;
-}
-
-.portfolio-icon-ref:hover {
-  color: #c74778;
-  text-shadow: 2px 2px 2px rgba(51, 61, 71, 0.2);
-}
-
-.card-cont {
-  text-align: left;
-  display: grid;
-  grid-template-columns: 50% 2.5% 45% 2.5%;
-  grid-template-rows: 1fr 1fr 2.5fr 1fr 2.5fr 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 10px;
-  overflow: hidden;
-  max-height: 80vh;
-  height: 80vh;
-  width: 80vw;
-  max-width: 135vh;
-}
-
-.portfolio-image {
-  grid-area: 1 / 1 / 7 / 2;
-}
-
-.name {
-  grid-area: 2 / 3 / 3 / 4;
-}
-.description {
-  grid-area: 3 / 3 / 4 / 4;
-  padding-right: 30px;
-  align-self: start;
-}
-
-.portfolio-icon-cont {
-  grid-area: 4 / 3 / 5 / 4;
-}
-.tagList {
-  grid-area: 5 / 3 / 6 / 4;
-  align-self: start;
 }

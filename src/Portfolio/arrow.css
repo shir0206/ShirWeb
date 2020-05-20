@@ -1,3 +1,10 @@
+.portfolio-arrow-cont{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+}
+
 .right-arrow-container,
 .left-arrow-container {
   position: fixed;
@@ -18,10 +25,11 @@
 }
 
 .right-arrow-container {
-  right: 25px;
+  transform: translateX(calc(min(70vw, 125vh)/2));
 }
 .left-arrow-container {
-  left: 25px;
+  transform: translateX(calc(max(-70vw, -125vh)/2));
+
 }
 
 .round {

@@ -1,0 +1,10 @@
+.tag {
+    color: #000;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 2px rgba(51, 61, 71, 0.4);
+    border-radius: 20px;
+    padding: 1.5%;
+    margin: 1.5%;
+    display: inline-block;
+    text-align: left;
+  }

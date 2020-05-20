@@ -2,6 +2,8 @@ import React, { useState, useCallback } from "react";
 import "./portfolio.css";
 import "./arrow.css";
 import "./carousel.css";
+import "./card.css";
+import "./tag.css";
 
 export const Portfolio = (props) => {
   const [currCard, setCurrCard] = useState(0);

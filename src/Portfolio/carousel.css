@@ -3,7 +3,7 @@
   list-style-type: none;
   padding-inline-start: 0px;
   position: fixed;
-  bottom: 0px;
+  bottom: 10vh;
   left: 0;
   right: 0;
   z-index: 10000;
@@ -11,8 +11,6 @@
   justify-content: center;
   flex-direction: row;
   display: flex;
-
-  /* TEST */
 }
 
 .portfolio-carousel-cont ul li {

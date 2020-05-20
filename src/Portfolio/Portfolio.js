@@ -181,8 +181,8 @@ const cards = [
     name: "TropiX",
     description: [
       "Developed an Android game inspired by Tic-Tac-Toe.",
-      "Unlockable characters.",
       "The development was planned and executed by using the MVC model.",
+      "Unlockable characters.",
     ],
     gitLink: "https://github.com/shir0206/TropiX-App",
     webLink: "",
@@ -204,8 +204,9 @@ const cards = [
   {
     name: "NyquistOptics",
     description: [
-      "Developed a native Android mobile app for cameras performance evaluation, used by a global company.",
-      "Collected, defined and translated user requirements into project designs and implementation plans.",
+      "Developed a native Android app for evaluating camera performances",
+      "Collected, defined and translated user requirements into implementation.",
+      "Approximately 50 active users worldwide (2020).",
     ],
     gitLink: "https://github.com/shir0206/NyquistOptics",
     webLink: "",

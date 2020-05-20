@@ -1,4 +1,4 @@
-.portfolio-arrow-cont{
+.portfolio-arrow-cont {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -25,11 +25,10 @@
 }
 
 .right-arrow-container {
-  transform: translateX(calc(min(70vw, 125vh)/2));
+  transform: translateX(calc(min(70vw, 125vh) / 2));
 }
 .left-arrow-container {
-  transform: translateX(calc(max(-70vw, -125vh)/2));
-
+  transform: translateX(calc(max(-70vw, -125vh) / 2));
 }
 
 .round {
@@ -128,13 +127,13 @@
 }
 
 @media (pointer: fine) {
-  .right-arrow-container .round:hover .arrow {
+  .right-arrow-container:hover .arrow {
     animation-name: floating-right;
     animation-duration: 1.4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
-  .right-arrow-container .round:hover .arrow.second-arrow {
+  .right-arrow-container:hover .arrow.second-arrow {
     animation-name: floating-right;
     animation-duration: 1.4s;
     animation-delay: 0.2s;
@@ -142,13 +141,13 @@
     animation-timing-function: linear;
   }
 
-  .left-arrow-container .round:hover .arrow {
+  .left-arrow-container:hover .arrow {
     animation-name: floating-left;
     animation-duration: 1.4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
-  .left-arrow-container .round:hover .arrow.second-arrow {
+  .left-arrow-container:hover .arrow.second-arrow {
     animation-name: floating-left;
     animation-duration: 1.4s;
     animation-delay: 0.2s;

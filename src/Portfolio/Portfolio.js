@@ -33,7 +33,11 @@ function Card(props) {
     <div className="card-cont">
       <img className="portfolio-image" src={card.image} alt={card.name}></img>
       <h1 className="name">{card.name}</h1>
-      <p className="description">{card.description}</p>
+      <ul className="descriptionList">
+        {createDescriptionList(card.description)}
+      </ul>
+
+      {/* <p className="description">{card.description}</p> */}
       <div className="portfolio-icon-cont">
         <a
           href={card.gitLink}
@@ -98,6 +102,18 @@ function Arrows(props) {
   );
 }
 
+function createDescriptionList(descriptions) {
+  let descriptionList = descriptions.map((i) => (
+    <Description currentDescription={i} key={i} />
+  ));
+  return descriptionList;
+}
+
+function Description(props) {
+  const description = props.currentDescription.toString();
+  return <li className="description">{description}</li>;
+}
+
 function createTagsList(tags) {
   let tagsList = tags.map((i) => <Tag currentTag={i} key={i} />);
   return tagsList;
@@ -143,8 +159,9 @@ function CarouselItem(props) {
 const cards = [
   {
     name: "Art Gallery",
-    description:
+    description: [
       "Developed a website in React that is used as a gallery for my paintings & drawings.",
+    ],
     gitLink: "https://github.com/shir0206/ArtGallery",
     webLink: "https://csb-9sv19.now.sh/",
     playStoreLink: "",
@@ -161,8 +178,10 @@ const cards = [
   },
   {
     name: "TropiX",
-    description:
-      "Developed game inspired from Tic-Tac-Toe. The development was planned and executed by using the MVC model.",
+    description: [
+      "Developed game inspired from Tic-Tac-Toe.",
+      "The development was planned and executed by using the MVC model.",
+    ],
     gitLink: "https://github.com/shir0206/TropiX-App",
     webLink: "",
     playStoreLink:
@@ -180,8 +199,10 @@ const cards = [
   },
   {
     name: "NyquistOptics",
-    description:
-      "Developed a native Android mobile app for cameras performance evaluation, used by a global company. Collected, defined and translated user requirements into project designs and implementation plans.",
+    description: [
+      "Developed a native Android mobile app for cameras performance evaluation, used by a global company.",
+      "Collected, defined and translated user requirements into project designs and implementation plans.",
+    ],
     gitLink: "https://github.com/shir0206/NyquistOptics",
     webLink: "",
     playStoreLink:

@@ -21,15 +21,23 @@
   color: #c74778;
   text-shadow: 1px 1px 1px rgba(51, 61, 71, 0.4);
 }
-.description {
+
+.descriptionList {
   grid-area: 3 / 3 / 4 / 4;
-  padding-right: 30px;
+  padding-right: 45px;
+  padding-left: 20px;
   align-self: start;
+}
+
+.description {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .portfolio-icon-cont {
   grid-area: 4 / 3 / 5 / 4;
 }
+
 .tagList {
   grid-area: 5 / 3 / 6 / 4;
   align-self: start;

@@ -10,54 +10,58 @@ import { ArrowPrev } from "./ArrowPrev";
 
 export const Portfolio = (props) => {
   const [currSlide, setCurrSlide] = useState(0);
-  const [moveSlide, setMoveSlide] = useState("");
+  const [moveSlide, setMoveSlide] = useState("slide-none");
 
   const recieveSlideIndexFromArrowNext = useCallback((childProps) => {
-    animSlideLeft();
-
-    setCurrSlide(childProps);
-  }, []);
-
-  const recieveSlideIndexFromArrowPrev = useCallback((childProps) => {
     animSlideRight();
 
     setCurrSlide(childProps);
   }, []);
 
+  const recieveSlideIndexFromArrowPrev = useCallback((childProps) => {
+    animSlideLeft();
+
+    setCurrSlide(childProps);
+  }, []);
+
   const recieveSlideIndexFromSlideList = useCallback((childProps) => {
-    if (currSlide < childProps) animSlideLeft();
-    else animSlideRight();
+    if (currSlide < childProps) animSlideRight();
+    else animSlideLeft();
 
     setCurrSlide(childProps);
   }, []);
 
   function animSlideLeft() {
-    setMoveSlide("left");
+    setMoveSlide("slide-prev");
     console.log("left");
   }
   function animSlideRight() {
-    setMoveSlide("right");
+    setMoveSlide("slide-next");
     console.log("right");
   }
 
   return (
     <div className="portfolio-cont">
-      <Slide
-        slide={slides[(currSlide - 1 + slides.length) % slides.length]}
-        position="prev"
-        moveSlide={moveSlide}
-      ></Slide>
-      <Slide
-        slide={slides[currSlide]}
-        position="curr"
-        moveSlide={moveSlide}
-      ></Slide>
-      <Slide
-        slide={slides[(currSlide + 1) % slides.length]}
-        position="next"
-        moveSlide={moveSlide}
-      ></Slide>
-
+      <div
+        className={moveSlide}
+        onAnimationEnd={() => setMoveSlide("slide-none")}
+      >
+        <Slide
+          slide={slides[(currSlide - 1 + slides.length) % slides.length]}
+          position="prev"
+          // moveSlide={moveSlide}
+        ></Slide>
+        <Slide
+          slide={slides[currSlide]}
+          position="curr"
+          // moveSlide={moveSlide}
+        ></Slide>
+        <Slide
+          slide={slides[(currSlide + 1) % slides.length]}
+          position="next"
+          // moveSlide={moveSlide}
+        ></Slide>
+      </div>
       <div className="portfolio-arrow-cont">
         <ArrowNext
           currSlide={currSlide}

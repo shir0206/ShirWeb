@@ -81,3 +81,128 @@
     opacity: 1;
   }
 }
+
+.slide-next,
+.slide-prev,
+.slide-none {
+  max-height: 80vh;
+  height: 80vh;
+  width: 80vw;
+  max-width: 135vh;
+  position: absolute;
+}
+
+.slide-next {
+  -webkit-animation: slide-next 0.6s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: slide-next 0.6s; /* Firefox < 16 */
+  -ms-animation: slide-next 0.6s; /* Internet Explorer */
+  -o-animation: slide-next 0.6s; /* Opera < 12.1 */
+  animation: slide-next 0.6s;
+}
+
+@keyframes slide-next {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slide-next {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slide-next {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slide-next {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slide-next {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+
+
+.slide-prev {
+  -webkit-animation: slide-prev 0.6s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: slide-prev 0.6s; /* Firefox < 16 */
+  -ms-animation: slide-prev 0.6s; /* Internet Explorer */
+  -o-animation: slide-prev 0.6s; /* Opera < 12.1 */
+  animation: slide-prev 0.6s;
+}
+
+@keyframes slide-prev {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slide-prev {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slide-prev {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slide-prev {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slide-prev {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}

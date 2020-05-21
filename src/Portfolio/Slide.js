@@ -14,8 +14,6 @@ export const Slide = (props) => {
     else if (props.position === "next") return "slide-cont next";
   }
 
-
-  console.log(props.moveSlide)
   return (
     <div className={slideClassName}>
       <img className="portfolio-image" src={slide.image} alt={slide.name}></img>

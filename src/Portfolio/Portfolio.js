@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useRef } from "react";
 
 import "./portfolio.css";
 import "./arrow.css";
@@ -12,33 +12,30 @@ export const Portfolio = (props) => {
   const [currSlide, setCurrSlide] = useState(0);
   const [moveSlide, setMoveSlide] = useState("slide-none");
 
+  const stateRef = useRef();
+  stateRef.current = currSlide;
+
   const recieveSlideIndexFromArrowNext = useCallback((childProps) => {
-    animSlideRight();
+    setMoveSlide("slide-next");
 
     setCurrSlide(childProps);
   }, []);
 
   const recieveSlideIndexFromArrowPrev = useCallback((childProps) => {
-    animSlideLeft();
+    setMoveSlide("slide-prev");
 
     setCurrSlide(childProps);
   }, []);
 
   const recieveSlideIndexFromSlideList = useCallback((childProps) => {
-    if (currSlide < childProps) animSlideRight();
-    else animSlideLeft();
-
-    setCurrSlide(childProps);
+    if (stateRef.current < childProps) {
+      setMoveSlide("slide-next");
+      setCurrSlide(childProps);
+    } else if (stateRef.current > childProps) {
+      setMoveSlide("slide-prev");
+      setCurrSlide(childProps);
+    }
   }, []);
-
-  function animSlideLeft() {
-    setMoveSlide("slide-prev");
-    console.log("left");
-  }
-  function animSlideRight() {
-    setMoveSlide("slide-next");
-    console.log("right");
-  }
 
   return (
     <div className="portfolio-cont">
@@ -49,17 +46,11 @@ export const Portfolio = (props) => {
         <Slide
           slide={slides[(currSlide - 1 + slides.length) % slides.length]}
           position="prev"
-          // moveSlide={moveSlide}
         ></Slide>
-        <Slide
-          slide={slides[currSlide]}
-          position="curr"
-          // moveSlide={moveSlide}
-        ></Slide>
+        <Slide slide={slides[currSlide]} position="curr"></Slide>
         <Slide
           slide={slides[(currSlide + 1) % slides.length]}
           position="next"
-          // moveSlide={moveSlide}
         ></Slide>
       </div>
       <div className="portfolio-arrow-cont">

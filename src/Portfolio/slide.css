@@ -26,12 +26,15 @@
   align-self: start;
 }
 
-.portfolio-image {
+.portfolio-image-cont {
   grid-area: 1 / 1 / 7 / 2;
   width: 100%;
   height: 100%;
 }
+.portfolio-image {
+  width: 100%;
 
+}
 .name {
   grid-area: 2 / 3 / 3 / 4;
   color: #c74778;
@@ -46,11 +49,6 @@
   align-self: start;
   margin: 0;
   font-size: min(1.5vw, 15px);
-}
-
-.description {
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .portfolio-icon-cont {

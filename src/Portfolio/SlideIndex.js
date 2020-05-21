@@ -9,7 +9,7 @@ export const SlideIndex = (props) => {
   return (
     <li
       className={
-        props.slideIndex == props.currSlide
+        props.slideIndex === props.currSlide
           ? "portfolio-circle-icon portfolio-fill-icon"
           : "portfolio-circle-icon"
       }

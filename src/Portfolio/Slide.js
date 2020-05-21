@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./slide.css";
 import { Description } from "./Description";
 import { Tag } from "./Tag";
@@ -16,7 +16,13 @@ export const Slide = (props) => {
 
   return (
     <div className={slideClassName}>
-      <img className="portfolio-image" src={slide.image} alt={slide.name}></img>
+      <div className="portfolio-image-cont">
+        <img
+          className="portfolio-image"
+          src={slide.image}
+          alt={slide.name}
+        ></img>
+      </div>
       <h1 className="name">{slide.name}</h1>
       <ul className="descriptionList">
         {createDescriptionList(slide.description)}

@@ -1,7 +1,6 @@
-.title-cont{
+.title-cont {
   height: 100%;
   position: absolute;
-
 }
 
 @media only screen and (min-width: 651px) {
@@ -9,11 +8,6 @@
     right: 5%;
     top: 50%;
     width: 40%;
-
-    /* right: 15%;
-    top: 50%;
-    width: 30%; */
-
   }
 }
 
@@ -23,7 +17,7 @@
     top: 60%;
     width: 80%;
   }
-} 
+}
 .title-cont svg {
   fill: none;
   max-width: 98vw;
@@ -33,30 +27,3 @@
   stroke-width: 5px;
   stroke: rgb(199, 71, 120);
 }
-
-
-
-
-/* 
-@media only screen and (min-width: 901px) {
-  .title-cont {
-    width: 30vw;
-    margin-top: 10vw;
-    margin-left: 4vw;
-  }
-}
-@media only screen and (min-width: 501px) and (max-width: 900px) {
-  .title-cont {
-    width: 40vw;
-    margin-top: 20vw;
-    margin-left: 3vw;
-    margin-right: 3vw;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .title-cont {
-    width: 50vw;
-    margin-top: 4vw;
-    margin-left: 2vw;
-  }
-} */

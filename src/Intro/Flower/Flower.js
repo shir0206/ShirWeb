@@ -17,7 +17,6 @@ export const Flower = () => {
       loop: false,
       direction: "alternate",
       autoplay: true,
-
       fill: function (el, i) {
         return colors[99 - i];
       },

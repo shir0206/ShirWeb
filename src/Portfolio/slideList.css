@@ -1,4 +1,4 @@
-.portfolio-carousel-cont ul {
+.slide-list-cont ul {
   list-style: none;
   list-style-type: none;
   padding-inline-start: 0px;
@@ -13,7 +13,7 @@
   display: flex;
 }
 
-.portfolio-carousel-cont ul li {
+.slide-list-cont ul li {
   margin: 0em 0.5em 0em 0.5em;
   display: inline-block;
   text-align: left;

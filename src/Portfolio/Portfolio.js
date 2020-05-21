@@ -1,10 +1,8 @@
 import React, { useState, useCallback, useRef } from "react";
 
 import "./portfolio.css";
-import "./arrow.css";
-import "./carousel.css";
 import { Slide } from "./Slide";
-import { SlideIndex } from "./SlideIndex";
+import { SlideList } from "./SlideList";
 import { ArrowNext } from "./ArrowNext";
 import { ArrowPrev } from "./ArrowPrev";
 
@@ -17,13 +15,11 @@ export const Portfolio = (props) => {
 
   const recieveSlideIndexFromArrowNext = useCallback((childProps) => {
     setMoveSlide("slide-next");
-
     setCurrSlide(childProps);
   }, []);
 
   const recieveSlideIndexFromArrowPrev = useCallback((childProps) => {
     setMoveSlide("slide-prev");
-
     setCurrSlide(childProps);
   }, []);
 
@@ -65,26 +61,14 @@ export const Portfolio = (props) => {
           handleSlideIndexClick={recieveSlideIndexFromArrowPrev}
         ></ArrowPrev>
       </div>
-      <div className="portfolio-carousel-cont ">
-        <ul>{createSlideList(currSlide, recieveSlideIndexFromSlideList)}</ul>
-      </div>
+      <SlideList
+        currSlide={currSlide}
+        slides={slides}
+        handleSlideIndexClick={recieveSlideIndexFromSlideList}
+      ></SlideList>
     </div>
   );
 };
-
-function createSlideList(currSlide, recieveSlideIndexFromSlideList) {
-  let carouselList = slides.map((slideObj, slideIndex) => {
-    return (
-      <SlideIndex
-        key={slideIndex}
-        slideIndex={slideIndex}
-        currSlide={currSlide}
-        handleSlideIndexClick={recieveSlideIndexFromSlideList}
-      />
-    );
-  });
-  return carouselList;
-}
 
 const slides = [
   {
@@ -148,5 +132,3 @@ const slides = [
     image: require("../images/nyquist-optics.png"),
   },
 ];
-
-//https://blog.logrocket.com/building-carousel-component-react-hooks/

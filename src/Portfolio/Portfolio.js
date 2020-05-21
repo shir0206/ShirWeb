@@ -5,47 +5,86 @@ import "./arrow.css";
 import "./carousel.css";
 import { Slide } from "./Slide";
 import { SlideIndex } from "./SlideIndex";
-import { Arrows } from "./Arrows";
+import { ArrowNext } from "./ArrowNext";
+import { ArrowPrev } from "./ArrowPrev";
 
 export const Portfolio = (props) => {
   const [currSlide, setCurrSlide] = useState(0);
+  const [moveSlide, setMoveSlide] = useState("");
 
-  const recieveSlideIndex = useCallback((childProps) => {
+  const recieveSlideIndexFromArrowNext = useCallback((childProps) => {
+    animSlideLeft();
+
     setCurrSlide(childProps);
   }, []);
+
+  const recieveSlideIndexFromArrowPrev = useCallback((childProps) => {
+    animSlideRight();
+
+    setCurrSlide(childProps);
+  }, []);
+
+  const recieveSlideIndexFromSlideList = useCallback((childProps) => {
+    if (currSlide < childProps) animSlideLeft();
+    else animSlideRight();
+
+    setCurrSlide(childProps);
+  }, []);
+
+  function animSlideLeft() {
+    setMoveSlide("left");
+    console.log("left");
+  }
+  function animSlideRight() {
+    setMoveSlide("right");
+    console.log("right");
+  }
 
   return (
     <div className="portfolio-cont">
       <Slide
         slide={slides[(currSlide - 1 + slides.length) % slides.length]}
         position="prev"
+        moveSlide={moveSlide}
       ></Slide>
-      <Slide slide={slides[currSlide]} position="curr"></Slide>
+      <Slide
+        slide={slides[currSlide]}
+        position="curr"
+        moveSlide={moveSlide}
+      ></Slide>
       <Slide
         slide={slides[(currSlide + 1) % slides.length]}
         position="next"
+        moveSlide={moveSlide}
       ></Slide>
 
-      <Arrows
-        currSlide={currSlide}
-        length={slides.length}
-        handleSlideIndexClick={recieveSlideIndex}
-      ></Arrows>
+      <div className="portfolio-arrow-cont">
+        <ArrowNext
+          currSlide={currSlide}
+          length={slides.length}
+          handleSlideIndexClick={recieveSlideIndexFromArrowNext}
+        ></ArrowNext>
+        <ArrowPrev
+          currSlide={currSlide}
+          length={slides.length}
+          handleSlideIndexClick={recieveSlideIndexFromArrowPrev}
+        ></ArrowPrev>
+      </div>
       <div className="portfolio-carousel-cont ">
-        <ul>{createSlideList(currSlide, recieveSlideIndex)}</ul>
+        <ul>{createSlideList(currSlide, recieveSlideIndexFromSlideList)}</ul>
       </div>
     </div>
   );
 };
 
-function createSlideList(currSlide, recieveSlideIndex) {
+function createSlideList(currSlide, recieveSlideIndexFromSlideList) {
   let carouselList = slides.map((slideObj, slideIndex) => {
     return (
       <SlideIndex
         key={slideIndex}
         slideIndex={slideIndex}
         currSlide={currSlide}
-        handleSlideIndexClick={recieveSlideIndex}
+        handleSlideIndexClick={recieveSlideIndexFromSlideList}
       />
     );
   });
@@ -58,7 +97,7 @@ const slides = [
     description: [
       "Developed a website in React that displays my paintings & drawings.",
       "The data is retrieved from Firebase.",
-      "Search images according to keywords.",
+      "Search images by keywords.",
     ],
     gitLink: "https://github.com/shir0206/ArtGallery",
     webLink: "https://shir0206.github.io/ArtGallery/",

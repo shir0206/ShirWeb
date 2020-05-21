@@ -5,12 +5,12 @@ export const Arrows = (props) => {
   function updateNext(event) {
     event.preventDefault();
     let next = (props.currSlide + 1) % props.length;
-    props.handleSlideIndexClick(next);
+    props.handleSlideIndexClick( next);
   }
 
   function updatePrev(event) {
     event.preventDefault();
-    let prev = (props.currSlide - 1 + props.length) % props.length;
+   let prev = (props.currSlide - 1 + props.length) % props.length;
     props.handleSlideIndexClick(prev);
   }
 

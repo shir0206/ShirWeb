@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ShirWeb/static/css/main.66237d5a.chunk.css",
-    "main.js": "/ShirWeb/static/js/main.e8ac5b24.chunk.js",
-    "main.js.map": "/ShirWeb/static/js/main.e8ac5b24.chunk.js.map",
+    "main.css": "/ShirWeb/static/css/main.4ec4e6d2.chunk.css",
+    "main.js": "/ShirWeb/static/js/main.6ff809b1.chunk.js",
+    "main.js.map": "/ShirWeb/static/js/main.6ff809b1.chunk.js.map",
     "runtime-main.js": "/ShirWeb/static/js/runtime-main.0dad025d.js",
     "runtime-main.js.map": "/ShirWeb/static/js/runtime-main.0dad025d.js.map",
-    "static/js/2.87be8d4c.chunk.js": "/ShirWeb/static/js/2.87be8d4c.chunk.js",
-    "static/js/2.87be8d4c.chunk.js.map": "/ShirWeb/static/js/2.87be8d4c.chunk.js.map",
+    "static/js/2.578d9e95.chunk.js": "/ShirWeb/static/js/2.578d9e95.chunk.js",
+    "static/js/2.578d9e95.chunk.js.map": "/ShirWeb/static/js/2.578d9e95.chunk.js.map",
     "index.html": "/ShirWeb/index.html",
-    "precache-manifest.b9814b442826eb30fbcb11764779a376.js": "/ShirWeb/precache-manifest.b9814b442826eb30fbcb11764779a376.js",
+    "precache-manifest.a941c2e4b7695427847919c461b6e091.js": "/ShirWeb/precache-manifest.a941c2e4b7695427847919c461b6e091.js",
     "service-worker.js": "/ShirWeb/service-worker.js",
-    "static/css/main.66237d5a.chunk.css.map": "/ShirWeb/static/css/main.66237d5a.chunk.css.map",
-    "static/js/2.87be8d4c.chunk.js.LICENSE.txt": "/ShirWeb/static/js/2.87be8d4c.chunk.js.LICENSE.txt",
-    "static/media/art-gallery.png": "/ShirWeb/static/media/art-gallery.8daa179a.png",
+    "static/css/main.4ec4e6d2.chunk.css.map": "/ShirWeb/static/css/main.4ec4e6d2.chunk.css.map",
+    "static/js/2.578d9e95.chunk.js.LICENSE.txt": "/ShirWeb/static/js/2.578d9e95.chunk.js.LICENSE.txt",
+    "static/media/art-gallery.png": "/ShirWeb/static/media/art-gallery.764e1870.png",
     "static/media/App.css": "/ShirWeb/static/media/background.8efe0c61.png",
     "static/media/cloud.css": "/ShirWeb/static/media/yellow-pink.8784cf55.png",
     "static/media/nyquist-optics.png": "/ShirWeb/static/media/nyquist-optics.1b5db60c.png",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0dad025d.js",
-    "static/js/2.87be8d4c.chunk.js",
-    "static/css/main.66237d5a.chunk.css",
-    "static/js/main.e8ac5b24.chunk.js"
+    "static/js/2.578d9e95.chunk.js",
+    "static/css/main.4ec4e6d2.chunk.css",
+    "static/js/main.6ff809b1.chunk.js"
   ]
 }

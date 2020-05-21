@@ -115,7 +115,7 @@ const slides = [
       "TicTacToe",
       "Fun",
     ],
-    image: require("../images/tropix.jpeg"),
+    image: require("../images/tropix.png"),
   },
   {
     name: "NyquistOptics",

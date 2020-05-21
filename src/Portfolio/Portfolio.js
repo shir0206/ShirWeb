@@ -74,7 +74,7 @@ const slides = [
   {
     name: "Art Gallery",
     description: [
-      "Developed a website in React that displays my paintings & drawings.",
+      "Developed a website in React for displaying my paintings & drawings.",
       "The data is retrieved from Firebase.",
       "Search images by keywords.",
     ],
@@ -82,8 +82,8 @@ const slides = [
     webLink: "https://shir0206.github.io/ArtGallery/",
     playStoreLink: "",
     tags: [
-      "JavaScript",
       "React",
+      "JavaScript",
       "HTML5",
       "CSS3",
       "Firebase",

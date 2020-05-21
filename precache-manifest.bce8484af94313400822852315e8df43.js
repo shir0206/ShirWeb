@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8794df89a1120463cc9eefaa34cc8b5b",
+    "revision": "6671ec6c9e3533e854d4b3cbd5ff5423",
     "url": "/ShirWeb/index.html"
   },
   {
-    "revision": "ffde9b0153fb9dab0fac",
-    "url": "/ShirWeb/static/css/main.f85e2b28.chunk.css"
+    "revision": "bb10e3db0c85bbf612c3",
+    "url": "/ShirWeb/static/css/main.93dd5062.chunk.css"
   },
   {
     "revision": "f71ac86f9fd76a5b31ca",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ShirWeb/static/js/2.578d9e95.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ffde9b0153fb9dab0fac",
+    "revision": "bb10e3db0c85bbf612c3",
     "url": "/ShirWeb/static/js/main.bd5f8e88.chunk.js"
   },
   {

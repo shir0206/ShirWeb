@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./slide.css";
 import { Description } from "./Description";
 import { Tag } from "./Tag";
 
 export const Slide = (props) => {
   let slide = props.slide;
+
+  let slideClassName = createSlideClassName();
+
+  function createSlideClassName() {
+    if (props.position === "prev") return "slide-cont prev";
+    else if (props.position === "curr") return "slide-cont curr";
+    else if (props.position === "next") return "slide-cont next";
+  }
+
   return (
-    <div className="slide-cont">
+    <div className={slideClassName}>
       <img className="portfolio-image" src={slide.image} alt={slide.name}></img>
       <h1 className="name">{slide.name}</h1>
       <ul className="descriptionList">

@@ -16,7 +16,16 @@ export const Portfolio = (props) => {
 
   return (
     <div className="portfolio-cont">
-      <Slide slide={slides[currSlide]}></Slide>
+      <Slide
+        slide={slides[(currSlide - 1 + slides.length) % slides.length]}
+        position="prev"
+      ></Slide>
+      <Slide slide={slides[currSlide]} position="curr"></Slide>
+      <Slide
+        slide={slides[(currSlide + 1) % slides.length]}
+        position="next"
+      ></Slide>
+
       <Arrows
         currSlide={currSlide}
         length={slides.length}

@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React from "react";
 import "./arrow.css";
 
 export const Arrows = (props) => {

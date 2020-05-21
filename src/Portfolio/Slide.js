@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React from "react";
 import "./slide.css";
 import { Description } from "./Description";
 import { Tag } from "./Tag";

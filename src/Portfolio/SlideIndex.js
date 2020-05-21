@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React from "react";
 
 export const SlideIndex = (props) => {
   function updateCarousel(event) {

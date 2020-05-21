@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react";
+
 import "./portfolio.css";
 import "./arrow.css";
 import "./carousel.css";
@@ -104,3 +105,5 @@ const slides = [
     image: require("../images/nyquist-optics.png"),
   },
 ];
+
+//https://blog.logrocket.com/building-carousel-component-react-hooks/

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./App.css";
 import "./cloud.css";
@@ -10,6 +10,7 @@ import { Profile } from "./Profile/Profile";
 import { Portfolio } from "./Portfolio/Portfolio";
 
 function App() {
+  const { height, width } = useWindowDimensions();
   const [tab, setTab] = useState(0);
   const [openReadMore, setOpenReadMore] = useState(false);
 
@@ -29,12 +30,26 @@ function App() {
         <div className="content-container">{cardContent}</div>
         {tab !== 0 && (
           <button
-            className="read-more-btn"
+            className={
+              width <= 500 && openReadMore
+                ? "hide-read-more-btn"
+                : "read-more-btn"
+            }
             onClick={() => {
               setOpenReadMore(!openReadMore);
             }}
           >
-            {openReadMore ? "Back" : "Read More"}
+            {width > 500 ? (
+              openReadMore ? (
+                "Back"
+              ) : (
+                "Read More"
+              )
+            ) : openReadMore ? (
+              <i className="fas fa-times exit-icon" />
+            ) : (
+              "Read More"
+            )}
           </button>
         )}
         <div className="button-container">
@@ -98,4 +113,29 @@ function Cloud(props) {
       <div className={cloudClassName} style={cloudStyle} />
     </div>
   );
+}
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
+export function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
 }

@@ -13,10 +13,18 @@
   display: flex;
 }
 
+@media only screen and (max-width: 500px) {
+  .slide-list-cont ul {
+    width: 100vw;
+    bottom: 2vh;
+  }
+}
+
 .slide-list-cont ul li {
   margin: 0em 0.5em 0em 0.5em;
   display: inline-block;
   text-align: left;
+  box-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
 }
 
 .portfolio-circle-icon {

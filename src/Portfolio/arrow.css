@@ -1,153 +1,125 @@
-.portfolio-arrow-cont {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  position: absolute;
-}
-
-.right-arrow-container,
-.left-arrow-container {
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 50px;
-  text-align: center;
-  box-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
-  z-index: 10;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  bottom: 45%;
-  width: 35px;
-  height: 35px;
-  border: 1.25px solid #c74778;
-  cursor: pointer;
-}
-
-.right-arrow-container {
-  transform: translateX(calc(min(70vw, 125vh) / 2));
-}
-.left-arrow-container {
-  transform: translateX(calc(max(-70vw, -125vh) / 2));
-}
-
-.round {
-  position: absolute;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding-left: 8px;
-}
-
-.arrow {
-  font-family: monospace, monospace;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  position: absolute;
-  font-size: 18px;
-  color: #c74778;
-  text-shadow: 2px 2px 5px rgba(51, 61, 71, 0.3);
-  font-weight: 500;
-}
-.right-arrow-container .second-arrow {
-  margin-left: -8px;
-}
-
-.left-arrow-container .arrow {
-  margin-left: -8px;
-}
-.left-arrow-container .second-arrow {
-  margin-left: 0px;
-}
-
-@keyframes floating-right {
-  0% {
-    opacity: 1;
-    transform: translateX(0px) scale(1);
+@media only screen and (min-width: 501px) {
+  .portfolio-arrow-cont {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
   }
-  25% {
-    opacity: 0;
-    transform: translateX(10px) scale(0.9);
-  }
-  35% {
-    opacity: 0;
-    transform: translateX(-10px) scale(0.9);
-  }
-  55% {
-    opacity: 1;
-    transform: translateX(0px) scale(1);
-  }
-}
 
-@keyframes floating-left {
-  0% {
-    opacity: 1;
-    transform: translateX(0px) scale(1);
+  .right-arrow-container,
+  .left-arrow-container {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    bottom: 45%;
+    width: 35px;
+    height: 35px;
+    border: 1.25px solid #c74778;
+    cursor: pointer;
   }
-  25% {
-    opacity: 0;
-    transform: translateX(-10px) scale(0.9);
-  }
-  35% {
-    opacity: 0;
-    transform: translateX(10px) scale(0.9);
-  }
-  55% {
-    opacity: 1;
-    transform: translateX(0px) scale(1);
-  }
-}
-.floating-right {
-  animation-name: floating-right;
-  animation-duration: 1.4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-.right-arrow-container .arrow.second-arrow.floating-right {
-  animation-name: floating-right;
-  animation-duration: 1.4s;
-  animation-delay: 0.2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-.floating-left {
-  animation-name: floating-left;
-  animation-duration: 1.4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-.right-arrow-container .arrow.second-arrow.floating-left {
-  animation-name: floating-left;
-  animation-duration: 1.4s;
-  animation-delay: 0.2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
 
-@media (pointer: fine) {
-  .right-arrow-container:hover .arrow {
+  .right-arrow-container {
+    transform: translateX(calc(min(70vw, 125vh) / 2));
+  }
+  .left-arrow-container {
+    transform: translateX(calc(max(-70vw, -125vh) / 2));
+  }
+
+  .round {
+    position: absolute;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 8px;
+  }
+
+  .arrow {
+    font-family: monospace, monospace;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    position: absolute;
+    font-size: 18px;
+    color: #c74778;
+    text-shadow: 2px 2px 5px rgba(51, 61, 71, 0.3);
+    font-weight: 500;
+  }
+  .right-arrow-container .second-arrow {
+    margin-left: -8px;
+  }
+
+  .left-arrow-container .arrow {
+    margin-left: -8px;
+  }
+  .left-arrow-container .second-arrow {
+    margin-left: 0px;
+  }
+
+  @keyframes floating-right {
+    0% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+    25% {
+      opacity: 0;
+      transform: translateX(10px) scale(0.9);
+    }
+    35% {
+      opacity: 0;
+      transform: translateX(-10px) scale(0.9);
+    }
+    55% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes floating-left {
+    0% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+    25% {
+      opacity: 0;
+      transform: translateX(-10px) scale(0.9);
+    }
+    35% {
+      opacity: 0;
+      transform: translateX(10px) scale(0.9);
+    }
+    55% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+  }
+  .floating-right {
     animation-name: floating-right;
     animation-duration: 1.4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
-  .right-arrow-container:hover .arrow.second-arrow {
+  .right-arrow-container .arrow.second-arrow.floating-right {
     animation-name: floating-right;
     animation-duration: 1.4s;
     animation-delay: 0.2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
-
-  .left-arrow-container:hover .arrow {
+  .floating-left {
     animation-name: floating-left;
     animation-duration: 1.4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
-  .left-arrow-container:hover .arrow.second-arrow {
+  .right-arrow-container .arrow.second-arrow.floating-left {
     animation-name: floating-left;
     animation-duration: 1.4s;
     animation-delay: 0.2s;
@@ -155,7 +127,213 @@
     animation-timing-function: linear;
   }
 
-  .arrow-container:hover {
-    background-color: rgba(255, 255, 255, 0.6);
+  @media (pointer: fine) {
+    .right-arrow-container:hover .arrow {
+      animation-name: floating-right;
+      animation-duration: 1.4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .right-arrow-container:hover .arrow.second-arrow {
+      animation-name: floating-right;
+      animation-duration: 1.4s;
+      animation-delay: 0.2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .left-arrow-container:hover .arrow {
+      animation-name: floating-left;
+      animation-duration: 1.4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .left-arrow-container:hover .arrow.second-arrow {
+      animation-name: floating-left;
+      animation-duration: 1.4s;
+      animation-delay: 0.2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .arrow-container:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .portfolio-arrow-cont {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+  }
+
+  .right-arrow-container {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    bottom: 40%;
+    width: 30px;
+    height: 30px;
+    border: 1.25px solid #c74778;
+    cursor: pointer;
+    left: 77%;
+  }
+
+  .left-arrow-container {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    bottom: 40%;
+    width: 30px;
+    height: 30px;
+    border: 1.25px solid #c74778;
+    cursor: pointer;
+    left: 12%;
+  }
+
+  .round {
+    position: absolute;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 8px;
+  }
+
+  .arrow {
+    font-family: monospace, monospace;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    position: absolute;
+    font-size: 18px;
+    color: #c74778;
+    text-shadow: 2px 2px 5px rgba(51, 61, 71, 0.3);
+    font-weight: 500;
+  }
+  .right-arrow-container .second-arrow {
+    margin-left: -8px;
+  }
+
+  .left-arrow-container .arrow {
+    margin-left: -8px;
+  }
+  .left-arrow-container .second-arrow {
+    margin-left: 0px;
+  }
+
+  @keyframes floating-right {
+    0% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+    25% {
+      opacity: 0;
+      transform: translateX(10px) scale(0.9);
+    }
+    35% {
+      opacity: 0;
+      transform: translateX(-10px) scale(0.9);
+    }
+    55% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes floating-left {
+    0% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+    25% {
+      opacity: 0;
+      transform: translateX(-10px) scale(0.9);
+    }
+    35% {
+      opacity: 0;
+      transform: translateX(10px) scale(0.9);
+    }
+    55% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+  }
+  .floating-right {
+    animation-name: floating-right;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .right-arrow-container .arrow.second-arrow.floating-right {
+    animation-name: floating-right;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .floating-left {
+    animation-name: floating-left;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .right-arrow-container .arrow.second-arrow.floating-left {
+    animation-name: floating-left;
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @media (pointer: fine) {
+    .right-arrow-container:hover .arrow {
+      animation-name: floating-right;
+      animation-duration: 1.4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .right-arrow-container:hover .arrow.second-arrow {
+      animation-name: floating-right;
+      animation-duration: 1.4s;
+      animation-delay: 0.2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .left-arrow-container:hover .arrow {
+      animation-name: floating-left;
+      animation-duration: 1.4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .left-arrow-container:hover .arrow.second-arrow {
+      animation-name: floating-left;
+      animation-duration: 1.4s;
+      animation-delay: 0.2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .arrow-container:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
   }
 }

@@ -1,12 +1,21 @@
 .about-cont {
-  z-index:10;
+  z-index: 10;
 }
 .about-svg {
-  width: 30vw;
-  margin-left: 40vw;
   animation: about-svg-anim 0.5s cubic-bezier(0, 0, 0.6, 1);
-  /* animation-delay: 0.25s; */
+}
 
+@media only screen and (min-width: 501px) {
+  .about-svg {
+    width: 30vw;
+    margin-left: 40vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about-svg {
+    width: 50vw;
+    margin-left: 25vw;
+  }
 }
 
 @keyframes about-svg-anim {

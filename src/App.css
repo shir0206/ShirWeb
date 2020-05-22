@@ -8,6 +8,8 @@ body {
   user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
   overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .app {
@@ -123,28 +125,75 @@ body {
 .about-container {
   border-width: 0.5px 0px 0px 0.25px;
 }
+@media only screen and (min-width: 501px) {
+  .read-more-btn {
+    position: absolute;
+    top: calc(50% + 15vh);
+    width: 50vw;
+    max-width: 250px;
+    left: 5%;
+    height: 5vw;
+    max-height: 50px;
+    min-height: 50px;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    border: 1.75px solid #c64675;
+    font-size: 1.25em;
+    color: #c64675;
+    font-family: Calibri;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 500;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .read-more-btn {
+    position: absolute;
+    top: calc(50% + 15vh);
+    width: 50vw;
+    max-width: 250px;
+    left: 5%;
+    height: 5vw;
+    max-height: 50px;
+    min-height: 50px;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    border: 1.75px solid #c64675;
+    font-size: 1.25em;
+    color: #c64675;
+    font-family: Calibri;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 500;
+  }
+  .hide-read-more-btn {
+    position: absolute;
+    top: 10%;
+    width: 35px;
+    height: 35px;
+    left: 81%;
+    opacity: 1;
+    /* background: rgba(255, 255, 255, 0.6); */
+    background: none;
+    /* box-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4); */
+    text-shadow: -1px 1px 5px rgba(51, 61, 71, 0.4);
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    font-size: 1.25em;
+    color: #c64675;
+    font-family: Calibri;
+    z-index: 500;
+  }
 
-.read-more-btn {
-  position: absolute;
-  top: calc(50% + 15vh);
-  width: 50vw;
-  max-width: 250px;
-  left: 5%;
-  height: 5vw;
-  max-height: 50px;
-  min-height: 50px;
-  opacity: 1;
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 15px;
-  text-decoration: none;
-  cursor: pointer;
-  outline: 0;
-  border: 1.75px solid #c64675;
-  font-size: 1.25em;
-  color: #c64675;
-  font-family: Calibri;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
-  z-index: 500;
 }
 
 svg {
@@ -234,7 +283,6 @@ svg {
 }
 
 .blob-container * {
-  /* animation: blob-anim 0.5s cubic-bezier(0, 0, 0.6, 1); */
   border-radius: 100%;
   position: absolute;
 }

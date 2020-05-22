@@ -28,7 +28,7 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
-  background-image: url("./images/yellow-pink.png");
+  background-image: url("../images/yellow-pink.png");
 }
 
 .cloud-intro::before,
@@ -40,7 +40,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-  background-image: url("./images/gold.png");
+  background-image: url("../images/gold.png");
   content: "";
 }
 
@@ -55,14 +55,14 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-  background-image: url("./images/blue.png");
+  background-image: url("../images/blue.png");
   content: "";
 }
 
 .cloud-project {
   height: 60%;
   position: absolute;
-  background-image: url("./images/yellow-pink.png");
+  background-image: url("../images/yellow-pink.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -84,7 +84,7 @@
   height: 50%;
   transform: translate(25%, 15%);
   position: absolute;
-  background-image: url("./images/gold.png");
+  background-image: url("../images/gold.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -98,7 +98,7 @@
   height: 70%;
   transform: translate(-40%, 30%);
   position: absolute;
-  background-image: url("./images/blue.png");
+  background-image: url("../images/blue.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -110,7 +110,7 @@
 .cloud-about {
   height: 60%;
   position: absolute;
-  background-image: url("./images/yellow-pink.png");
+  background-image: url("../images/yellow-pink.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -131,7 +131,7 @@
   height: 40%;
   transform: translate(-15%, 5%);
   position: absolute;
-  background-image: url("./images/gold.png");
+  background-image: url("../images/gold.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -145,7 +145,7 @@
   height: 80%;
   transform: translate(-80%, 40%);
   position: absolute;
-  background-image: url("./images/blue.png");
+  background-image: url("../images/blue.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -155,7 +155,7 @@
 }
 
 .cloud-read-more {
-  background-image: url("./images/yellow-pink.png");
+  background-image: url("../images/yellow-pink.png");
   background-size: 100% auto;
   background-position: center;
   position: absolute;
@@ -166,7 +166,7 @@
 
 .cloud-read-more::before,
 .cloud-read-more::after {
-  background-image: url("./images/gold.png");
+  background-image: url("../images/gold.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   content: "";
@@ -177,7 +177,7 @@
 }
 
 .cloud-read-more::after {
-  background-image: url("./images/blue.png");
+  background-image: url("../images/blue.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 65%;

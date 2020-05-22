@@ -87,8 +87,7 @@ body {
 }
 
 .tab-on {
-  /* background-color: rgb(199, 71, 120);
-  border-color: rgb(199, 71, 120); */
+
   border-radius: 1.5px 1.5px 0px 0px;
   transition: padding-bottom 0.5s;
   padding-bottom: 5px;
@@ -97,10 +96,6 @@ body {
   background-color: rgb(255, 226, 234);
 }
 
-/* .tab-on p {
-  color: #fff;
-  color: #000;
-} */
 
 .button-container p {
   font-size: 1em;
@@ -109,8 +104,6 @@ body {
 
 .button-container .tab-on p {
   font-size: 1em;
-  /* color: rgb(255, 255, 255); */
-  /* color: #000; */
   color: rgb(88, 88, 88);
 }
 

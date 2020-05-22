@@ -39,17 +39,13 @@ function App() {
               setOpenReadMore(!openReadMore);
             }}
           >
-            {width > 500 ? (
-              openReadMore ? (
-                "Back"
-              ) : (
-                "Read More"
-              )
-            ) : openReadMore ? (
-              <i className="fas fa-times exit-icon" />
-            ) : (
-              "Read More"
-            )}
+            {width > 500
+              ? openReadMore
+                ? "Back"
+                : "Read More"
+              : openReadMore
+              ? "x"
+              : "Read More"}
           </button>
         )}
         <div className="button-container">

@@ -1,0 +1,138 @@
+.brush-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.brush-container .brush-intro {
+  opacity: 0;
+}
+.brush-container .brush-project,
+.brush-container .brush-about {
+  opacity: 0.8;
+  z-index: 1;
+}
+.brush-container .brush-read-more {
+  opacity: 0.4;
+  z-index: 200;
+}
+img#first.brush-intro {
+  position: absolute;
+
+  width: 0%;
+  height: 0%;
+  transform: translate(-50%, -50%);
+}
+
+img#second.brush-intro {
+  position: absolute;
+
+  width: 0%;
+  height: 0%;
+  transform: translate(0%, 5%);
+}
+
+img#third.brush-intro {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  left: 0%;
+  right: auto;
+  top: 0%;
+  transform: translate(0%, 5%);
+}
+
+img#first.brush-project {
+  position: absolute;
+  height: 60%;
+  transform: translate(-5%, 5%) rotate(-5deg);
+}
+@media only screen and (min-width: 501px) {
+  img#first.brush-project {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  img#first.brush-project {
+    width: 70%;
+  }
+}
+
+img#second.brush-project {
+  width: 35%;
+  height: 35%;
+  transform: translate(-55%, 55%) rotate(5deg);
+  z-index: 6;
+  opacity: 0.7;
+}
+
+img#third.brush-project {
+  width: 20%;
+  height: 25%;
+  transform: translate(-60%, -120%);
+  z-index: 4;
+  opacity: 0.6;
+}
+
+img#first.brush-about {
+  height: 55%;
+  position: absolute;
+  transform: translate(-5%, 15%);
+}
+@media only screen and (min-width: 501px) {
+  img#first.brush-about {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  img#first.brush-about {
+    width: 70%;
+  }
+}
+img#second.brush-about {
+  width: 40%;
+  height: 40%;
+  transform: translate(-45%, 75%);
+  z-index: 6;
+  opacity: 0.5;
+}
+
+img#third.brush-about {
+  width: 35%;
+  height: 35%;
+  transform: translate(-20%, -90%);
+  z-index: 4;
+  opacity: 0.6;
+}
+
+img#first.brush-read-more {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  transform: translate(0%, 0%);
+}
+
+img#second.brush-read-more {
+  width: 65%;
+  height: 65%;
+  transform: translate(-80%, 55%);
+}
+
+img#third.brush-read-more {
+  width: 65%;
+  height: 65%;
+  transform: translate(40%, -150%);
+}
+
+.change-shape {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}

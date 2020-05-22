@@ -8,6 +8,7 @@ import { About } from "./About/About";
 import { Profile } from "./Profile/Profile";
 import { Portfolio } from "./Portfolio/Portfolio";
 import { Cloud } from "./Cloud/Cloud";
+import { Brush } from "./Brush/Brush";
 
 function App() {
   const { height, width } = useWindowDimensions();
@@ -25,7 +26,8 @@ function App() {
 
   return (
     <div className="app">
-      <Cloud tab={tab} openReadMore={openReadMore}></Cloud>
+      {/* <Cloud tab={tab} openReadMore={openReadMore}></Cloud> */}
+      <Brush tab={tab} openReadMore={openReadMore}></Brush>
       <div className="card">
         <div className="content-container">{cardContent}</div>
         {tab !== 0 && (

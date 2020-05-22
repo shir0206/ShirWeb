@@ -180,7 +180,6 @@
   background-image: url("./images/blue.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-size: auto;
   width: 65%;
   height: 65%;
   transform: translate(-80%, 50%);

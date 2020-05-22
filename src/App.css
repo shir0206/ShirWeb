@@ -173,45 +173,18 @@ body {
     z-index: 500;
   }
   .hide-read-more-btn {
-    position: absolute;
-    top: 10%;
-    width: 35px;
-    height: 35px;
-    left: 81%;
-    opacity: 1;
-    /* background: rgba(255, 255, 255, 0.6); */
-    background: none;
-    /* box-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4); */
     text-shadow: -1px 1px 5px rgba(51, 61, 71, 0.4);
-    border-radius: 15px;
-    text-decoration: none;
-    cursor: pointer;
-    outline: 0;
-    border: none;
-    font-size: 1.25em;
-    color: #c64675;
-    font-family: Calibri;
-    z-index: 500;
     position: absolute;
     top: 11%;
-    width: 35px;
-    height: 35px;
-    left: 81%;
     opacity: 1;
     background: rgba(255, 255, 255, 0.6);
-    /* background: none; */
     box-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
-    /* text-shadow: -1px 1px 5px rgba(51, 61, 71, 0.4); */
     border-radius: 15px;
     text-decoration: none;
     cursor: pointer;
     outline: 0;
-    border: none;
-    font-size: 1.25em;
     color: #c64675;
-    font-family: Calibri;
     z-index: 500;
-    font-weight: 900;
     width: 30px;
     height: 30px;
     border: 1.25px solid #c74778;
@@ -219,9 +192,6 @@ body {
     font-family: monospace;
     font-weight: 500;
     font-size: 1.75em;
-
-    vertical-align: middle;
-
     -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 0.5s; /* Firefox < 16 */
     -ms-animation: fadein 0.5s; /* Internet Explorer */

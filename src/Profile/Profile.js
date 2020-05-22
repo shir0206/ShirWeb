@@ -1,6 +1,6 @@
 import React from "react";
-import "./profile.css";
 
+import "./profile.css";
 
 export const Profile = (props) => {
   return (
@@ -48,8 +48,7 @@ export const Profile = (props) => {
         <img
           className="profile-image"
           alt="Profile"
-          src={require('../images/profile.png')}
-
+          src={require("../images/profile.png")}
         ></img>
       </div>
     </div>

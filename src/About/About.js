@@ -1,5 +1,7 @@
 import React from "react";
+
 import "./about.css";
+
 import { AboutSVG } from "./AboutSVG";
 
 export const About = (props) => {

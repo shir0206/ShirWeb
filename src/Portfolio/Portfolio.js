@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useRef } from "react";
 
 import "./portfolio.css";
+
 import { Slide } from "../Slide/Slide";
 import { SlideList } from "../SlideList/SlideList";
 import { ArrowNext } from "../Arrow/ArrowNext";

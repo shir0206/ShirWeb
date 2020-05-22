@@ -1,8 +1,10 @@
-import "./flower.css";
 import React, { useEffect } from "react";
-import { FlowerSVG } from "./FlowerSVG";
+
+import "./flower.css";
 
 import anime from "animejs";
+import { FlowerSVG } from "./FlowerSVG";
+
 
 export const Flower = () => {
   function animation() {

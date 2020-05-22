@@ -1,6 +1,8 @@
 import React, { useCallback } from "react";
-import { SlideIndex } from "./SlideIndex";
+
 import "./slideList.css";
+
+import { SlideIndex } from "../SlideIndex/SlideIndex";
 
 export const SlideList = (props) => {
   const recieveSlideIndexFromSlideList = useCallback((childProps) => {

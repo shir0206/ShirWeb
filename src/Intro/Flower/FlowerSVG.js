@@ -1,5 +1,6 @@
-import "./flower.css";
 import React from "react";
+
+import "./flower.css";
 
 export const FlowerSVG = () => {
   return flowerSvg;

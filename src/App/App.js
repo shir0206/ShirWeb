@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 
 import "./App.css";
 
-import { Intro } from "./Intro/Intro";
-import { Project } from "./Project/Project";
-import { About } from "./About/About";
-import { Profile } from "./Profile/Profile";
-import { Portfolio } from "./Portfolio/Portfolio";
-import { Cloud } from "./Cloud/Cloud";
-import { Brush } from "./Brush/Brush";
+import { Intro } from "../Intro/Intro";
+import { Project } from "../Project/Project";
+import { About } from "../About/About";
+import { Profile } from "../Profile/Profile";
+import { Portfolio } from "../Portfolio/Portfolio";
+import { Cloud } from "../Cloud/Cloud";
+import { Brush } from "../Brush/Brush";
 
-function App() {
+export default function App() {
   const { height, width } = useWindowDimensions();
   const [tab, setTab] = useState(0);
   const [openReadMore, setOpenReadMore] = useState(false);
@@ -84,8 +84,6 @@ function App() {
     </div>
   );
 }
-
-export default App;
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;

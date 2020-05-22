@@ -1,7 +1,8 @@
 import React from "react";
 import "./slide.css";
-import { Description } from "./Description";
-import { Tag } from "./Tag";
+
+import { Description } from "../Description/Description";
+import { Tag } from "../Tag/Tag";
 
 export const Slide = (props) => {
   let slide = props.slide;

@@ -1,10 +1,10 @@
 import React, { useState, useCallback, useRef } from "react";
 
 import "./portfolio.css";
-import { Slide } from "./Slide";
-import { SlideList } from "./SlideList";
-import { ArrowNext } from "./ArrowNext";
-import { ArrowPrev } from "./ArrowPrev";
+import { Slide } from "../Slide/Slide";
+import { SlideList } from "../SlideList/SlideList";
+import { ArrowNext } from "../Arrow/ArrowNext";
+import { ArrowPrev } from "../Arrow/ArrowPrev";
 
 export const Portfolio = (props) => {
   const [currSlide, setCurrSlide] = useState(0);

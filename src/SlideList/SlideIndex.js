@@ -1,7 +1,7 @@
 import React from "react";
 
 export const SlideIndex = (props) => {
-  function updateCarousel(event) {
+  function updateSlide(event) {
     event.preventDefault();
     props.handleSlideIndexClick(props.slideIndex);
   }
@@ -13,7 +13,7 @@ export const SlideIndex = (props) => {
           ? "portfolio-circle-icon portfolio-fill-icon"
           : "portfolio-circle-icon"
       }
-      onClick={updateCarousel}
+      onClick={updateSlide}
     ></li>
   );
 };

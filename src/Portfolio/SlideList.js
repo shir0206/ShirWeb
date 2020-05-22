@@ -5,7 +5,7 @@ import "./slideList.css";
 export const SlideList = (props) => {
   const recieveSlideIndexFromSlideList = useCallback((childProps) => {
     props.handleSlideIndexClick(childProps);
-  }, []);
+  },[props]);
 
   return (
     <div className="slide-list-cont">

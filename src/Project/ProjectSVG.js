@@ -5,16 +5,6 @@ export const ProjectSVG = () => {
   return projectSVG;
 };
 
-const colors = [
-  "#693c3c",
-  "#fdfffc",
-  "#1d120d",
-  "#f59f52",
-  "#f3c891",
-  "#9f5c24",
-  "#44250f",
-  "#c64675",
-];
 const projectSVG = (
   <svg viewBox="0 0 632 954">
     <path

@@ -2,16 +2,13 @@ import React, { useState } from "react";
 
 import "./tab.css";
 
-export const Tab = (props) => {
-  const [tab, setTab] = useState(0);
-
+export const Tab = ({tab, setTab, }) => {
   return (
     <div className="tab-container">
       <div
         className={tab === 0 ? "intro-container tab-on" : "intro-container"}
         onClick={() => {
           setTab(0);
-          props.handleTabClick(0);
         }}
       >
         <p>Intro</p>
@@ -20,7 +17,6 @@ export const Tab = (props) => {
         className={tab === 1 ? "project-container tab-on" : "project-container"}
         onClick={() => {
           setTab(1);
-          props.handleTabClick(1);
         }}
       >
         <p>Projects</p>
@@ -29,8 +25,6 @@ export const Tab = (props) => {
         className={tab === 2 ? "about-container tab-on" : "about-container"}
         onClick={() => {
           setTab(2);
-
-          props.handleTabClick(2);
         }}
       >
         <p>About</p>

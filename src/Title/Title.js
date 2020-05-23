@@ -22,8 +22,11 @@ export const Title = (props) => {
   }
 
   useEffect(() => {
-    props.play && animation();
-  },[]);
+    if(!props.animationPlayed){
+      animation();
+      props.setAnimationPlayed(true);
+    }
+  });
 
   return (
     <div className="title-cont">

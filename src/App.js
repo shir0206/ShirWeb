@@ -2,26 +2,24 @@ import React, { useState, useEffect, useCallback } from "react";
 
 import "./App.css";
 
-import { Intro } from "../Intro/Intro";
-import { Project } from "../Project/Project";
-import { About } from "../About/About";
-import { Profile } from "../Profile/Profile";
-import { Portfolio } from "../Portfolio/Portfolio";
-import { Brush } from "../Brush/Brush";
-import { Tab } from "../Tab/Tab";
+import { Intro } from "./Intro/Intro";
+import { Project } from "./Project/Project";
+import { About } from "./About/About";
+import { Profile } from "./Profile/Profile";
+import { Portfolio } from "./Portfolio/Portfolio";
+import { Brush } from "./Brush/Brush";
+import { Tab } from "./Tab/Tab";
 
 export default function App() {
   const { height, width } = useWindowDimensions();
   const [tab, setTab] = useState(0);
+  const [animationPlayed, setAnimationPlayed] = useState(false);
   const [openReadMore, setOpenReadMore] = useState(false);
   //const [play, setPlay] = useState(true);
 
   // const recievePlay = useCallback((childProps) => {
   //   setPlay(false);
   // }, []);
-  const recieveTab = useCallback((childProps) => {
-    setTab(childProps);
-  }, []);
 
   let cardContent;
   if (tab === 0) {
@@ -33,12 +31,13 @@ export default function App() {
     // }
     // play={flag}
 
-    cardContent = <Intro />;
+    cardContent = <Intro animationPlayed={animationPlayed} setAnimationPlayed={setAnimationPlayed}/>;
   } else if (tab === 1) {
     cardContent = <Project />;
   } else if (tab === 2) {
     cardContent = <About />;
   }
+  console.log('render app');
   return (
     <div className="app">
       <Brush tab={tab} openReadMore={openReadMore}></Brush>
@@ -64,7 +63,7 @@ export default function App() {
               : "Read More"}
           </button>
         )}
-        <Tab handleTabClick={recieveTab}></Tab>
+        <Tab tab={tab} setTab={setTab}></Tab>
       </div>
       {openReadMore && tab === 1 ? <Portfolio></Portfolio> : null}
       {openReadMore && tab === 2 ? <Profile></Profile> : null}

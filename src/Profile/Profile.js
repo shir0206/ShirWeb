@@ -1,5 +1,5 @@
 import React from "react";
-
+// import image from '../../public/images/profile.png';
 import "./profile.css";
 
 export const Profile = (props) => {

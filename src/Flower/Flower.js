@@ -5,11 +5,10 @@ import "./flower.css";
 import anime from "animejs";
 import { FlowerSVG } from "./FlowerSVG";
 
-
 export const Flower = (props) => {
-  //const [play, setPlay] = useState(props.play);
 
   function animation() {
+    console.log('run animation');
     anime({
       targets: ".flower-cont svg path",
       strokeDashoffset: [anime.setDashoffset, 0],
@@ -28,7 +27,10 @@ export const Flower = (props) => {
   }
 
   useEffect(() => {
-    animation();
+    if(!props.animationPlayed){
+      animation();
+      props.setAnimationPlayed(true);
+    }
   });
 
   return (

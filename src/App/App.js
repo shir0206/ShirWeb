@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 import "./App.css";
 
@@ -9,6 +9,7 @@ import { Profile } from "../Profile/Profile";
 import { Portfolio } from "../Portfolio/Portfolio";
 import { Cloud } from "../Cloud/Cloud";
 import { Brush } from "../Brush/Brush";
+import { Tab } from "../Tab/Tab";
 
 export default function App() {
   const { height, width } = useWindowDimensions();
@@ -23,6 +24,10 @@ export default function App() {
   } else if (tab === 2) {
     cardContent = <About />;
   }
+
+  const recieveTab = useCallback((childProps) => {
+    setTab(childProps);
+  }, []);
 
   return (
     <div className="app">
@@ -50,34 +55,7 @@ export default function App() {
               : "Read More"}
           </button>
         )}
-        <div className="button-container">
-          <div
-            className={tab === 0 ? "intro-container tab-on" : "intro-container"}
-            onClick={() => {
-              setTab(0);
-            }}
-          >
-            <p>Intro</p>
-          </div>
-          <div
-            className={
-              tab === 1 ? "project-container tab-on" : "project-container"
-            }
-            onClick={() => {
-              setTab(1);
-            }}
-          >
-            <p>Projects</p>
-          </div>
-          <div
-            className={tab === 2 ? "about-container tab-on" : "about-container"}
-            onClick={() => {
-              setTab(2);
-            }}
-          >
-            <p>About</p>
-          </div>
-        </div>
+        <Tab handleTabClick={recieveTab}></Tab>
       </div>
       {openReadMore && tab === 1 ? <Portfolio></Portfolio> : null}
       {openReadMore && tab === 2 ? <Profile></Profile> : null}

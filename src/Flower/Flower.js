@@ -34,7 +34,7 @@ export const Flower = (props) => {
   });
 
   return (
-    <div className="flower-cont">
+    <div className={props.animationPlayed ? "flower-cont with-fill" :"flower-cont"}>
       <FlowerSVG />
     </div>
   );

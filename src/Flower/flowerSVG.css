@@ -1,5 +1,5 @@
 .flower-cont svg {
-  fill: white;
+  fill: none;
   max-width: 98vw;
   max-height: 98vw;
   stroke: white;
@@ -308,3 +308,306 @@
 .flower-cont #path-99 {
   stroke: #ff0000;
 }
+
+
+.with-fill #path-0 {
+  fill: #cccccc57;
+}
+.with-fill #path-1 {
+  fill: #6699cc71;
+}
+.with-fill #path-2 {
+  fill: #669999;
+}
+.with-fill #path-3 {
+  fill: #ccccff;
+}
+.with-fill #path-4 {
+  fill: #9999cc91;
+}
+.with-fill #path-5 {
+  fill: #6666995d;
+}
+.with-fill #path-6 {
+  fill: #698869;
+}
+.with-fill #path-7 {
+  fill: #1c94da9a;
+}
+.with-fill #path-8 {
+  fill: #24dfdf81;
+}
+.with-fill #path-9 {
+  fill: #2ac52a50;
+}
+.with-fill #path-10 {
+  fill: #43b128a4;
+}
+.with-fill #path-11 {
+  fill: #6666cc;
+}
+.with-fill #path-12 {
+  fill: #33336698;
+}
+.with-fill #path-13 {
+  fill: #336666;
+}
+.with-fill #path-14 {
+  fill: #9966cc;
+}
+.with-fill #path-15 {
+  fill: #cc99997e;
+}
+.with-fill #path-16 {
+  fill: #ffcccc;
+}
+.with-fill #path-17 {
+  fill: #ffccff;
+}
+.with-fill #path-18 {
+  fill: #cc99cc;
+}
+.with-fill #path-19 {
+  fill: #9966999d;
+}
+.with-fill #path-20 {
+  fill: #330066;
+}
+.with-fill #path-21 {
+  fill: #333399;
+}
+.with-fill #path-22 {
+  fill: #339966;
+}
+.with-fill #path-23 {
+  fill: #339933;
+}
+.with-fill #path-24 {
+  fill: #333333;
+}
+.with-fill #path-25 {
+  fill: #663366;
+}
+.with-fill #path-26 {
+  fill: #663399;
+}
+.with-fill #path-27 {
+  fill: #336633;
+}
+.with-fill #path-28 {
+  fill: #003333;
+}
+.with-fill #path-29 {
+  fill: #330033;
+}
+.with-fill #path-30 {
+  fill: #000033;
+}
+.with-fill #path-31 {
+  fill: #000000;
+}
+.with-fill #path-32 {
+  fill: #663333;
+}
+.with-fill #path-33 {
+  fill: #996666;
+}
+.with-fill #path-34 {
+  fill: #330000;
+}
+.with-fill #path-35 {
+  fill: #996633;
+}
+.with-fill #path-36 {
+  fill: #cc6666;
+}
+.with-fill #path-37 {
+  fill: #cc9966;
+}
+.with-fill #path-38 {
+  fill: #993333;
+}
+.with-fill #path-39 {
+  fill: #993366;
+}
+.with-fill #path-40 {
+  fill: #66cc99;
+}
+.with-fill #path-41 {
+  fill: #66cc66;
+}
+.with-fill #path-42 {
+  fill: #666633;
+}
+.with-fill #path-43 {
+  fill: #ff9966;
+}
+.with-fill #path-44 {
+  fill: #999966;
+}
+.with-fill #path-45 {
+  fill: #669933;
+}
+.with-fill #path-46 {
+  fill: #cccc99;
+}
+.with-fill #path-47 {
+  fill: #660066;
+}
+.with-fill #path-48 {
+  fill: #cc6699;
+}
+.with-fill #path-49 {
+  fill: #660000;
+}
+.with-fill #path-50 {
+  fill: #ffffcc;
+}
+.with-fill #path-51 {
+  fill: #ffcc99;
+}
+.with-fill #path-52 {
+  fill: #990066;
+}
+.with-fill #path-53 {
+  fill: #cc3333;
+}
+.with-fill #path-54 {
+  fill: #cc0066;
+}
+.with-fill #path-55 {
+  fill: #ff9933;
+}
+.with-fill #path-56 {
+  fill: #ff6699;
+}
+.with-fill #path-57 {
+  fill: #cccc66;
+}
+.with-fill #path-58 {
+  fill: #ffff33;
+}
+.with-fill #path-59 {
+  fill: #663300;
+}
+.with-fill #path-60 {
+  fill: #cc6633;
+}
+.with-fill #path-61 {
+  fill: #cc6600;
+}
+.with-fill #path-62 {
+  fill: #ff6600;
+}
+.with-fill #path-63 {
+  fill: #ffff66;
+}
+.with-fill #path-64 {
+  fill: #cc3300;
+}
+.with-fill #path-65 {
+  fill: #990033;
+}
+.with-fill #path-66 {
+  fill: #ff6633;
+}
+.with-fill #path-67 {
+  fill: #ff9999;
+}
+.with-fill #path-68 {
+  fill: #ffff99;
+}
+.with-fill #path-69 {
+  fill: #cccc33;
+}
+.with-fill #path-70 {
+  fill: #996600;
+}
+.with-fill #path-71 {
+  fill: #cc9933;
+}
+.with-fill #path-72 {
+  fill: #999933;
+}
+.with-fill #path-73 {
+  fill: #ff3399;
+}
+.with-fill #path-74 {
+  fill: #660033;
+}
+.with-fill #path-75 {
+  fill: #ffff00;
+}
+.with-fill #path-76 {
+  fill: #ffcc33;
+}
+.with-fill #path-77 {
+  fill: #990000;
+}
+.with-fill #path-78 {
+  fill: #cc66cc;
+}
+.with-fill #path-79 {
+  fill: #cc3399;
+}
+.with-fill #path-80 {
+  fill: #cccc00;
+}
+.with-fill #path-81 {
+  fill: #cc9900;
+}
+.with-fill #path-82 {
+  fill: #ff6666;
+}
+.with-fill #path-83 {
+  fill: #ff3333;
+}
+.with-fill #path-84 {
+  fill: #cc3366;
+}
+.with-fill #path-85 {
+  fill: #cc0033;
+}
+.with-fill #path-86 {
+  fill: #ff3366;
+}
+.with-fill #path-87 {
+  fill: #ff99ff;
+}
+.with-fill #path-88 {
+  fill: #ffcc66;
+}
+.with-fill #path-89 {
+  fill: #cc99ff;
+}
+.with-fill #path-90 {
+  fill: #cc0099;
+}
+.with-fill #path-91 {
+  fill: #ff0066;
+}
+.with-fill #path-92 {
+  fill: #993300;
+}
+.with-fill #path-93 {
+  fill: #cc0000;
+}
+.with-fill #path-94 {
+  fill: #ffcc00;
+}
+.with-fill #path-95 {
+  fill: #993399;
+}
+.with-fill #path-96 {
+  fill: #ff3300;
+}
+.with-fill #path-97 {
+  fill: #ff66cc;
+}
+.with-fill #path-98 {
+  fill: #ff99cc;
+}
+.with-fill #path-99 {
+  fill: #ff0000;
+}
+

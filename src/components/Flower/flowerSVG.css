@@ -309,7 +309,6 @@
   stroke: #ff0000;
 }
 
-
 .with-fill #path-0 {
   fill: #cccccc57;
 }
@@ -611,3 +610,7 @@
   fill: #ff0000;
 }
 
+.without-fill {
+  fill: white;
+  stroke: white;
+}

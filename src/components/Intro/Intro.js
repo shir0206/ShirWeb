@@ -8,13 +8,16 @@ import { Title } from "../Title/Title";
 export const Intro = (props) => {
   return (
     <div className="intro-cont">
-      {/* <button
-        onClick={() => {
-          props.setAnimationPlayed(!(props.setAnimationPlayed));
-        }}
-      >
-        {props.setAnimationPlayed ? "Strop" : "Start"}
-      </button> */}
+      {props.animationPlayed && (
+        <button
+          onClick={() => {
+            props.setAnimationPlayed(false);
+          }}
+        >
+          RESTART
+        </button>
+      )}
+
       <Flower
         setAnimationPlayed={props.setAnimationPlayed}
         animationPlayed={props.animationPlayed}

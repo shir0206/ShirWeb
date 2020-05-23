@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./flower.css";
 
@@ -6,9 +6,8 @@ import anime from "animejs";
 import { FlowerSVG } from "./FlowerSVG";
 
 export const Flower = (props) => {
-
   function animation() {
-    console.log('run animation');
+    console.log("run animation");
     anime({
       targets: ".flower-cont svg path",
       strokeDashoffset: [anime.setDashoffset, 0],
@@ -27,14 +26,20 @@ export const Flower = (props) => {
   }
 
   useEffect(() => {
-    if(!props.animationPlayed){
+    if (!props.animationPlayed) {
       animation();
       props.setAnimationPlayed(true);
     }
   });
 
   return (
-    <div className={props.animationPlayed ? "flower-cont with-fill" :"flower-cont"}>
+    <div
+      className={
+        props.animationPlayed
+          ? "flower-cont with-fill"
+          : "flower-cont without-fill"
+      }
+    >
       <FlowerSVG />
     </div>
   );

@@ -31,7 +31,6 @@ export default function App() {
 
   return (
     <div className="app">
-      {/* <Cloud tab={tab} openReadMore={openReadMore}></Cloud> */}
       <Brush tab={tab} openReadMore={openReadMore}></Brush>
       <div className="card">
         <div className="content-container">{cardContent}</div>

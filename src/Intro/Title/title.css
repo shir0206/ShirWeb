@@ -5,25 +5,14 @@
 
 @media only screen and (min-width: 651px) {
   .title-cont {
-    right: 5%;
-    top: 50%;
+    transform: translate(65%, 50%);
     width: 40%;
   }
 }
 
 @media only screen and (max-width: 650px) {
   .title-cont {
-    right: 10%;
-    top: 60%;
+    transform: translate(10%, 68%);
     width: 80%;
   }
-}
-.title-cont svg {
-  fill: none;
-  max-width: 98vw;
-  max-height: 98vw;
-}
-.title-cont svg path {
-  stroke-width: 5px;
-  stroke: rgb(199, 71, 120);
 }

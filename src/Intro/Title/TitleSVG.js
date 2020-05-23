@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./title.css";
+import "./titleSVG.css";
 
 export const TitleSVG = () => {
   return titleSvg;

@@ -4,7 +4,7 @@ import "./intro.css";
 import { Flower } from "./Flower/Flower";
 import { Title } from "./Title/Title";
 
-export const Intro = props => {
+export const Intro = (props) => {
   return (
     <div className="intro-cont">
       <Flower />

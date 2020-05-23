@@ -39,7 +39,7 @@ export default function App() {
           <button
             className={
               width <= 500 && openReadMore
-                ? "hide-read-more-btn"
+                ? "exit-read-more-btn"
                 : "read-more-btn"
             }
             onClick={() => {

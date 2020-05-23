@@ -6,6 +6,9 @@ import { Slide } from "../Slide/Slide";
 import { SlideList } from "../SlideList/SlideList";
 import { ArrowNext } from "../Arrow/ArrowNext";
 import { ArrowPrev } from "../Arrow/ArrowPrev";
+import artGalleryImage from "../../images/art-gallery.png";
+import tropixImage from "../../images/tropix.png";
+import nyquistOpticsImage from "../../images/nyquist-optics.png";
 
 export const Portfolio = (props) => {
   const [currSlide, setCurrSlide] = useState(0);
@@ -92,7 +95,7 @@ const slides = [
       "ImageZoom",
       "ScrollLock",
     ],
-    image: require("../images/art-gallery.png"),
+    image: artGalleryImage,
   },
   {
     name: "TropiX",
@@ -116,7 +119,7 @@ const slides = [
       "TicTacToe",
       "Fun",
     ],
-    image: require("../images/tropix.png"),
+    image: tropixImage,
   },
   {
     name: "NyquistOptics",
@@ -130,6 +133,6 @@ const slides = [
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.shirzabolotnyklein.nyquistoptics&hl=en",
     tags: ["Java", "Android", "PerformanceCalculator", "SharedPreferance"],
-    image: require("../images/nyquist-optics.png"),
+    image: nyquistOpticsImage,
   },
 ];

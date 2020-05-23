@@ -2,35 +2,22 @@ import React, { useState, useEffect, useCallback } from "react";
 
 import "./App.css";
 
-import { Intro } from "./Intro/Intro";
-import { Project } from "./Project/Project";
-import { About } from "./About/About";
-import { Profile } from "./Profile/Profile";
-import { Portfolio } from "./Portfolio/Portfolio";
-import { Brush } from "./Brush/Brush";
-import { Tab } from "./Tab/Tab";
+import { Intro } from "./components/Intro/Intro";
+import { Project } from "./components/Project/Project";
+import { About } from "./components/About/About";
+import { Profile } from "./components/Profile/Profile";
+import { Portfolio } from "./components/Portfolio/Portfolio";
+import { Brush } from "./components/Brush/Brush";
+import { Tab } from "./components/Tab/Tab";
 
 export default function App() {
   const { height, width } = useWindowDimensions();
   const [tab, setTab] = useState(0);
   const [animationPlayed, setAnimationPlayed] = useState(false);
   const [openReadMore, setOpenReadMore] = useState(false);
-  //const [play, setPlay] = useState(true);
-
-  // const recievePlay = useCallback((childProps) => {
-  //   setPlay(false);
-  // }, []);
 
   let cardContent;
   if (tab === 0) {
-    // play={play} handlePlay={recievePlay}
-    // var b = localStorage.getItem("play");
-    // let flag = true;
-    // if (b) {
-    //   flag = false;
-    // }
-    // play={flag}
-
     cardContent = <Intro animationPlayed={animationPlayed} setAnimationPlayed={setAnimationPlayed}/>;
   } else if (tab === 1) {
     cardContent = <Project />;

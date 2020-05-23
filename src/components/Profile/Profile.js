@@ -1,5 +1,7 @@
 import React from "react";
-// import image from '../../public/images/profile.png';
+// import image from "../../public/images/profile.png";
+import profileImage from "../../images/profile.png";
+
 import "./profile.css";
 
 export const Profile = (props) => {
@@ -45,11 +47,7 @@ export const Profile = (props) => {
         </div>
       </div>
       <div className="profile-image-cont">
-        <img
-          className="profile-image"
-          alt="Profile"
-          src={require("../images/profile.png")}
-        ></img>
+        <img className="profile-image" alt="Profile" src={profileImage}></img>
       </div>
     </div>
   );

@@ -2,6 +2,10 @@ import React from "react";
 
 import "./brush.css";
 
+import firstImage from "../../images/yellow-pink.png";
+import secondImage from "../../images/blue.png";
+import thirdImage from "../../images/gold.png";
+
 export const Brush = (props) => {
   let brushClassName;
 
@@ -21,19 +25,19 @@ export const Brush = (props) => {
       <img
         id="first"
         className={brushClassName}
-        src={require("../images/yellow-pink.png")}
+        src={firstImage}
         alt="first"
       />
       <img
         id="second"
         className={brushClassName}
-        src={require("../images/blue.png")}
+        src={secondImage}
         alt="second"
       />
       <img
         id="third"
         className={brushClassName}
-        src={require("../images/gold.png")}
+        src={thirdImage}
         alt="third"
       />
     </div>

@@ -5,7 +5,7 @@ import "./title.css";
 import anime from "animejs";
 import { TitleSVG } from "./TitleSVG";
 
-export const Title = () => {
+export const Title = (props) => {
   function animation() {
     anime({
       targets: ".title-cont svg path",
@@ -22,8 +22,8 @@ export const Title = () => {
   }
 
   useEffect(() => {
-    animation();
-  });
+    props.play && animation();
+  },[]);
 
   return (
     <div className="title-cont">

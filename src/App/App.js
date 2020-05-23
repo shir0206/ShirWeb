@@ -7,7 +7,6 @@ import { Project } from "../Project/Project";
 import { About } from "../About/About";
 import { Profile } from "../Profile/Profile";
 import { Portfolio } from "../Portfolio/Portfolio";
-import { Cloud } from "../Cloud/Cloud";
 import { Brush } from "../Brush/Brush";
 import { Tab } from "../Tab/Tab";
 
@@ -15,20 +14,31 @@ export default function App() {
   const { height, width } = useWindowDimensions();
   const [tab, setTab] = useState(0);
   const [openReadMore, setOpenReadMore] = useState(false);
+  //const [play, setPlay] = useState(true);
+
+  // const recievePlay = useCallback((childProps) => {
+  //   setPlay(false);
+  // }, []);
+  const recieveTab = useCallback((childProps) => {
+    setTab(childProps);
+  }, []);
 
   let cardContent;
   if (tab === 0) {
+    // play={play} handlePlay={recievePlay}
+    // var b = localStorage.getItem("play");
+    // let flag = true;
+    // if (b) {
+    //   flag = false;
+    // }
+    // play={flag}
+
     cardContent = <Intro />;
   } else if (tab === 1) {
     cardContent = <Project />;
   } else if (tab === 2) {
     cardContent = <About />;
   }
-
-  const recieveTab = useCallback((childProps) => {
-    setTab(childProps);
-  }, []);
-
   return (
     <div className="app">
       <Brush tab={tab} openReadMore={openReadMore}></Brush>

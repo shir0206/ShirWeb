@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 
 import "./flower.css";
 
@@ -6,7 +6,9 @@ import anime from "animejs";
 import { FlowerSVG } from "./FlowerSVG";
 
 
-export const Flower = () => {
+export const Flower = (props) => {
+  //const [play, setPlay] = useState(props.play);
+
   function animation() {
     anime({
       targets: ".flower-cont svg path",

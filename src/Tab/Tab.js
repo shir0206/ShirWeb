@@ -20,7 +20,6 @@ export const Tab = (props) => {
         className={tab === 1 ? "project-container tab-on" : "project-container"}
         onClick={() => {
           setTab(1);
-
           props.handleTabClick(1);
         }}
       >

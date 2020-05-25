@@ -91,7 +91,7 @@ body {
     left: 78%;
     font-family: monospace;
     font-weight: 500;
-    font-size: 1.75em;
+    font-size: 1.5em;
     -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 0.5s; /* Firefox < 16 */
     -ms-animation: fadein 0.5s; /* Internet Explorer */

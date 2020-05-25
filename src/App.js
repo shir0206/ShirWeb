@@ -46,7 +46,7 @@ export default function App() {
                 ? "Back"
                 : "Read More"
               : openReadMore
-              ? "x"
+              ? "X"
               : "Read More"}
           </button>
         )}

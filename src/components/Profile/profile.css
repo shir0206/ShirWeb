@@ -1,35 +1,65 @@
+.profile-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 400;
+  max-height: 80vh;
+  height: 80vh;
+  width: 80vw;
+  max-width: 135vh;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.5s; /* Firefox < 16 */
+  -ms-animation: fadein 0.5s; /* Internet Explorer */
+  -o-animation: fadein 0.5s; /* Opera < 12.1 */
+  animation: fadein 0.5s;
+}
+
 @media only screen and (min-width: 501px) {
   .profile-cont {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    z-index: 400;
-    max-height: 80vh;
-    height: 80vh;
-    width: 80vw;
-    max-width: 135vh;
     font-size: 1.25em;
-    background-color: white;
-    border-radius: 20px;
-    overflow: hidden;
-    position: absolute;
-    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 0.5s; /* Firefox < 16 */
-    -ms-animation: fadein 0.5s; /* Internet Explorer */
-    -o-animation: fadein 0.5s; /* Opera < 12.1 */
-    animation: fadein 0.5s;
   }
-
-  .profile-image-cont,
-  .profile-info-cont {
-    margin: 1vw;
-    padding: 1vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  .profile-cont {
     flex-direction: column;
   }
+}
+
+.profile-info-cont {
+  margin: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.profile-image-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 501px) {
+  .profile-image-cont {
+    margin: 1vw;
+    padding: 1vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .profile-image-cont {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 501px) {
   .profile-image {
     width: 30vw;
     border-radius: 70px 20px;
@@ -37,43 +67,6 @@
   }
 }
 @media only screen and (max-width: 500px) {
-  .profile-cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 400;
-    max-height: 80vh;
-    height: 80vh;
-    width: 80vw;
-    max-width: 135vh;
-    background-color: white;
-    border-radius: 20px;
-    overflow: hidden;
-    position: absolute;
-    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 0.5s; /* Firefox < 16 */
-    -ms-animation: fadein 0.5s; /* Internet Explorer */
-    -o-animation: fadein 0.5s; /* Opera < 12.1 */
-    animation: fadein 0.5s;
-  }
-
-  .profile-info-cont {
-    margin: 1vw;
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .profile-image-cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-  }
-
   .profile-image {
     width: 100%;
   }

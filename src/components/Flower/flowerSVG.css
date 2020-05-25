@@ -610,7 +610,8 @@
   fill: #ff0000;
 }
 
-.without-fill {
+/* .without-fill,
+.without-fill path  {
   fill: white;
   stroke: white;
-}
+} */

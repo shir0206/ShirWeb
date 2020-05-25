@@ -6,15 +6,20 @@ import { Flower } from "../Flower/Flower";
 import { Title } from "../Title/Title";
 
 export const Intro = (props) => {
+  const [displayRestart, setDisplayRestart] = useState(false);
+
+  console.log(props.animationPlayed);
   return (
     <div className="intro-cont">
       {props.animationPlayed && (
         <button
+          class="restart-anim-cont"
           onClick={() => {
             props.setAnimationPlayed(false);
+            setDisplayRestart(false);
           }}
         >
-          RESTART
+          <i class="fas fa-redo restart-anim-icon"></i>
         </button>
       )}
 

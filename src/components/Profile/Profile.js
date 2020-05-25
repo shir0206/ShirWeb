@@ -10,10 +10,14 @@ export const Profile = (props) => {
       <div className="profile-info-cont">
         <h1>Shir Zabolotny</h1>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          Hey there! :)
+          <br />
+          I am a web developer striving for pixel perfect design and not
+          compromising on less.
+          <br />
+          I enjoy creating beautiful designs and expolring the world of React.
+          <br />
+          You can check out my other works and some other links down below :)
         </p>
 
         <div className="profile-icon-cont">

@@ -24,7 +24,7 @@ export default function App() {
   } else if (tab === 2) {
     cardContent = <About />;
   }
-  console.log('render app');
+
   return (
     <div className="app">
       <Brush tab={tab} openReadMore={openReadMore}></Brush>

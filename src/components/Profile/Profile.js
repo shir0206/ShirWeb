@@ -8,19 +8,25 @@ export const Profile = (props) => {
   return (
     <div className="profile-cont">
       <div className="profile-info-cont">
-        <h1>Shir Zabolotny</h1>
+        <h1 className="profile-info-name">Shir Zabolotny</h1>
         <p>
           Hey there! :)
           <br />
-          I am a web developer striving for pixel perfect design and not
+          I am a developer striving for pixel perfect design and not
           compromising on less.
+          <br />I enjoy creating beautiful designs and exploring the world of
+          <i className="fab fa-html5 profile-info-icon html-icon"></i>
+          <i className="fab fa-css3-alt profile-info-icon css-icon"></i>
+          <i className="fab fa-js-square profile-info-icon js-icon"></i>
+          <i className="fab fa-react profile-info-icon react-icon"></i>
+          <i className="fab fa-java profile-info-icon java-icon"></i>
+          <i className="fab fa-android profile-info-icon android-icon"></i>
+          <i className="fas fa-database profile-info-icon db-icon"></i> !
           <br />
-          I enjoy creating beautiful designs and expolring the world of React.
-          <br />
-          You can check out my other works and some other links down below :)
+          You can check out my other works and some other links down below.
         </p>
 
-        <div className="profile-icon-cont">
+        <span className="profile-icon-cont">
           <a
             href="https://github.com/shir0206/"
             target="_blank"
@@ -48,7 +54,7 @@ export const Profile = (props) => {
           <a href="mailto:shir0206@gmail.com" className="profile-icon-ref">
             <i className="far fa-envelope profile-icon"></i>
           </a>
-        </div>
+        </span>
       </div>
       <div className="profile-image-cont">
         <img className="profile-image" alt="Profile" src={profileImage}></img>

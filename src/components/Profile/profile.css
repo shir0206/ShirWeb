@@ -1,37 +1,82 @@
-.profile-cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 400;
-  max-height: 80vh;
-  height: 80vh;
-  width: 80vw;
-  max-width: 135vh;
+@media only screen and (min-width: 501px) {
+  .profile-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 400;
+    max-height: 80vh;
+    height: 80vh;
+    width: 80vw;
+    max-width: 135vh;
+    font-size: 1.25em;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.5s; /* Firefox < 16 */
+    -ms-animation: fadein 0.5s; /* Internet Explorer */
+    -o-animation: fadein 0.5s; /* Opera < 12.1 */
+    animation: fadein 0.5s;
+  }
 
-  background-color: white;
-  border-radius: 20px;
-  overflow: hidden;
-  position: absolute;
-  -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 0.5s; /* Firefox < 16 */
-  -ms-animation: fadein 0.5s; /* Internet Explorer */
-  -o-animation: fadein 0.5s; /* Opera < 12.1 */
-  animation: fadein 0.5s;
+  .profile-image-cont,
+  .profile-info-cont {
+    margin: 1vw;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .profile-image {
+    width: 30vw;
+    border-radius: 70px 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
 }
+@media only screen and (max-width: 500px) {
+  .profile-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 400;
+    max-height: 80vh;
+    height: 80vh;
+    width: 80vw;
+    max-width: 135vh;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.5s; /* Firefox < 16 */
+    -ms-animation: fadein 0.5s; /* Internet Explorer */
+    -o-animation: fadein 0.5s; /* Opera < 12.1 */
+    animation: fadein 0.5s;
+  }
 
-.profile-image-cont,
-.profile-info-cont {
-  margin: 1vw;
-  padding: 1vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.profile-image {
-  width: 30vw;
-  border-radius: 70px 20px; 
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  .profile-info-cont {
+    margin: 1vw;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .profile-image-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .profile-image {
+    width: 100%;
+  }
 }
 
 @keyframes fadein {
@@ -116,9 +161,44 @@
 
 .profile-icon-ref:hover {
   color: #c74778;
+}
+
+.profile-info-name {
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: left;
+}
+.profile-info-cont p {
+  max-height: 40vh;
+  text-align: left;
+}
+
+.profile-info-icon {
+  padding: 0em 0.2em 0em 0.2em;
   text-shadow: 2px 2px 2px rgba(51, 61, 71, 0.2);
 }
 
-.profile-info-cont p {
-  max-height: 40vh;
+.html-icon {
+  margin-left: 0.4em;
+  color: rgb(228, 77, 38);
+}
+.css-icon {
+  color: rgb(38, 77, 228);
+}
+.js-icon {
+  color: rgb(233, 202, 50);
+}
+.react-icon {
+  color: rgb(36, 202, 254);
+}
+.java-icon {
+  color: rgb(230, 31, 36);
+}
+.android-icon {
+  color: rgb(159, 196, 55);
+}
+.db-icon {
+  color: rgb(64, 135, 194);
 }

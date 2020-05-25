@@ -13,13 +13,13 @@ export const Intro = (props) => {
     <div className="intro-cont">
       {props.animationPlayed && (
         <button
-          class="restart-anim-cont"
+        className="restart-anim-cont"
           onClick={() => {
             props.setAnimationPlayed(false);
             setDisplayRestart(false);
           }}
         >
-          <i class="fas fa-redo restart-anim-icon"></i>
+          <i className="fas fa-redo restart-anim-icon"></i>
         </button>
       )}
 

@@ -13,7 +13,7 @@ export const Profile = (props) => {
           <br />
           I am a developer striving for pixel perfect design and not
           compromising on less.
-          <br />I enjoy creating beautiful designs and exploring the world of
+          <br />I enjoy creating beautiful designs and exploring the worlds of
           <i className="fab fa-html5 profile-info-icon html-icon"></i>
           <i className="fab fa-css3-alt profile-info-icon css-icon"></i>
           <i className="fab fa-js-square profile-info-icon js-icon"></i>

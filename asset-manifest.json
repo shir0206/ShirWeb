@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ShirWeb/static/css/main.86277293.chunk.css",
-    "main.js": "/ShirWeb/static/js/main.cba9a00f.chunk.js",
-    "main.js.map": "/ShirWeb/static/js/main.cba9a00f.chunk.js.map",
+    "main.css": "/ShirWeb/static/css/main.9eae1873.chunk.css",
+    "main.js": "/ShirWeb/static/js/main.5182703b.chunk.js",
+    "main.js.map": "/ShirWeb/static/js/main.5182703b.chunk.js.map",
     "runtime-main.js": "/ShirWeb/static/js/runtime-main.0dad025d.js",
     "runtime-main.js.map": "/ShirWeb/static/js/runtime-main.0dad025d.js.map",
     "static/js/2.fec9c747.chunk.js": "/ShirWeb/static/js/2.fec9c747.chunk.js",
     "static/js/2.fec9c747.chunk.js.map": "/ShirWeb/static/js/2.fec9c747.chunk.js.map",
     "index.html": "/ShirWeb/index.html",
-    "precache-manifest.ad472c254c02907bd4a78a71344cbedc.js": "/ShirWeb/precache-manifest.ad472c254c02907bd4a78a71344cbedc.js",
+    "precache-manifest.9fff92a6527467cdc0ae2a85ef843e5f.js": "/ShirWeb/precache-manifest.9fff92a6527467cdc0ae2a85ef843e5f.js",
     "service-worker.js": "/ShirWeb/service-worker.js",
-    "static/css/main.86277293.chunk.css.map": "/ShirWeb/static/css/main.86277293.chunk.css.map",
+    "static/css/main.9eae1873.chunk.css.map": "/ShirWeb/static/css/main.9eae1873.chunk.css.map",
     "static/js/2.fec9c747.chunk.js.LICENSE.txt": "/ShirWeb/static/js/2.fec9c747.chunk.js.LICENSE.txt",
     "static/media/art-gallery.png": "/ShirWeb/static/media/art-gallery.8964fa86.png",
     "static/media/App.css": "/ShirWeb/static/media/background.8efe0c61.png",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.0dad025d.js",
     "static/js/2.fec9c747.chunk.js",
-    "static/css/main.86277293.chunk.css",
-    "static/js/main.cba9a00f.chunk.js"
+    "static/css/main.9eae1873.chunk.css",
+    "static/js/main.5182703b.chunk.js"
   ]
 }

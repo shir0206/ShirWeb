@@ -16,6 +16,8 @@ body {
   text-align: center;
   background-image: url("./images/background.png");
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+
   overflow: hidden;
   display: flex;
   justify-content: center;

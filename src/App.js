@@ -16,9 +16,18 @@ export default function App() {
   const [animationPlayed, setAnimationPlayed] = useState(false);
   const [openReadMore, setOpenReadMore] = useState(false);
 
+  let vh = window.innerHeight * 0.01;
+  vh = height * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+
   let cardContent;
   if (tab === 0) {
-    cardContent = <Intro animationPlayed={animationPlayed} setAnimationPlayed={setAnimationPlayed}/>;
+    cardContent = (
+      <Intro
+        animationPlayed={animationPlayed}
+        setAnimationPlayed={setAnimationPlayed}
+      />
+    );
   } else if (tab === 1) {
     cardContent = <Project />;
   } else if (tab === 2) {

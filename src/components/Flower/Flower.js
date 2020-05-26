@@ -40,7 +40,7 @@ export const Flower = (props) => {
           : "flower-cont without-fill"
       }
     >
-      <FlowerSVG />
+      <FlowerSVG displayRestart={props.displayRestart}/>
     </div>
   );
 };

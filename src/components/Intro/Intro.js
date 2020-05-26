@@ -16,7 +16,8 @@ export const Intro = (props) => {
         className="restart-anim-cont"
           onClick={() => {
             props.setAnimationPlayed(false);
-            setDisplayRestart(false);
+            setDisplayRestart(!displayRestart);
+            
           }}
         >
           <i className="fas fa-redo restart-anim-icon"></i>
@@ -26,6 +27,7 @@ export const Intro = (props) => {
       <Flower
         setAnimationPlayed={props.setAnimationPlayed}
         animationPlayed={props.animationPlayed}
+        displayRestart={displayRestart}
       />
       <Title
         setAnimationPlayed={props.setAnimationPlayed}

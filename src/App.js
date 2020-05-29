@@ -38,7 +38,16 @@ export default function App() {
     <div className="app">
       <Brush tab={tab} openReadMore={openReadMore}></Brush>
       <div className="card">
-        <div className="content-container">{cardContent}</div>
+        <div className="content-container">
+          {(tab === 0 && (
+            <Intro
+              animationPlayed={animationPlayed}
+              setAnimationPlayed={setAnimationPlayed}
+            />
+          )) ||
+            (tab === 1 && <Project />) ||
+            (tab === 2 && <About />)}
+        </div>
         {tab !== 0 && (
           <button
             className={

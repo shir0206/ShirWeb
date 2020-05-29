@@ -2,10 +2,12 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  display: flex;
+  /* display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  flex-direction: column;
+  flex-direction: column; */
+  /* position: relative; */
+
   overflow: hidden;
 }
 
@@ -21,44 +23,43 @@
   opacity: 0.4;
   z-index: 200;
 }
-img#first.brush-intro {
-  position: absolute;
 
+#first,
+#second,
+#third {
+  position: absolute;
+}
+
+img#first.brush-intro {
   width: 0%;
   height: 0%;
   transform: translate(-50%, -50%);
 }
 
 img#second.brush-intro {
-  position: absolute;
-
   width: 0%;
   height: 0%;
   transform: translate(0%, 5%);
 }
 
 img#third.brush-intro {
-  position: absolute;
   width: 0%;
   height: 0%;
-  left: 0%;
-  right: auto;
-  top: 0%;
   transform: translate(0%, 5%);
 }
 
 img#first.brush-project {
-  position: absolute;
-  transform: translate(-5%, 5%) rotate(-5deg);
 }
 @media only screen and (min-width: 501px) {
   img#first.brush-project {
+    transform: translate(-25%, 5%) rotate(-5deg);
     width: 55%;
     height: 60%;
   }
 }
 @media only screen and (max-width: 500px) {
   img#first.brush-project {
+    transform: translate(-45%, 15%) rotate(-5deg);
     width: 80%;
     height: 50%;
   }
@@ -85,13 +86,14 @@ img#second.brush-project {
 
 img#third.brush-project {
   height: 25%;
-  z-index: 4;
+  /* z-index: 4; */
   opacity: 0.6;
 }
 @media only screen and (min-width: 501px) {
   img#third.brush-project {
     width: 20%;
-    transform: translate(-60%, -120%);
+    /* transform: translate(-60%, -120%); */
+    transform: translate(50%, 40%);
   }
 }
 @media only screen and (max-width: 500px) {
@@ -102,7 +104,6 @@ img#third.brush-project {
 }
 
 img#first.brush-about {
-  position: absolute;
   transform: translate(-5%, 15%) rotate(0);
   height: 55%;
 }
@@ -119,7 +120,7 @@ img#first.brush-about {
 
 img#second.brush-about {
   height: 40%;
-  z-index: 6;
+  /* z-index: 6; */
   opacity: 0.5;
 }
 
@@ -138,9 +139,9 @@ img#second.brush-about {
 
 img#third.brush-about {
   height: 35%;
-  z-index: 4;
+  /* z-index: 4; */
   opacity: 0.6;
-  transform: translate(-20%, -90%) rotate(0);
+  transform: translate(-20%, 90%) rotate(0);
 }
 @media only screen and (min-width: 501px) {
   img#third.brush-about {
@@ -154,7 +155,6 @@ img#third.brush-about {
 }
 
 img#first.brush-read-more {
-  position: absolute;
   height: 100%;
   width: 100%;
   transform: translate(-10%, 0%);

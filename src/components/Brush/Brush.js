@@ -10,14 +10,14 @@ export const Brush = (props) => {
   let brushClassName;
 
   if (props.openReadMore) {
-    brushClassName = "change-shape brush-read-more";
+    brushClassName = "brush-read-more";
   } else {
     if (props.tab === 0) {
-      brushClassName = "change-shape brush-intro";
+      brushClassName = "brush-intro";
     } else if (props.tab === 1) {
-      brushClassName = "change-shape brush-project";
+      brushClassName = "brush-project";
     } else if (props.tab === 2) {
-      brushClassName = "change-shape brush-about";
+      brushClassName = "brush-about";
     }
   }
   return (

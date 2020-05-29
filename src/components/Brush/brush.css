@@ -167,7 +167,9 @@ img#third.brush-read-more {
   opacity: 1;
 }
 
-.change-shape {
+/* .change-shape  */
+
+.brush-container img {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;

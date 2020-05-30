@@ -10,36 +10,26 @@ export const Brush = (props) => {
   let brushClassName;
 
   if (props.openReadMore) {
-    brushClassName = "brush-read-more";
+    brushClassName = "change-shape rush-read-more";
   } else {
     if (props.tab === 0) {
-      brushClassName = "brush-intro";
+      brushClassName = "change-shape brush-intro";
     } else if (props.tab === 1) {
-      brushClassName = "brush-project";
+      brushClassName = "change-shape brush-project";
     } else if (props.tab === 2) {
-      brushClassName = "brush-about";
+      brushClassName = "change-shape brush-about";
     }
   }
   return (
     <div className="brush-container">
-      <img
-        id="first"
-        className={brushClassName}
-        src={firstImage}
-        alt="first"
-      />
+      <img id="first" className={brushClassName} src={firstImage} alt="first" />
       <img
         id="second"
         className={brushClassName}
         src={secondImage}
         alt="second"
       />
-      <img
-        id="third"
-        className={brushClassName}
-        src={thirdImage}
-        alt="third"
-      />
+      <img id="third" className={brushClassName} src={thirdImage} alt="third" />
     </div>
   );
 };

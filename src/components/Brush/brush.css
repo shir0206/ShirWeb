@@ -24,7 +24,7 @@
 #second,
 #third {
   position: absolute;
-  display: block
+  display: inline-block;
 }
 
 img#first.brush-intro {

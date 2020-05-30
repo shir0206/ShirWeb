@@ -5,6 +5,7 @@
   overflow: hidden;
   position: absolute;
   z-index: 10;
+  display: inline-block;
 }
 
 .brush-container .brush-intro {
@@ -25,7 +26,6 @@
 #third {
   position: absolute;
   display: inline-block;
-  left: 0%;
 }
 
 img#first.brush-intro {
@@ -180,7 +180,6 @@ img#third.brush-read-more {
   -o-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
  */
-
 
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;

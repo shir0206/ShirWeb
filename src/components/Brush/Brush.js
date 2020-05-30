@@ -10,7 +10,7 @@ export const Brush = (props) => {
   let brushClassName;
 
   if (props.openReadMore) {
-    brushClassName = "rush-read-more";
+    brushClassName = "brush-read-more";
   } else {
     if (props.tab === 0) {
       brushClassName = "brush-intro";

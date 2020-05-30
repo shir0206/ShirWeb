@@ -27,19 +27,22 @@
 img#first.brush-intro {
   width: 0%;
   height: 0%;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, 5%);
+  opacity: 0;
 }
 
 img#second.brush-intro {
   width: 0%;
   height: 0%;
   transform: translate(0%, 5%);
+  opacity: 0;
 }
 
 img#third.brush-intro {
   width: 0%;
   height: 0%;
   transform: translate(0%, 5%);
+  opacity: 0;
 }
 
 @media only screen and (min-width: 501px) {

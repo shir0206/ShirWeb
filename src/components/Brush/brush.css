@@ -25,6 +25,7 @@
 #third {
   position: absolute;
   display: inline-block;
+  left: 0%;
 }
 
 img#first.brush-intro {
@@ -174,8 +175,16 @@ img#third.brush-read-more {
 /* .change-shape  */
 
 .brush-container img {
-  -webkit-transition: all 250ms ease-out;
+  /* -webkit-transition: all 250ms ease-out;
   -moz-transition: all 250ms ease-out;
   -o-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
+ */
+
+
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }

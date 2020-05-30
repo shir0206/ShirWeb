@@ -2,35 +2,35 @@ import React, { useState } from "react";
 
 import "./tab.css";
 
-export const Tab = (props) => {
+export const Tab = ({tab, setTab, }) => {
   return (
     <div className="tab-container">
       <div
         className={
-          props.tab === 0 ? "intro-container tab-on" : "intro-container"
+          tab === 0 ? "intro-container tab-on" : "intro-container"
         }
         onClick={() => {
-          props.setTab(0);
+          setTab(0);
         }}
       >
         <p>Intro</p>
       </div>
       <div
         className={
-          props.tab === 1 ? "project-container tab-on" : "project-container"
+          tab === 1 ? "project-container tab-on" : "project-container"
         }
         onClick={() => {
-          props.setTab(1);
+          setTab(1);
         }}
       >
         <p>Projects</p>
       </div>
       <div
         className={
-          props.tab === 2 ? "about-container tab-on" : "about-container"
+          tab === 2 ? "about-container tab-on" : "about-container"
         }
         onClick={() => {
-          props.setTab(2);
+          setTab(2);
         }}
       >
         <p>About</p>

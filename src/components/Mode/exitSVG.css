@@ -1,0 +1,12 @@
+
+.exit-svg {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: block;
+    display: inline-block;
+    stroke-width: 3.5;
+    stroke: #c74778;
+    stroke-miterlimit: 10;
+  }
+  

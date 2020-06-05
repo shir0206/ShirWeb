@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { ExitSVG } from "./ExitSVG";
+
 import "./mode.css";
 
 export const Mode = (props) => {
@@ -16,13 +18,17 @@ export const Mode = (props) => {
             props.setOpenReadMore(!props.openReadMore);
           }}
         >
-          {props.width > 500
-            ? props.openReadMore
-              ? "Back"
-              : "Read More"
-            : props.openReadMore
-            ? "X"
-            : "Read More"}
+          {props.width > 500 ? (
+            props.openReadMore ? (
+              "Back"
+            ) : (
+              "Read More"
+            )
+          ) : props.openReadMore ? (
+            <ExitSVG></ExitSVG>
+          ) : (
+            "Read More"
+          )}
         </button>
       )}
     </div>

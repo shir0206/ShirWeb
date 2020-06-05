@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import "./intro.css";
 
@@ -13,11 +13,10 @@ export const Intro = (props) => {
     <div className="intro-cont">
       {props.animationPlayed && (
         <button
-        className="restart-anim-cont"
+          className="restart-anim-cont"
           onClick={() => {
             props.setAnimationPlayed(false);
             setDisplayRestart(!displayRestart);
-            
           }}
         >
           <i className="fas fa-redo restart-anim-icon"></i>

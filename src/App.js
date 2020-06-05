@@ -9,6 +9,7 @@ import { Project } from "./components/project-componets/Project/Project";
 import { Portfolio } from "./components/project-componets/Portfolio/Portfolio";
 import { Brush } from "./components/Brush/Brush";
 import { Tab } from "./components/Tab/Tab";
+import { Mode } from "./components/Mode/Mode";
 
 export default function App() {
   const { height, width } = useWindowDimensions();
@@ -48,26 +49,12 @@ export default function App() {
             (tab === 1 && <Project />) ||
             (tab === 2 && <About />)}
         </div>
-        {tab !== 0 && (
-          <button
-            className={
-              width <= 500 && openReadMore
-                ? "exit-read-more-btn"
-                : "read-more-btn"
-            }
-            onClick={() => {
-              setOpenReadMore(!openReadMore);
-            }}
-          >
-            {width > 500
-              ? openReadMore
-                ? "Back"
-                : "Read More"
-              : openReadMore
-              ? "X"
-              : "Read More"}
-          </button>
-        )}
+        <Mode
+          tab={tab}
+          width={width}
+          openReadMore={openReadMore}
+          setOpenReadMore={setOpenReadMore}
+        ></Mode>
         <Tab tab={tab} setTab={setTab}></Tab>
       </div>
       {openReadMore && tab === 1 ? <Portfolio></Portfolio> : null}

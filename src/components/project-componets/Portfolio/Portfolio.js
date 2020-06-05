@@ -6,9 +6,10 @@ import { Slide } from "../Slide/Slide";
 import { SlideList } from "../SlideList/SlideList";
 import { ArrowNext } from "../Arrow/ArrowNext";
 import { ArrowPrev } from "../Arrow/ArrowPrev";
-import artGalleryImage from "../../images/art-gallery.png";
-import tropixImage from "../../images/tropix.png";
-import nyquistOpticsImage from "../../images/nyquist-optics.png";
+
+import artGalleryImage from "./../../../images/art-gallery.png"
+import tropixImage from "./../../../images/tropix.png";
+import nyquistOpticsImage from "./../../../images/nyquist-optics.png";
 
 export const Portfolio = (props) => {
   const [currSlide, setCurrSlide] = useState(0);

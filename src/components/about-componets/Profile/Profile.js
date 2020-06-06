@@ -56,7 +56,13 @@ export const Profile = (props) => {
         </span>
       </div>
       <div className="profile-image-cont">
-        <img className="profile-image" alt="Profile" src={profileImage}></img>
+        <img
+          className="profile-image"
+          alt="Profile"
+          src={
+            "https://res.cloudinary.com/doywfjryu/image/upload/v1591429272/shir-web/profile_jt73iz.png"
+          }
+        ></img>
       </div>
     </div>
   );

@@ -7,10 +7,6 @@ import { SlideList } from "../SlideList/SlideList";
 import { ArrowNext } from "../Arrow/ArrowNext";
 import { ArrowPrev } from "../Arrow/ArrowPrev";
 
-import artGalleryImage from "./../../../images/art-gallery.png"
-import tropixImage from "./../../../images/tropix.png";
-import nyquistOpticsImage from "./../../../images/nyquist-optics.png";
-
 export const Portfolio = (props) => {
   const [currSlide, setCurrSlide] = useState(0);
   const [moveSlide, setMoveSlide] = useState("slide-none");
@@ -96,7 +92,9 @@ const slides = [
       "ImageZoom",
       "ScrollLock",
     ],
-    image: artGalleryImage,
+
+
+    image:"https://res.cloudinary.com/doywfjryu/image/upload/v1591429275/shir-web/art-gallery_dnnzna.png",
   },
   {
     name: "TropiX",
@@ -120,7 +118,7 @@ const slides = [
       "TicTacToe",
       "Fun",
     ],
-    image: tropixImage,
+    image: "https://res.cloudinary.com/doywfjryu/image/upload/v1591429271/shir-web/tropix_fkexxi.png",
   },
   {
     name: "NyquistOptics",
@@ -134,6 +132,6 @@ const slides = [
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.shirzabolotnyklein.nyquistoptics&hl=en",
     tags: ["Java", "Android", "PerformanceCalculator", "SharedPreferance"],
-    image: nyquistOpticsImage,
+    image: "https://res.cloudinary.com/doywfjryu/image/upload/v1591429270/shir-web/nyquist-optics_kzeurl.png",
   },
 ];

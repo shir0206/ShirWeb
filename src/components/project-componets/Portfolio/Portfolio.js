@@ -9,22 +9,29 @@ import { ArrowNext } from "../Arrow/ArrowNext";
 import { ArrowPrev } from "../Arrow/ArrowPrev";
 
 export const Portfolio = (props) => {
-  const [currSlide, setCurrSlide] = useState(0);
-  const [moveSlide, setMoveSlide] = useState("slide-none");
+  const [currSlide, setCurrSlide] = useState(0); // The current slide
+  const [moveSlide, setMoveSlide] = useState("slide-none"); // The animation movement
 
   const stateRef = useRef();
   stateRef.current = currSlide;
 
+  // When click on the arrow button "Next" (Callback recieved from ArrowNext),
+  // set "Next" slide as current & set animation movement as Next
   const recieveSlideIndexFromArrowNext = useCallback((childProps) => {
     setMoveSlide("slide-next");
     setCurrSlide(childProps);
   }, []);
 
+  // When click on the arrow button "Prev" (Callback recieved from ArrowPrev),
+  // set "Prev" slide as current & set animation movement as Prev
   const recieveSlideIndexFromArrowPrev = useCallback((childProps) => {
     setMoveSlide("slide-prev");
     setCurrSlide(childProps);
   }, []);
 
+  // When click on the a certain slide button in the bottom (Callback recieved from  SlideList),
+  // check if the clicked slide is next of prev relative to the current.
+  // set "Clicked" slide as current & set animation movement as Prev/Next
   const recieveSlideIndexFromSlideList = useCallback((childProps) => {
     if (stateRef.current < childProps) {
       setMoveSlide("slide-next");
@@ -35,6 +42,8 @@ export const Portfolio = (props) => {
     }
   }, []);
 
+  // When swipe right/left on mobile, update current 
+  // set swiped slide as current & set animation movement
   const handlers = useSwipeable({
     onSwipedLeft: () => {
       setMoveSlide("slide-next");

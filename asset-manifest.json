@@ -1,30 +1,27 @@
 {
   "files": {
-    "main.css": "/ShirWeb/static/css/main.d9ceec9f.chunk.css",
-    "main.js": "/ShirWeb/static/js/main.8b04b986.chunk.js",
-    "main.js.map": "/ShirWeb/static/js/main.8b04b986.chunk.js.map",
+    "main.css": "/ShirWeb/static/css/main.50fe6f02.chunk.css",
+    "main.js": "/ShirWeb/static/js/main.2cb85ea7.chunk.js",
+    "main.js.map": "/ShirWeb/static/js/main.2cb85ea7.chunk.js.map",
     "runtime-main.js": "/ShirWeb/static/js/runtime-main.0dad025d.js",
     "runtime-main.js.map": "/ShirWeb/static/js/runtime-main.0dad025d.js.map",
-    "static/js/2.fec9c747.chunk.js": "/ShirWeb/static/js/2.fec9c747.chunk.js",
-    "static/js/2.fec9c747.chunk.js.map": "/ShirWeb/static/js/2.fec9c747.chunk.js.map",
+    "static/js/2.83ba431e.chunk.js": "/ShirWeb/static/js/2.83ba431e.chunk.js",
+    "static/js/2.83ba431e.chunk.js.map": "/ShirWeb/static/js/2.83ba431e.chunk.js.map",
     "index.html": "/ShirWeb/index.html",
-    "precache-manifest.14dd447e1fff2be421bcef44e23a9da3.js": "/ShirWeb/precache-manifest.14dd447e1fff2be421bcef44e23a9da3.js",
+    "precache-manifest.6c07562a6e2ca7ee8e4e41f46faf71cb.js": "/ShirWeb/precache-manifest.6c07562a6e2ca7ee8e4e41f46faf71cb.js",
     "service-worker.js": "/ShirWeb/service-worker.js",
-    "static/css/main.d9ceec9f.chunk.css.map": "/ShirWeb/static/css/main.d9ceec9f.chunk.css.map",
-    "static/js/2.fec9c747.chunk.js.LICENSE.txt": "/ShirWeb/static/js/2.fec9c747.chunk.js.LICENSE.txt",
-    "static/media/art-gallery.png": "/ShirWeb/static/media/art-gallery.8964fa86.png",
+    "static/css/main.50fe6f02.chunk.css.map": "/ShirWeb/static/css/main.50fe6f02.chunk.css.map",
+    "static/js/2.83ba431e.chunk.js.LICENSE.txt": "/ShirWeb/static/js/2.83ba431e.chunk.js.LICENSE.txt",
     "static/media/App.css": "/ShirWeb/static/media/background.8efe0c61.png",
     "static/media/blue.png": "/ShirWeb/static/media/blue.7adcd17d.png",
     "static/media/gold.png": "/ShirWeb/static/media/gold.2c9e3715.png",
-    "static/media/nyquist-optics.png": "/ShirWeb/static/media/nyquist-optics.1b5db60c.png",
-    "static/media/profile.jpg": "/ShirWeb/static/media/profile.b2332e61.jpg",
-    "static/media/tropix.png": "/ShirWeb/static/media/tropix.6c737bd5.png",
+    "static/media/profile.png": "/ShirWeb/static/media/profile.925fccd0.png",
     "static/media/yellow-pink.png": "/ShirWeb/static/media/yellow-pink.8784cf55.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0dad025d.js",
-    "static/js/2.fec9c747.chunk.js",
-    "static/css/main.d9ceec9f.chunk.css",
-    "static/js/main.8b04b986.chunk.js"
+    "static/js/2.83ba431e.chunk.js",
+    "static/css/main.50fe6f02.chunk.css",
+    "static/js/main.2cb85ea7.chunk.js"
   ]
 }

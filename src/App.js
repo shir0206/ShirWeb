@@ -3,11 +3,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import "./App.css";
 
 import { Card } from "./components/Card/Card";
-
-import { Intro } from "./components/intro-components/Intro/Intro";
-import { About } from "./components/about-componets/About/About";
 import { Profile } from "./components/about-componets/Profile/Profile";
-import { Project } from "./components/project-componets/Project/Project";
 import { Portfolio } from "./components/project-componets/Portfolio/Portfolio";
 import { Brush } from "./components/Brush/Brush";
 

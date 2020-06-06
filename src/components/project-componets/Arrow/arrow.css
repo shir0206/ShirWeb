@@ -182,3 +182,14 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
+.arrow-svg {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: block;
+  display: inline-block;
+  stroke-width: 2.5;
+  stroke: #c74778;
+  stroke-miterlimit: 10;
+}

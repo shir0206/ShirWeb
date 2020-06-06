@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowPrevSVG } from "./ArrowPrevSVG";
 
 import "./arrow.css";
 
@@ -12,8 +13,7 @@ export const ArrowPrev = (props) => {
   return (
     <div className="left-arrow-container" onClick={updatePrev}>
       <div className="round">
-        <p className="arrow">&lt;</p>
-        <p className="arrow second-arrow">&lt;</p>
+        <ArrowPrevSVG></ArrowPrevSVG>
       </div>
     </div>
   );

@@ -1,5 +1,7 @@
 import React from "react";
 
+import { ArrowNextSVG } from "./ArrowNextSVG";
+
 import "./arrow.css";
 
 export const ArrowNext = (props) => {
@@ -12,8 +14,7 @@ export const ArrowNext = (props) => {
   return (
     <div className="right-arrow-container" onClick={updateNext}>
       <div className="round">
-        <p className="arrow">&gt;</p>
-        <p className="arrow second-arrow">&gt;</p>
+        <ArrowNextSVG></ArrowNextSVG>
       </div>
     </div>
   );

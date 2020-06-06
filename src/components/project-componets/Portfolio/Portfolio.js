@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useRef } from "react";
+import { useSwipeable } from "react-swipeable";
 
 import "./portfolio.css";
 
@@ -34,8 +35,21 @@ export const Portfolio = (props) => {
     }
   }, []);
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      setMoveSlide("slide-next");
+      setCurrSlide((currSlide + 1) % slides.length);
+    },
+    onSwipedRight: () => {
+      setMoveSlide("slide-prev");
+      setCurrSlide((currSlide - 1 + slides.length) % slides.length);
+    },
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
   return (
-    <div className="portfolio-cont">
+    <div className="portfolio-cont" {...handlers}>
       <div
         className={moveSlide}
         onAnimationEnd={() => setMoveSlide("slide-none")}
@@ -93,8 +107,8 @@ const slides = [
       "ScrollLock",
     ],
 
-
-    image:"https://res.cloudinary.com/doywfjryu/image/upload/v1591429275/shir-web/art-gallery_dnnzna.png",
+    image:
+      "https://res.cloudinary.com/doywfjryu/image/upload/v1591429275/shir-web/art-gallery_dnnzna.png",
   },
   {
     name: "TropiX",
@@ -118,7 +132,8 @@ const slides = [
       "TicTacToe",
       "Fun",
     ],
-    image: "https://res.cloudinary.com/doywfjryu/image/upload/v1591429271/shir-web/tropix_fkexxi.png",
+    image:
+      "https://res.cloudinary.com/doywfjryu/image/upload/v1591429271/shir-web/tropix_fkexxi.png",
   },
   {
     name: "NyquistOptics",
@@ -132,6 +147,7 @@ const slides = [
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.shirzabolotnyklein.nyquistoptics&hl=en",
     tags: ["Java", "Android", "PerformanceCalculator", "SharedPreferance"],
-    image: "https://res.cloudinary.com/doywfjryu/image/upload/v1591429270/shir-web/nyquist-optics_kzeurl.png",
+    image:
+      "https://res.cloudinary.com/doywfjryu/image/upload/v1591429270/shir-web/nyquist-optics_kzeurl.png",
   },
 ];

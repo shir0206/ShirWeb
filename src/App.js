@@ -2,14 +2,14 @@ import React, { useState, useEffect, useCallback } from "react";
 
 import "./App.css";
 
+import { Card } from "./components/Card/Card";
+
 import { Intro } from "./components/intro-components/Intro/Intro";
 import { About } from "./components/about-componets/About/About";
 import { Profile } from "./components/about-componets/Profile/Profile";
 import { Project } from "./components/project-componets/Project/Project";
 import { Portfolio } from "./components/project-componets/Portfolio/Portfolio";
 import { Brush } from "./components/Brush/Brush";
-import { Tab } from "./components/Tab/Tab";
-import { Mode } from "./components/Mode/Mode";
 
 export default function App() {
   const { height, width } = useWindowDimensions();
@@ -21,42 +21,18 @@ export default function App() {
   vh = height * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
 
-  let cardContent;
-  if (tab === 0) {
-    cardContent = (
-      <Intro
-        animationPlayed={animationPlayed}
-        setAnimationPlayed={setAnimationPlayed}
-      />
-    );
-  } else if (tab === 1) {
-    cardContent = <Project />;
-  } else if (tab === 2) {
-    cardContent = <About />;
-  }
-
   return (
     <div className="app">
       <Brush tab={tab} openReadMore={openReadMore}></Brush>
-      <div className="card">
-        <div className="content-container">
-          {(tab === 0 && (
-            <Intro
-              animationPlayed={animationPlayed}
-              setAnimationPlayed={setAnimationPlayed}
-            />
-          )) ||
-            (tab === 1 && <Project />) ||
-            (tab === 2 && <About />)}
-        </div>
-        <Mode
-          tab={tab}
-          width={width}
-          openReadMore={openReadMore}
-          setOpenReadMore={setOpenReadMore}
-        ></Mode>
-        <Tab tab={tab} setTab={setTab}></Tab>
-      </div>
+      <Card
+        tab={tab}
+        setTab={setTab}
+        animationPlayed={animationPlayed}
+        setAnimationPlayed={setAnimationPlayed}
+        width={width}
+        openReadMore={openReadMore}
+        setOpenReadMore={setOpenReadMore}
+      ></Card>
       {openReadMore && tab === 1 ? <Portfolio></Portfolio> : null}
       {openReadMore && tab === 2 ? <Profile></Profile> : null}
     </div>

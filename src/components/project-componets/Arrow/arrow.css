@@ -118,38 +118,38 @@
 @keyframes floating-right {
   0% {
     opacity: 1;
-    transform: translateX(0px) scale(1);
+    transform: translateX(0px);
   }
   25% {
     opacity: 0;
-    transform: translateX(10px) scale(0.9);
+    transform: translateX(10px);
   }
   35% {
     opacity: 0;
-    transform: translateX(-10px) scale(0.9);
+    transform: translateX(-10px);
   }
   55% {
     opacity: 1;
-    transform: translateX(0px) scale(1);
+    transform: translateX(0px);
   }
 }
 
 @keyframes floating-left {
   0% {
     opacity: 1;
-    transform: translateX(0px) scale(1);
+    transform: translateX(0px);
   }
   25% {
     opacity: 0;
-    transform: translateX(-10px) scale(0.9);
+    transform: translateX(-10px);
   }
   35% {
     opacity: 0;
-    transform: translateX(10px) scale(0.9);
+    transform: translateX(10px);
   }
   55% {
     opacity: 1;
-    transform: translateX(0px) scale(1);
+    transform: translateX(0px);
   }
 }
 .floating-right {

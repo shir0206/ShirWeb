@@ -22,25 +22,17 @@
     z-index: 500;
   }
   .exit-read-more-btn {
-    text-shadow: -1px 1px 5px rgba(51, 61, 71, 0.4);
-    position: absolute;
-    top: 11%;
+    position: relative;
     opacity: 1;
-    background: rgba(255, 255, 255, 0.6);
+    background: #c74778;
     box-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
     border-radius: 15px;
-    text-decoration: none;
     cursor: pointer;
-    outline: 0;
-    color: #c64675;
     z-index: 500;
     width: 30px;
     height: 30px;
-    border: 1.25px solid #c74778;
-    left: 78%;
-    font-family: monospace;
-    font-weight: 500;
-    font-size: 1.5em;
+    border: none;
+    transform: translateX(34vw);
     -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 0.5s; /* Firefox < 16 */
     -ms-animation: fadein 0.5s; /* Internet Explorer */

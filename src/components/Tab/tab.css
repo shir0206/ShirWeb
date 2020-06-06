@@ -4,7 +4,7 @@
   align-items: flex-end;
   max-width: 80vw;
   bottom: 0;
-  height: fit-content;
+  height: 10vh;
   z-index: 150;
 }
 

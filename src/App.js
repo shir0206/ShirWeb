@@ -11,7 +11,6 @@ import { Mode } from "./components/Mode/Mode";
 export default function App() {
   const { height, width } = useWindowDimensions();
   const [tab, setTab] = useState(0);
-  const [animationPlayed, setAnimationPlayed] = useState(false);
   const [openReadMore, setOpenReadMore] = useState(false);
 
   let vh = window.innerHeight * 0.01;
@@ -24,8 +23,6 @@ export default function App() {
       <Card
         tab={tab}
         setTab={setTab}
-        animationPlayed={animationPlayed}
-        setAnimationPlayed={setAnimationPlayed}
         width={width}
         openReadMore={openReadMore}
         setOpenReadMore={setOpenReadMore}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./card.css";
 
@@ -6,16 +6,17 @@ import { Intro } from "../intro-components/Intro/Intro";
 import { About } from "../about-componets/About/About";
 import { Project } from "../project-componets/Project/Project";
 import { Tab } from "../Tab/Tab";
-import { Mode } from "../Mode/Mode";
 
 export const Card = (props) => {
+  const [animationPlayed, setAnimationPlayed] = useState(false);
+
   return (
     <div className="card">
       <div className="content-container">
         {(props.tab === 0 && (
           <Intro
-            animationPlayed={props.animationPlayed}
-            setAnimationPlayed={props.setAnimationPlayed}
+            animationPlayed={animationPlayed}
+            setAnimationPlayed={setAnimationPlayed}
           />
         )) ||
           (props.tab === 1 && <Project />) ||

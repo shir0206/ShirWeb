@@ -30,9 +30,8 @@
   width: 30px;
   height: 30px;
   border: none;
-  /* right: calc(-100% + 35px); */
   text-decoration: none;
-
+  outline: 0;
   transform: translate(36vw, -37vh);
   -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 0.5s; /* Firefox < 16 */

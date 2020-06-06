@@ -45,7 +45,7 @@ img#third.brush-intro {
 
 @media only screen and (min-width: 501px) {
   img#first.brush-project {
-    transform: translate(-25%, -5%) scale(0.5);
+    transform: translate(-35%, -15%) scale(0.7);
     opacity: 1;
   }
 }
@@ -58,7 +58,7 @@ img#third.brush-intro {
 
 @media only screen and (min-width: 501px) {
   img#second.brush-project {
-    transform: translate(-55%, -25%) scale(0.2);
+    transform: translate(-55%, -10%) scale(0.3);
     opacity: 0.7;
   }
 }
@@ -71,7 +71,7 @@ img#third.brush-intro {
 
 @media only screen and (min-width: 501px) {
   img#third.brush-project {
-    transform: translate(-50%, -40%) scale(0.45);
+    transform: translate(-50%, -25%) scale(0.45);
     opacity: 0.6;
   }
 }
@@ -84,7 +84,7 @@ img#third.brush-intro {
 
 @media only screen and (min-width: 501px) {
   img#first.brush-about {
-    transform: translate(-15%, -15%) scale(0.6);
+    transform: translate(-35%, -15%) scale(0.6);
     opacity: 1;
   }
 }
@@ -97,7 +97,7 @@ img#third.brush-intro {
 
 @media only screen and (min-width: 501px) {
   img#second.brush-about {
-    transform: translate(-25%, -25%) scale(0.5);
+    transform: translate(-45%, 1%) scale(0.5);
     opacity: 0.7;
   }
 }
@@ -110,7 +110,7 @@ img#third.brush-intro {
 
 @media only screen and (min-width: 501px) {
   img#third.brush-about {
-    transform: translate(-40%, -20%) scale(0.3);
+    transform: translate(-40%, -30%) scale(0.35);
     opacity: 0.6;
   }
 }
@@ -122,18 +122,18 @@ img#third.brush-intro {
 }
 
 img#first.brush-read-more {
-  transform: translate(-10%, 0%) scale(1);
-  opacity: 1;
+  transform: translate(-15%, 0%) scale(1.1);
+  opacity: 0.5;
 }
 
 img#second.brush-read-more {
-  transform: translate(-80%, -55%) scale(0.6);
-  opacity: 1;
+  transform: translate(-80%, 25%) scale(0.6);
+  opacity: 0.5;
 }
 
 img#third.brush-read-more {
-  transform: translate(-40%, -150%) scale(0.8);
-  opacity: 1;
+  transform: translate(-10%, -40%) scale(0.8);
+  opacity: 0.4;
 }
 
 /* .change-shape  */

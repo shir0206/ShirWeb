@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  /* overflow: hidden; */
+  overflow: hidden;
   position: absolute;
 }
 

@@ -11,12 +11,6 @@ import { Mode } from "../Mode/Mode";
 export const Card = (props) => {
   return (
     <div className="card">
-      <Mode
-        tab={props.tab}
-        width={props.width}
-        openReadMore={props.openReadMore}
-        setOpenReadMore={props.setOpenReadMore}
-      ></Mode>
       <div className="content-container">
         {(props.tab === 0 && (
           <Intro

@@ -6,6 +6,7 @@ import { Card } from "./components/Card/Card";
 import { Profile } from "./components/about-componets/Profile/Profile";
 import { Portfolio } from "./components/project-componets/Portfolio/Portfolio";
 import { Brush } from "./components/Brush/Brush";
+import { Mode } from "./components/Mode/Mode";
 
 export default function App() {
   const { height, width } = useWindowDimensions();
@@ -29,6 +30,12 @@ export default function App() {
         openReadMore={openReadMore}
         setOpenReadMore={setOpenReadMore}
       ></Card>
+      <Mode
+        tab={tab}
+        width={width}
+        openReadMore={openReadMore}
+        setOpenReadMore={setOpenReadMore}
+      ></Mode>
       {openReadMore && tab === 1 ? <Portfolio></Portfolio> : null}
       {openReadMore && tab === 2 ? <Profile></Profile> : null}
     </div>

@@ -6,7 +6,7 @@ import "./mode.css";
 
 export const Mode = (props) => {
   return (
-    <div>
+    <>
       {props.tab !== 0 && (
         <button
           className={
@@ -31,6 +31,6 @@ export const Mode = (props) => {
           )}
         </button>
       )}
-    </div>
+    </>
   );
 };

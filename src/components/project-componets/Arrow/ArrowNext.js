@@ -14,7 +14,9 @@ export const ArrowNext = (props) => {
   return (
     <div className="right-arrow-container" onClick={updateNext}>
       <div className="round">
-        <ArrowNextSVG></ArrowNextSVG>
+        <ArrowNextSVG
+          viewBoxNext={props.width <= 500 ? "10 5 30 30" : "10 5 40 40"}
+        ></ArrowNextSVG>
       </div>
     </div>
   );

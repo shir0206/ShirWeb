@@ -42,7 +42,7 @@ export const Portfolio = (props) => {
     }
   }, []);
 
-  // When swipe right/left on mobile, update current 
+  // When swipe right/left on mobile, update current
   // set swiped slide as current & set animation movement
   const handlers = useSwipeable({
     onSwipedLeft: () => {
@@ -78,11 +78,13 @@ export const Portfolio = (props) => {
           currSlide={currSlide}
           length={slides.length}
           handleSlideIndexClick={recieveSlideIndexFromArrowNext}
+          width={props.width}
         ></ArrowNext>
         <ArrowPrev
           currSlide={currSlide}
           length={slides.length}
           handleSlideIndexClick={recieveSlideIndexFromArrowPrev}
+          width={props.width}
         ></ArrowPrev>
       </div>
       <SlideList

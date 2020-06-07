@@ -4,7 +4,7 @@ import "./arrow.css";
 
 export const ArrowNextSVG = (props) => {
   return (
-    <svg className="arrow-svg" viewBox="10 5 40 40">
+    <svg className="arrow-svg" viewBox={props.viewBoxNext}>
       <path className="arrow" d="M26 16 35.9 25.9 M36.5 25.8 26 36" />
       <path
         className="arrow second-arrow"

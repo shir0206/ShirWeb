@@ -13,7 +13,9 @@ export const ArrowPrev = (props) => {
   return (
     <div className="left-arrow-container" onClick={updatePrev}>
       <div className="round">
-        <ArrowPrevSVG></ArrowPrevSVG>
+        <ArrowPrevSVG
+          viewBoxPrev={props.width <= 500 ? "15 5 30 30" : "15 5 40 40"}
+        ></ArrowPrevSVG>
       </div>
     </div>
   );

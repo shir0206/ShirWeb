@@ -33,7 +33,9 @@ export default function App() {
         openReadMore={openReadMore}
         setOpenReadMore={setOpenReadMore}
       ></Mode>
-      {openReadMore && tab === 1 ? <Portfolio></Portfolio> : null}
+      {openReadMore && tab === 1 ? (
+        <Portfolio width={width}></Portfolio>
+      ) : null}
       {openReadMore && tab === 2 ? <Profile></Profile> : null}
     </div>
   );

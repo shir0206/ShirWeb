@@ -16,7 +16,7 @@
 @media only screen and (max-width: 500px) {
   .slide-list-cont ul {
     width: 100vw;
-    bottom: 0.5vh;
+    bottom: 0.25vh;
   }
 }
 

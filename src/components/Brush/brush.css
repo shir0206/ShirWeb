@@ -25,7 +25,14 @@
 #third {
   position: absolute;
   display: inline-block;
-  height: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  #first,
+  #second,
+  #third {
+    height: auto;
+  }
 }
 
 img#first.brush-intro {
@@ -51,7 +58,7 @@ img#third.brush-intro {
 }
 @media only screen and (max-width: 500px) {
   img#first.brush-project {
-    transform: translate(-45%, -15%) scale(0.8);
+    transform: translate(-45%, 35%) scale(0.8);
     opacity: 1;
   }
 }
@@ -64,7 +71,7 @@ img#third.brush-intro {
 }
 @media only screen and (max-width: 500px) {
   img#second.brush-project {
-    transform: translate(-55%, -25%) scale(0.3);
+    transform: translate(-55%, 55%) scale(0.5);
     opacity: 0.7;
   }
 }
@@ -77,7 +84,7 @@ img#third.brush-intro {
 }
 @media only screen and (max-width: 500px) {
   img#third.brush-project {
-    transform: translate(-60%, -90%) scale(0.2);
+    transform: translate(-30%, -5%) scale(0.7);
     opacity: 0.6;
   }
 }
@@ -90,7 +97,7 @@ img#third.brush-intro {
 }
 @media only screen and (max-width: 500px) {
   img#first.brush-about {
-    transform: translate(-35%, -35%) scale(0.7);
+    transform: translate(-45%, 35%) scale(1);
     opacity: 1;
   }
 }
@@ -103,7 +110,7 @@ img#third.brush-intro {
 }
 @media only screen and (max-width: 500px) {
   img#second.brush-about {
-    transform: translate(-45%, -45%) scale(0.2);
+    transform: translate(-65%, 45%) scale(0.4);
     opacity: 0.7;
   }
 }
@@ -116,7 +123,7 @@ img#third.brush-intro {
 }
 @media only screen and (max-width: 500px) {
   img#third.brush-about {
-    transform: translate(-70%, -50%) scale(0.4);
+    transform: translate(-30%, -10%) scale(0.4);
     opacity: 0.6;
   }
 }

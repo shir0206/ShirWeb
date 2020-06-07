@@ -49,6 +49,7 @@
     align-items: center;
     flex-direction: column;
     padding: 1em;
+    height: 60%;
   }
 }
 

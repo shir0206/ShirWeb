@@ -182,6 +182,7 @@
   margin-block-start: 0;
   margin-block-end: 0;
   text-align: left;
+  text-shadow: 1px 1px 1px rgba(51, 61, 71, 0.2);
 }
 .profile-info-cont p {
   max-height: 40vh;

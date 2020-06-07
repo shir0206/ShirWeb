@@ -138,10 +138,9 @@ const slides = [
       "MVC",
       "MultiLanguage",
       "RecyclerView",
-      "SharedPreference",
       "UX/UI",
+      "SharedPreference",
       "TicTacToe",
-      "Fun",
     ],
     image:
       "https://res.cloudinary.com/doywfjryu/image/upload/v1591429271/shir-web/tropix_fkexxi.png",
@@ -149,7 +148,7 @@ const slides = [
   {
     name: "NyquistOptics",
     description: [
-      "Developed an Android app for evaluating camera performances",
+      "Developed an Android app for evaluating camera performances.",
       "Translated user requirements into implementation.",
       "Approximately 50 active users worldwide (2020).",
     ],

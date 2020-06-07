@@ -7,7 +7,7 @@ export const Profile = (props) => {
     <div className="profile-cont">
       <div className="profile-info-cont">
         <h1 className="profile-info-name">Shir Zabolotny</h1>
-        <p>
+        <p className="portfolio-text">
           Hey there! :)
           <br />
           I am a developer striving for pixel perfect design and not

@@ -1,5 +1,4 @@
 .brush-container {
-  /* position: relative; */
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -26,6 +25,7 @@
 #third {
   position: absolute;
   display: inline-block;
+  height: auto;
 }
 
 img#first.brush-intro {

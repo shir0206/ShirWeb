@@ -95,7 +95,7 @@
     text-align: left;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 22% 7% 35% 8% 25% auto;
+    grid-template-rows: 22% 7% 30% 8% auto;
     grid-column-gap: 0px;
     grid-row-gap: 5px;
     overflow: hidden;
@@ -158,7 +158,7 @@
   }
 
   .tagList {
-    grid-area: 5 / 1 / 6 / 4;
+    grid-area: 5 / 1 / 7 / 4;
     align-self: start;
     list-style: none;
     list-style-type: none;

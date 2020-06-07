@@ -8,8 +8,7 @@
 .right-arrow-container,
 .left-arrow-container {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 50px;
+
   text-align: center;
   z-index: 10;
   align-items: center;
@@ -54,6 +53,8 @@
     height: 35px;
     border: 1.25px solid #c74778;
     box-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
   }
 
   .right-arrow-container {
@@ -67,17 +68,16 @@
 @media only screen and (max-width: 500px) {
   .right-arrow-container,
   .left-arrow-container {
-    bottom: 40%;
     width: 30px;
     height: 30px;
   }
 
   .right-arrow-container {
-    left: 78%;
+    transform: translate(min(32vw, 70vh), 5vh);
   }
 
   .left-arrow-container {
-    left: 12%;
+    transform: translate(max(-33.5vw, -71.1vh), 5vh);
   }
 }
 

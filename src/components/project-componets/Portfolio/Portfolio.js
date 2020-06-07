@@ -149,8 +149,8 @@ const slides = [
   {
     name: "NyquistOptics",
     description: [
-      "Developed a native Android app for evaluating camera performances",
-      "Collected, defined and translated user requirements into implementation.",
+      "Developed an Android app for evaluating camera performances",
+      "Translated user requirements into implementation.",
       "Approximately 50 active users worldwide (2020).",
     ],
     gitLink: "https://github.com/shir0206/NyquistOptics",

@@ -3,10 +3,8 @@
   justify-content: center;
   align-items: center;
   z-index: 400;
-  max-height: 80vh;
   height: 80vh;
-  width: 80vw;
-  max-width: 135vh;
+  width: min(80vw, 135vh);
   background-color: white;
   border-radius: 20px;
   position: absolute;
@@ -148,7 +146,6 @@
     transform: translateX(0%);
   }
 }
-
 
 .slide-prev {
   -webkit-animation: slide-prev 0.6s; /* Safari, Chrome and Opera > 12.1 */

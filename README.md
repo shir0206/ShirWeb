@@ -1,4 +1,4 @@
-## :cherry_blossom: Shir Web
+## Shir Web :hibiscus:
 
 :link: Personal website: https://shir0206.github.io/ShirWeb/
 

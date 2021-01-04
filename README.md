@@ -29,5 +29,5 @@
      - Then I got excited about the result, and added an animation of a caption I wrote in *my own handwriting*.
   - The **Projects** tab shows my portfolio, using a *carousel* I built from scratch.
   - In the **Profile** tab you can read about me and [get in touch](mailto:shir0206@gmail.com)!
-    - The **transitions** between the tabs produce an animation of brushstrokes.
+  - The **transitions** between the tabs produce an animation of brushstrokes.
   - In other words, the purpose of this project was to explore `animations`.

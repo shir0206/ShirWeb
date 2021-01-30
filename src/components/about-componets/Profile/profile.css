@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   z-index: 400;
-  max-height: 80vh;
   height: 80vh;
   width: 80vw;
   max-width: 135vh;
@@ -27,6 +26,7 @@
 @media only screen and (max-width: 500px) {
   .profile-cont {
     flex-direction: column;
+    height: 90vh;
   }
 }
 
@@ -182,7 +182,9 @@
   margin-block-start: 0;
   margin-block-end: 0;
   text-align: left;
-  text-shadow: 1px 1px 1px rgba(51, 61, 71, 0.2);
+
+  font-family: "Lucida Handwriting";
+  /* text-shadow: 1px 1px 1px rgba(51, 61, 71, 0.4); */
 }
 .profile-info-cont p {
   max-height: 40vh;

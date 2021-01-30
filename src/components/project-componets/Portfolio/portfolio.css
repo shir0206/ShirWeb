@@ -20,6 +20,11 @@
     font-size: min(1em, 2.25vh);
   }
 }
+@media only screen and (max-width: 500px) {
+  .portfolio-cont {
+    height: 90vh;
+  }
+}
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -87,11 +92,17 @@
 .slide-next,
 .slide-prev,
 .slide-none {
-  max-height: 80vh;
   height: 80vh;
   width: 80vw;
   max-width: 135vh;
   position: absolute;
+}
+@media only screen and (max-width: 500px) {
+  .slide-next,
+  .slide-prev,
+  .slide-none {
+    height: 90vh;
+  }
 }
 
 .slide-next {

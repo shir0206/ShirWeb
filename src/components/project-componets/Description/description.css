@@ -3,5 +3,7 @@
 }
 
 code {
-  background-color: teal;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: min(80%, 1em);
+  padding: 0.5% 1%;
 }

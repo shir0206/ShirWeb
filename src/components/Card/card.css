@@ -2,7 +2,7 @@
   background-color: #fff;
   border-radius: 20px;
   height: 80vh;
-  width: min(80vw,135vh);
+  width: min(80vw, 135vh);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
@@ -10,6 +10,11 @@
   align-items: stretch;
   overflow: hidden;
   position: absolute;
+}
+@media only screen and (max-width: 500px) {
+  .card {
+    height: 90vh;
+  }
 }
 
 .content-container {
@@ -19,4 +24,10 @@
   justify-content: center;
   align-items: center;
   z-index: 20;
+}
+
+@media only screen and (max-width: 500px) {
+  .content-container {
+    height: 80vh;
+  }
 }

@@ -6,6 +6,7 @@
 }
 .flower-cont path {
   stroke-width: 2.5px;
+  opacity: 0.85;
 }
 
 .flower-cont #path-0 {

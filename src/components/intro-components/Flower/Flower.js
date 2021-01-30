@@ -14,7 +14,7 @@ export const Flower = (props) => {
       easing: "cubicBezier(.5, .05, .1, .3)",
       duration: 200,
       delay: function (el, i) {
-        return i * 50 + 1500;
+        return i === 0 ? 0 : i * 60 + 1500;
       },
       loop: false,
       direction: "alternate",
@@ -40,7 +40,7 @@ export const Flower = (props) => {
           : "flower-cont without-fill"
       }
     >
-      <FlowerSVG displayRestart={props.displayRestart}/>
+      <FlowerSVG displayRestart={props.displayRestart} />
     </div>
   );
 };

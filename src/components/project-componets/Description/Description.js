@@ -15,8 +15,9 @@ export const Description = (props) => {
       <span
         dangerouslySetInnerHTML={{
           __html: description
-            .replace(/\*.+\*/, generateReplacer("*", "strong"))
-            .replace(/`.+`/, generateReplacer("`", "code")),
+          .replace(/\*\*.+\*\*/, generateReplacer("**", "strong"))
+          .replace(/\*.+\*/, generateReplacer("*", "em"))
+          .replace(/`.+`/, generateReplacer("`", "code")),
         }}
       />
     </li>

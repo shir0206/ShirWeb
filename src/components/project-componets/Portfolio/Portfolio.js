@@ -130,12 +130,12 @@ const slides = [
   {
     name: "Radial Menu",
     description: [
-      "Developed a recursive & responsive radial menu, that retrieves from a server the structure of folders & images.",
+      "Developed a recursive & responsive radial menu, written in React.js",
+      "The radial menu displays the strcture of the folders & images.",
+      "The data retreival is done by using axios and a server token.",
       "When a folder is clicked, displayed the next level of it's folders and images.",
       "When an image is clicked, it is displayed below, along with a gallery of all the rest of the images at the current level.",
-      "The code is written in React.js, the data is retrived using axios & server token.",
-      "The button is built recursively so that each button in the menu is represented as a Node component.",
-      "The position of the button on the screen is dynamically changing, using Trigonometric calculations.",
+      "The position of the buttons on the screen is dynamically changing, using Trigonometric calculations.",
     ],
     gitLink: "https://github.com/shir0206/radial-menu",
     webLink: "https://shir0206.github.io/radial-menu/",

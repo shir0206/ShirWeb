@@ -22,7 +22,7 @@
 }
 @media only screen and (max-width: 500px) {
   .portfolio-cont {
-    height: 90vh;
+    /* height: 90vh; */
   }
 }
 @keyframes fadein {
@@ -101,7 +101,7 @@
   .slide-next,
   .slide-prev,
   .slide-none {
-    height: 90vh;
+    /* height: 90vh; */
   }
 }
 

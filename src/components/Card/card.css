@@ -13,7 +13,7 @@
 }
 @media only screen and (max-width: 500px) {
   .card {
-    height: 90vh;
+    /* height: 90vh; */
   }
 }
 
@@ -28,6 +28,6 @@
 
 @media only screen and (max-width: 500px) {
   .content-container {
-    height: 80vh;
+    /* height: 80vh; */
   }
 }
